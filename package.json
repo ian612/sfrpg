@@ -7,6 +7,7 @@
     "package": "gulp package",
     "build": "gulp build && gulp link",
     "buildDock": "gulp build && gulp copyUser",
+    "build:noLink": "gulp build",
     "build:watch": "gulp watch",
     "copyLocalization": "gulp copyLocalization",
     "cook": "gulp cook",

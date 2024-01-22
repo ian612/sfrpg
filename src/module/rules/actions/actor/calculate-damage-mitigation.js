@@ -1,6 +1,6 @@
 import { SFRPG } from "../../../config.js";
 import { DiceSFRPG } from "../../../dice.js";
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "../../../modifiers/types.js";
 import RollContext from "../../../rolls/rollcontext.js";
 
 function tryResolveModifier(modifier, rollContext) {

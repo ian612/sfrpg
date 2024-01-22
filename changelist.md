@@ -29,7 +29,7 @@ The very cool features currently sat on the development branch are here! Hopeful
 Biohackers and Envoys rejoice, for the new Effect item type allows you to apply temporary modifiers to yourself and others with the drop of an item. These Effects are smart, and will expire after their duration has expired -- on exactly the turn you want, and can even reference the origin actor's stats. This also comes with a refactor of conditions and the status effect token HUD. Major thanks to Dosendusche for doing the majority of the heavy lifting for this.
 
 ## Roll code fixes
-Dosendusche's other big contribution this update was a refactor of our roll code. The details are very technical, but this will result in far fewer modifier bugs, roll-time bugs, and miscalculations. 
+Dosendusche's other big contribution this update was a refactor of our roll code. The details are very technical, but this will result in far fewer modifier bugs, roll-time bugs, and miscalculations.
 
 ## Modifier improvements
 Modifiers also use Foundry's `DataModel` class, which basically means they will be more reliable and resistant to incorrect data. Additionally,
@@ -137,12 +137,12 @@ A custom `@Template` enricher has been added, allowing you to place templates fr
 - Fix missing condition description localisations
 - Use the correct starship frame in oliphaunt
 - Updated alternate outcome
-- Updated Reduction plating. 
-- Updated Bulkheads. 
-- Added Data Broker features. 
+- Updated Reduction plating.
+- Updated Bulkheads.
+- Added Data Broker features.
 - Set Nanite Patches as Consumables
-- Added Trap Spotter Exploit. 
-- Added Other to Consumable types. 
+- Added Trap Spotter Exploit.
+- Added Other to Consumable types.
 - Added Ace Pilot features.
 - Re-organised the Tactical Rules journals with the help of folders-in-compendiums, and added more sections from the Tactical Rules chapter of the CRB.
 - Added all remaining power armor, and fixes to existing power armor
@@ -920,7 +920,7 @@ game.sfrpg = {
         SFRPGEffectType,
         SFRPGModifier,
         SFRPGModifierType,
-        SFRPGModifierTypes
+        SFRPGBonusTypes
 };
 ```
 

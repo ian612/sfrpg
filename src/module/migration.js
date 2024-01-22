@@ -1,4 +1,4 @@
-import { SFRPGModifierTypes, SFRPGEffectType, SFRPGModifierType } from "./modifiers/types.js";
+import { SFRPGBonusTypes, SFRPGEffectType, SFRPGModifierType } from "./modifiers/types.js";
 import SFRPGModifier from "./modifiers/modifier.js";
 
 const SFRPGMigrationSchemas = Object.freeze({
@@ -363,7 +363,7 @@ const _migrateActorDamageReductions = function(actor, migratedData) {
             const damageReductionModifier = new SFRPGModifier({
                 name: "Damage Reduction",
                 modifier: oldDamageReductionValue,
-                type: SFRPGModifierTypes.UNTYPED,
+                type: SFRPGBonusTypes.UNTYPED,
                 modifierType: SFRPGModifierType.CONSTANT,
                 effectType: SFRPGEffectType.DAMAGE_REDUCTION,
                 valueAffected: "",
@@ -398,7 +398,7 @@ const _migrateActorDamageReductions = function(actor, migratedData) {
                     const energyResistanceModifier = new SFRPGModifier({
                         name: "Energy Resistance",
                         modifier: resistanceValue,
-                        type: SFRPGModifierTypes.UNTYPED,
+                        type: SFRPGBonusTypes.UNTYPED,
                         modifierType: SFRPGModifierType.CONSTANT,
                         effectType: SFRPGEffectType.ENERGY_RESISTANCE,
                         valueAffected: key,
@@ -429,7 +429,7 @@ const _migrateActorDamageReductions = function(actor, migratedData) {
                     const energyResistanceModifier = new SFRPGModifier({
                         name: "Energy Resistance",
                         modifier: resistanceValue,
-                        type: SFRPGModifierTypes.UNTYPED,
+                        type: SFRPGBonusTypes.UNTYPED,
                         modifierType: SFRPGModifierType.CONSTANT,
                         effectType: SFRPGEffectType.ENERGY_RESISTANCE,
                         valueAffected: "custom",

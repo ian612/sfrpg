@@ -1,4 +1,8 @@
-export const SFRPGModifierTypes = Object.freeze({
+/**
+ * This object defines the available modifier types in the Starfinder game system.
+ * By the Starfinder rules, modifiers of the same type do not stack.
+ */
+export const SFRPGBonusTypes = Object.freeze({
     ABILITY: "ability",
     ARMOR: "armor",
     BASE: "base",
@@ -13,6 +17,9 @@ export const SFRPGModifierTypes = Object.freeze({
     UNTYPED: "untyped"
 });
 
+/**
+ * These are the properties/property categories of an actor that a modifier can affect.
+ */
 export const SFRPGEffectType = Object.freeze({
     RANGED_ATTACKS: "ranged-attacks",
     MELEE_ATTACKS: "melee-attacks",
@@ -62,6 +69,9 @@ export const SFRPGEffectType = Object.freeze({
     ENERGY_RESISTANCE: "energy-resistance"
 });
 
+/**
+ * Constant modifiers can include formulas, but do not include anything involving a dice roll.
+ */
 export const SFRPGModifierType = Object.freeze({
     CONSTANT: "constant",
     FORMULA: "formula"

@@ -1,5 +1,5 @@
 import { Closure } from "../../engine/closure/closure.js";
-import { SFRPGModifierType, SFRPGModifierTypes } from "../../modifiers/types.js";
+import { SFRPGModifierType, SFRPGBonusTypes } from "../../modifiers/types.js";
 
 /**
  * Takes an array of modifiers and "stacks" them.
@@ -111,40 +111,40 @@ export default class StackModifiers extends Closure {
             untypedMods,
             resistanceMods] = modifiers.reduce((prev, curr) => {
             switch (curr.type) {
-                case SFRPGModifierTypes.ABILITY:
+                case SFRPGBonusTypes.ABILITY:
                     prev[0].push(curr);
                     break;
-                case SFRPGModifierTypes.ARMOR:
+                case SFRPGBonusTypes.ARMOR:
                     prev[1].push(curr);
                     break;
-                case SFRPGModifierTypes.BASE:
+                case SFRPGBonusTypes.BASE:
                     prev[2].push(curr);
                     break;
-                case SFRPGModifierTypes.CIRCUMSTANCE:
+                case SFRPGBonusTypes.CIRCUMSTANCE:
                     prev[3].push(curr);
                     break;
-                case SFRPGModifierTypes.DIVINE:
+                case SFRPGBonusTypes.DIVINE:
                     prev[4].push(curr);
                     break;
-                case SFRPGModifierTypes.ENHANCEMENT:
+                case SFRPGBonusTypes.ENHANCEMENT:
                     prev[5].push(curr);
                     break;
-                case SFRPGModifierTypes.INSIGHT:
+                case SFRPGBonusTypes.INSIGHT:
                     prev[6].push(curr);
                     break;
-                case SFRPGModifierTypes.LUCK:
+                case SFRPGBonusTypes.LUCK:
                     prev[7].push(curr);
                     break;
-                case SFRPGModifierTypes.MORALE:
+                case SFRPGBonusTypes.MORALE:
                     prev[8].push(curr);
                     break;
-                case SFRPGModifierTypes.RACIAL:
+                case SFRPGBonusTypes.RACIAL:
                     prev[9].push(curr);
                     break;
-                case SFRPGModifierTypes.RESISTANCE:
+                case SFRPGBonusTypes.RESISTANCE:
                     prev[11].push(curr);
                     break;
-                case SFRPGModifierTypes.UNTYPED:
+                case SFRPGBonusTypes.UNTYPED:
                 default:
                     prev[10].push(curr);
                     break;

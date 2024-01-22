@@ -1,4 +1,4 @@
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "../../../modifiers/types.js";
 
 export default function(engine) {
     engine.closures.add("calculateArmorModifiers", (fact, context) => {
@@ -48,7 +48,7 @@ export default function(engine) {
         let eacMod = Object.entries(eacMods).reduce((sum, curr) => {
             if (curr[1] === null || curr[1].length < 1) return sum;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(curr[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(curr[0])) {
                 for (const bonus of curr[1]) {
                     sum += addModifier(bonus, data, eac, "SFRPG.ACTooltipBonus");
                 }
@@ -62,7 +62,7 @@ export default function(engine) {
         let kacMod = Object.entries(kacMods).reduce((sum, curr) => {
             if (curr[1] === null || curr[1].length < 1) return sum;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(curr[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(curr[0])) {
                 for (const bonus of curr[1]) {
                     sum += addModifier(bonus, data, kac, "SFRPG.ACTooltipBonus");
                 }

@@ -1,4 +1,4 @@
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "../../../modifiers/types.js";
 
 export default function(engine) {
     engine.closures.add("calculateSaveModifiers", (fact, context) => {
@@ -103,7 +103,7 @@ export default function(engine) {
         let fortMod = Object.entries(fortMods).reduce((sum, mod) => {
             if (mod[1] === null || mod[1].length < 1) return sum;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(mod[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(mod[0])) {
                 for (const bonus of mod[1]) {
                     sum += addModifier(bonus, data, fort, "SFRPG.SaveModifiersTooltip");
                 }
@@ -117,7 +117,7 @@ export default function(engine) {
         let reflexMod = Object.entries(reflexMods).reduce((sum, mod) => {
             if (mod[1] === null || mod[1].length < 1) return sum;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(mod[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(mod[0])) {
                 for (const bonus of mod[1]) {
                     sum += addModifier(bonus, data, reflex, "SFRPG.SaveModifiersTooltip");
                 }
@@ -131,7 +131,7 @@ export default function(engine) {
         let willMod = Object.entries(willMods).reduce((sum, mod) => {
             if (mod[1] === null || mod[1].length < 1) return sum;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(mod[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(mod[0])) {
                 for (const bonus of mod[1]) {
                     sum += addModifier(bonus, data, will, "SFRPG.SaveModifiersTooltip");
                 }

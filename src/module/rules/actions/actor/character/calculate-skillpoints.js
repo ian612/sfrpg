@@ -1,4 +1,4 @@
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../../../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "../../../../modifiers/types.js";
 
 export default function(engine) {
     engine.closures.add("calculateSkillpoints", (fact, context) => {
@@ -55,7 +55,7 @@ export default function(engine) {
         const skillPointModifierBonus = Object.entries(skillPointModifiers).reduce((sum, mod) => {
             if (mod[1] === null || mod[1].length < 1) return sum;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(mod[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(mod[0])) {
                 for (const bonus of mod[1]) {
                     sum += addModifier(bonus, data, data.skillpoints, "SFRPG.ActorSheet.Modifiers.Tooltips.BonusSkillpoints");
                 }
@@ -84,7 +84,7 @@ export default function(engine) {
             let accumulator = Object.entries(mods).reduce((sum, mod) => {
                 if (mod[1] === null || mod[1].length < 1) return sum;
 
-                if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(mod[0])) {
+                if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(mod[0])) {
                     for (const bonus of mod[1]) {
                         sum += addModifier(bonus, fact.data, skill, "SFRPG.ActorSheet.Modifiers.Tooltips.SkillRank");
                     }

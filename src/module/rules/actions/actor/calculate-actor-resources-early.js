@@ -1,4 +1,4 @@
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "../../../modifiers/types.js";
 
 export default function(engine) {
     engine.closures.add('calculateActorResources', (fact, context) => {
@@ -75,7 +75,7 @@ export default function(engine) {
                     const resourceMod = Object.entries(processedMods).reduce((sum, curr) => {
                         if (curr[1] === null || curr[1].length < 1) return sum;
 
-                        if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(curr[0])) {
+                        if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(curr[0])) {
                             for (const bonus of curr[1]) {
                                 sum += addModifier(bonus, data, finalActorResource, "SFRPG.ACTooltipBonus");
                             }
@@ -111,7 +111,7 @@ export default function(engine) {
                         if (mod === null || mod.length < 1) continue;
 
                         let resourceMod = 0;
-                        if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(key)) {
+                        if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(key)) {
                             for (const bonus of mod) {
                                 resourceMod = addModifier(bonus, data, finalActorResource, "SFRPG.ACTooltipBonus");
                             }

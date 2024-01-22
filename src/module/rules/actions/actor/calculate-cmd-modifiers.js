@@ -1,4 +1,4 @@
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "../../../modifiers/types.js";
 
 export default function(engine) {
     engine.closures.add("calculateCMDModifiers", (fact, context) => {
@@ -42,7 +42,7 @@ export default function(engine) {
         const cmdMod = Object.entries(mods).reduce((prev, curr) => {
             if (curr[1] === null || curr[1].length < 1) return prev;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(curr[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(curr[0])) {
                 for (const bonus of curr[1]) {
                     prev += addModifier(bonus, fact.data, cmd, "SFRPG.CMDModiferTooltip");
                 }

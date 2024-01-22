@@ -1,6 +1,6 @@
 import SFRPGModifierApplication from "../../apps/modifier-app.js";
 import SFRPGModifier from "../../modifiers/modifier.js";
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "../../modifiers/types.js";
 import { getItemContainer } from "../actor-inventory-utils.js";
 
 export const ActorModifiersMixin = (superclass) => class extends superclass {
@@ -43,7 +43,7 @@ export const ActorModifiersMixin = (superclass) => class extends superclass {
     async addModifier({
         name = "",
         modifier = 0,
-        type = SFRPGModifierTypes.UNTYPED,
+        type = SFRPGBonusTypes.UNTYPED,
         modifierType = SFRPGModifierType.CONSTANT,
         effectType = SFRPGEffectType.SKILL,
         subtab = "misc",

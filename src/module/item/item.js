@@ -4,7 +4,7 @@ import AbilityTemplate from "../canvas/ability-template.js";
 import { SFRPG } from "../config.js";
 import { DiceSFRPG } from "../dice.js";
 import SFRPGModifier from "../modifiers/modifier.js";
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "../modifiers/types.js";
 import RollContext from "../rolls/rollcontext.js";
 import StackModifiers from "../rules/closures/stack-modifiers.js";
 import { Mix } from "../utils/custom-mixer.js";
@@ -899,7 +899,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         Object.entries(modifiers).reduce((sum, mod) => {
             if (mod[1] === null || mod[1].length < 1) return 0;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(mod[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(mod[0])) {
                 for (const bonus of mod[1]) {
                     addModifier(bonus, parts);
                 }
@@ -1271,7 +1271,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         Object.entries(modifiers).reduce((sum, mod) => {
             if (mod[1] === null || mod[1].length < 1) return 0;
 
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(mod[0])) {
+            if ([SFRPGBonusTypes.CIRCUMSTANCE, SFRPGBonusTypes.UNTYPED].includes(mod[0])) {
                 for (const bonus of mod[1]) {
                     addModifier(bonus, parts);
                 }
@@ -1864,7 +1864,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
     async addModifier({
         name = "",
         modifier = 0,
-        type = SFRPGModifierTypes.UNTYPED,
+        type = SFRPGBonusTypes.UNTYPED,
         modifierType = SFRPGModifierType.CONSTANT,
         effectType = SFRPGEffectType.SKILL,
         subtab = "misc",
@@ -2016,4 +2016,3 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         }
     }
 }
-

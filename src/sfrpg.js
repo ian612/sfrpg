@@ -41,7 +41,7 @@ import { ItemSFRPG } from "./module/item/item.js";
 import { ItemSheetSFRPG } from "./module/item/sheet.js";
 import migrateWorld from './module/migration.js';
 import SFRPGModifier from "./module/modifiers/modifier.js";
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "./module/modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "./module/modifiers/types.js";
 import { RPC } from "./module/rpc.js";
 import registerSystemRules from "./module/rules.js";
 import { registerSystemSettings } from "./module/system/settings.js";
@@ -150,7 +150,7 @@ Hooks.once('init', async function() {
         SFRPGEffectType,
         SFRPGModifier,
         SFRPGModifierType,
-        SFRPGModifierTypes,
+        SFRPGBonusTypes,
         timedEffects: new Map(),
 
         // Namespace style
@@ -163,7 +163,7 @@ Hooks.once('init', async function() {
                 SFRPGEffectType,
                 SFRPGModifier,
                 SFRPGModifierType,
-                SFRPGModifierTypes
+                SFRPGBonusTypes
             },
             Sheet: {
                 Base: ActorSheetSFRPG,

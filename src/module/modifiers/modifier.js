@@ -1,5 +1,5 @@
 import { generateUUID } from "../utils/utilities.js";
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "./types.js";
+import { SFRPGEffectType, SFRPGModifierType, SFRPGBonusTypes } from "./types.js";
 
 /**
  * A data object that hold information about a specific modifier.
@@ -89,9 +89,9 @@ export default class SFRPGModifier extends foundry.abstract.DataModel {
             }),
             max: new fields.NumberField({ initial: 0, integer: true, required: false }),
             type: new fields.StringField({
-                initial: SFRPGModifierTypes.UNTYPED,
+                initial: SFRPGBonusTypes.UNTYPED,
                 required: false,
-                choices: Object.values(SFRPGModifierTypes),
+                choices: Object.values(SFRPGBonusTypes),
                 label: "SFRPG.ModifierTypeLabel",
                 hint: "SFRPG.ModifierTypeTooltip"
             }),

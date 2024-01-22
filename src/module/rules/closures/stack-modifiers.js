@@ -8,13 +8,16 @@ export default class StackModifiers extends Closure {
     /**
      * @override
      *
-     * Note: do not put Situational Modifiers in here. (modifiers that have dices inside the formula)
+     * This method takes a list of modifiers available to a roll and evaluates them, only making
+     * available the highest modifier of each type to _process. This method only processes
+     * modifiers that are static, i.e. have no dice roll component. They can include statically
+     * evaluated formulas.
+     * For situational modifiers with dice rolls involved, processAsync must be used.
      *
-     * @param {Array}   modifiers The modifiers to stack.
-     * @param {Context} context   The context for this closure.
-     * @param {Object} options    Some options for this closure. F.e. we can provide the whole actor here.
-     * @returns {Object}          An object containing only those modifiers allowed
-     *                            based on the stacking rules.
+     * @param {Array}    modifiers  The modifiers to stack.
+     * @param {Context}  context    The context for this closure.
+     * @param {Object}   options    Some options for this closure. e.g. we can provide the whole actor here.
+     * @returns {Object}            An object containing only those modifiers allowed based on the stacking rules.
      */
     process(mods, context, options = { actor: null }) {
         const modifiers = mods;
@@ -49,17 +52,18 @@ export default class StackModifiers extends Closure {
     }
 
     /**
-     * In difference to normal "process" "processAsync" can calculate with dices and so it is allowed to take situational modifiers.
-     * @param {Array} mods modifiers The modifiers to stack.
-     * @param {Context} context The context for this closure.
-     * @param {Object} options Some options for this closure. F.e. we can provide the whole actor here.
-     * @returns {Object} An object containing only those modifiers allowed based on the stacking rules.
+     * This functions similarly to process(), but allows the evaluation of dice rolls and
+     * situational modifiers before stacking.
+     * @param   {Array}   mods    The modifiers to stack.
+     * @param   {Context} context The context for this closure.
+     * @param   {Object}  options Some options for this closure. e.g. we can provide the whole actor here.
+     * @returns {Object}          An object containing only those modifiers allowed based on the stacking rules.
      */
     async processAsync(mods, context, options = { actor: null }) {
         const modifiers = mods;
         if (modifiers.length > 0) {
-            for (let modifiersI = 0; modifiersI < modifiers.length; modifiersI++) {
-                const modifier = modifiers[modifiersI];
+            // Loop through all the modifiers available to the stack
+            for (const modifier of modifiers) {
                 const actor = options.actor;
                 const formula = String(modifier.modifier);
 
@@ -74,15 +78,15 @@ export default class StackModifiers extends Closure {
                             dice: []
                         };
                     }
-                    modifiers[modifiersI].max = evaluatedRoll.total;
-                    modifiers[modifiersI].isDeterministic = roll.isDeterministic;
-                    modifiers[modifiersI].dices = [];
+                    modifier.max = evaluatedRoll.total;
+                    modifier.isDeterministic = roll.isDeterministic;
+                    modifier.dices = [];
 
                     if (!roll.isDeterministic) {
                         for (let allDiceI = 0; allDiceI < evaluatedRoll.dice.length; allDiceI++) {
                             const die = evaluatedRoll.dice[allDiceI];
                             if (!die) continue;
-                            modifiers[modifiersI].dices.push({
+                            modifier.dices.push({
                                 formula: `${die.number}d${die.faces}`,
                                 faces: die.faces,
                                 total: die.results.reduce((pv, cv) => pv + cv.result, 0)
@@ -90,13 +94,19 @@ export default class StackModifiers extends Closure {
                         }
                     }
                 } else {
-                    modifiers[modifiersI].max = 0;
+                    modifier.max = 0;
                 }
             }
         }
         return this._process(modifiers);
     }
 
+    /**
+     * Plucks out the highest valued evaluated modifier from the list of modifiers available for
+     * the current roll/evaluation context, and returns them in an object.
+     * @param {Array}    modifiers  The modifiers to process
+     * @returns {Object}            The highest value modifier of each bonus type, plus all untyped modifiers
+     */
     _process(modifiers) {
         const [abilityMods,
             armorMods,

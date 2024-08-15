@@ -1,0 +1,63 @@
+{
+  "_id": "NgON7LiyiTbZR7jq",
+  "name": "Rocket Launcher",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 2,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "high",
+    "damageType": {
+      "andOr": "and",
+      "primary": "fire",
+      "secondary": "piercing"
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This weapon fires individual missiles that can crack the toughest armor or devastate small areas.</p>\n<p><strong>Type</strong> ranged; <strong>Range</strong> 150 ft.; <strong>Special</strong> explode (10 ft.), unwieldy</p>\n<p><strong>Damage</strong> high; <strong>Damage Type</strong> F&amp;P; <strong>Critical</strong> —</p>\n<p><strong>Slots</strong> 1 (frame or upper limb); <strong>Capacity</strong> 2</p>\n<p><strong>Siege Mode (3 PP)</strong> As a full action, the mech reconfigures its body and ordinance into a siege configuration, providing the stability and power necessary to bombard distant targets. While configured in this way, the mech can’t fly, and its other movement speeds are reduced to 10 feet. The rocket launcher’s range increases to 500 feet, its explode property’s radius increases to 20 feet, and it deals medium damage for a weapon of its level. The mech can end the siege configuration as a full action.</p>\n<p><strong>Cost</strong> 4 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 4,
+    "modifiers": [],
+    "ppAbilities": {
+      "0": {
+        "description": "<p><span style=\"font-family: 'Exo 2', sans-serif\">As a full action, the mech reconfigures its body and ordinance into a siege configuration, providing the stability and power necessary to bombard distant targets. While configured in this way, the mech can’t fly, and its other movement speeds are reduced to 10 feet. The rocket launcher’s range increases to 500 feet, its explode property’s radius increases to 20 feet, and it deals medium damage for a weapon of its level. The mech can end the siege configuration as a full action.</span></p>"
+      }
+    },
+    "range": {
+      "unit": "ft",
+      "value": 150
+    },
+    "slots": {
+      "allowed": {
+        "frame": true,
+        "lowerLimb": false,
+        "upperLimb": true
+      },
+      "number": 1
+    },
+    "source": "TR, p. 105",
+    "specialEffect": "explode (10 ft.), unwieldy",
+    "weaponType": "ranged"
+  }
+}

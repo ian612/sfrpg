@@ -1,0 +1,53 @@
+{
+  "_id": "ak8JQCgaBS7dDhEN",
+  "name": "Malfunctioning Power Core",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "TkcfBqUjfyUxrcDu",
+  "img": "systems/sfrpg/icons/conditions/burning.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "permanent",
+      "value": "0"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>The rate at which a mech with a malfunctioning power core regains lost Shield Points and Power Points is halved.</p>\n<p>When a mech’s power core first gains the malfunctioning condition and again when it gains the inoperable condition, the mech loses [[/r 1d4]] PP.</p>"
+    },
+    "enabled": true,
+    "modifiers": [],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR, p. 114"
+  }
+}

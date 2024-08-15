@@ -1,0 +1,37 @@
+{
+  "_id": "ELfY1wjupJuBfn7n",
+  "name": "Cargo Hold",
+  "type": "mechAuxiliarySystem",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "ErhWJ7D61H76feuD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>Prerequisite:</strong> The mech must have a <span style=\"text-decoration:underline\"><span style=\"text-decoration:underline\">transporter</span></span> frame.</p>\n<p>The mech’s body houses a small garage capable of storing a single creature, vehicle, or other object no larger than two size categories smaller than the mech. An operator can move from a stored vehicle to the mech’s cockpit as a move action, and vice versa. A mech can have no more than two cargo hold systems.</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 0,
+    "modifiers": [],
+    "ppAbilities": [],
+    "prerequisite": "Must have a Transporter frame",
+    "source": "TR, p. 106"
+  }
+}

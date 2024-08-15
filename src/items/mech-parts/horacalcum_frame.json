@@ -1,0 +1,129 @@
+{
+  "_id": "DqcVvj6oKp1unSRC",
+  "name": "Horacalcum Frame",
+  "type": "feat",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "AqpK9Ib7uQrHYNfd",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "ability": null,
+    "abilityMods": {
+      "parts": []
+    },
+    "actionTarget": "",
+    "actionType": "",
+    "activation": {
+      "type": "",
+      "condition": "",
+      "cost": 0
+    },
+    "area": {
+      "effect": "",
+      "shapable": false,
+      "shape": "",
+      "units": "",
+      "value": 0
+    },
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "effect": "",
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "damageNotes": "",
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>A mech with a horacalcum frame has a dull coppery sheen, and time functions strangely around it, potentially creating permanent areas of altered time-flow if the mech stays in one location long enough. A horacalcum frame grants a mech the following special abilities.</p>\n<p><strong>Bullet Time (2 PP)</strong> As a reaction when it would take damage from a ranged attack, the mech can try to dodge the hit, attempting a Reflex saving throw with a DC equal to 15 + the enemy creature’s CR or mech tier. On a success, the attack misses.</p>\n<p>@UUID[Compendium.world.mech-actions.Item.PBeCef421FEIYxtu]{Bullet Time (2 PP)}</p>\n<p><strong>Temporal Pulse (4 PP)</strong> As a standard action, the mech can emanate a burst of chronological energy in an 80-foot radius. Allied creatures and mechs within the area can take an extra move action on their turn, while enemy creatures and mechs within the area must succeed at a Will save with a DC equal to 12 + 1/2 your mech’s tier or lose their move action for the turn. This effect lasts for 1 round.</p>\n<p>@UUID[Compendium.world.mech-actions.Item.sqbrftfHL3TtELQv]{Temporal Pulse (4 PP)}</p>\n<p>Can only have 1 type of Starmetal Frame.</p>\n<p><strong>Cost</strong>: 2.5 × tier</p>"
+    },
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
+    "details": {
+      "category": "speciesFeature",
+      "combat": false,
+      "specialAbilityType": "su"
+    },
+    "duration": {
+      "units": "text",
+      "value": null
+    },
+    "formula": "",
+    "isActive": null,
+    "modifiers": [],
+    "ppAbilities": [],
+    "properties": {},
+    "range": {
+      "additional": "",
+      "per": "",
+      "units": "",
+      "value": null
+    },
+    "recharge": {
+      "charged": false,
+      "value": null
+    },
+    "requirements": "Frame Variant",
+    "rollNotes": "",
+    "save": {
+      "type": "",
+      "dc": null,
+      "descriptor": ""
+    },
+    "source": "TDtD, p. 60",
+    "target": {
+      "type": "",
+      "value": null
+    },
+    "uses": {
+      "max": null,
+      "per": null,
+      "value": null
+    }
+  }
+}

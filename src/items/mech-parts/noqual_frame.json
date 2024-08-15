@@ -1,0 +1,129 @@
+{
+  "_id": "LnJX6SFOdbb8iKER",
+  "name": "Noqual Frame",
+  "type": "feat",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "AqpK9Ib7uQrHYNfd",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "ability": null,
+    "abilityMods": {
+      "parts": []
+    },
+    "actionTarget": "",
+    "actionType": "",
+    "activation": {
+      "type": "",
+      "condition": "",
+      "cost": 0
+    },
+    "area": {
+      "effect": "",
+      "shapable": false,
+      "shape": "",
+      "units": "",
+      "value": 0
+    },
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "effect": "",
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "damageNotes": "",
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Noqual-infused mechs have green crystalline inlays worked into their frames, and magic used around them sometimes falters. Mechs with noqual frames gain the following special abilities.</p>\n<p><strong>Anti-Magic Targeting (1+ PP)</strong> The mech can activate this ability when making a single attack against a magical construct or foe capable of spellcasting. If the attack hits the mech increases its damage dice by 2 × the PP expended.</p>\n<p>@UUID[Compendium.world.mech-actions.Item.CUygHUxnBRaABLWT]{Anti-Magic Targeting (1+ PP)}</p>\n<p><strong>Dampening Field (2 PP)</strong> As a standard action, the mech can create a magic-dampening aura around itself. The effect lasts for 1 round, though the mech can extend the duration each round by expending 1 PP as a free action. Spells or spell-like abilities cast within an 80-foot radius of the mech have a 25% chance of failure while this aura is active.</p>\n<p>@UUID[Compendium.world.mech-actions.Item.0seaCdnomLblGQIT]{Dampening Field (2 PP)}</p>\n<p>Can only have 1 type of Starmetal Frame.</p>\n<p><strong>Cost</strong>: 2.5 × tier</p>"
+    },
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
+    "details": {
+      "category": "speciesFeature",
+      "combat": false,
+      "specialAbilityType": "su"
+    },
+    "duration": {
+      "units": "text",
+      "value": null
+    },
+    "formula": "",
+    "isActive": null,
+    "modifiers": [],
+    "ppAbilities": [],
+    "properties": {},
+    "range": {
+      "additional": "",
+      "per": "",
+      "units": "",
+      "value": null
+    },
+    "recharge": {
+      "charged": false,
+      "value": null
+    },
+    "requirements": "Frame Variant",
+    "rollNotes": "",
+    "save": {
+      "type": "",
+      "dc": null,
+      "descriptor": ""
+    },
+    "source": "TDtD, p. 61",
+    "target": {
+      "type": "",
+      "value": null
+    },
+    "uses": {
+      "max": null,
+      "per": null,
+      "value": null
+    }
+  }
+}

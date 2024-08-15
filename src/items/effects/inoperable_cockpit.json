@@ -1,0 +1,53 @@
+{
+  "_id": "vkag4Ukt3ntLS0Zy",
+  "name": "Inoperable Cockpit",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "TkcfBqUjfyUxrcDu",
+  "img": "systems/sfrpg/icons/conditions/broken.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "permanent",
+      "value": "0"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>The cockpit is the control center where the operators reside. Cockpit system failure doesn’t directly impede the mech but instead threatens one or more operators.</p>\n<p>When the cockpit gains the <strong>inoperable</strong> condition, each of the operators takes [[/r 1d8+@details.cr]]{1d8 × the mech’s tier} bludgeoning damage; they can attempt a @Check[type:reflex] saving throw to halve the damage (DC = [[15+@details.cr]] 15 + half the mech’s tier). In addition, the operators’ controls become unreliable; the first time each turn that an operator uses a <strong>full action</strong> to pilot the mech, there’s a [[/r 1d100]] 50% chance that the mech doesn’t gain an action. Either effect lasts until the beginning of the mech’s next turn.</p>"
+    },
+    "enabled": true,
+    "modifiers": [],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR, p. 114"
+  }
+}

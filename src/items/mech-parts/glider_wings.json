@@ -1,0 +1,57 @@
+{
+  "_id": "H9orEzZnHxxt72SJ",
+  "name": "Glider Wings",
+  "type": "mechAuxiliarySystem",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "ErhWJ7D61H76feuD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>When installed into a mech with @UUID[Compendium.world.auxiliary-systems.Item.JQwCDkyoSwktaI9r]{thrusters}, these winglike extensions to the mech’s frame allow it to fly for longer and higher when it activates its <span style=\"text-decoration:underline\">Power Jump</span> ability.</p>\n<p><strong>Glide (1 PP)</strong> The mech adds an additional 30 feet to the maximum height of its fly speed when using <span style=\"text-decoration:underline\">Power Jump</span>. After jumping, the mech remains floating in the air in the same position until the beginning of the operator’s next turn. Remaining in the air for additional time requires additional uses of this ability; otherwise, the mech begins falling at a rate of 5 feet per round.</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 0,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "Glide",
+        "abilityType": "util",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": 1,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p>The mech adds an additional 30 feet to the maximum height of its fly speed when using <span style=\"text-decoration: underline;\"><span style=\"text-decoration: underline;\">Power Jump</span></span>. After jumping, the mech remains floating in the air in the same position until the beginning of the operator’s next turn. Remaining in the air for additional time requires additional uses of this ability; otherwise, the mech begins falling at a rate of 5 feet per round.</p>",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "Must have Thrusters auxiliary system",
+    "source": "TDtD, p. 59"
+  }
+}

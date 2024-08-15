@@ -1,0 +1,69 @@
+{
+  "_id": "W82CE5nqKEche4IE",
+  "name": "Scrapper Core Template",
+  "type": "mechPowerCoreTemplate",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Q98Ywgf35jKWSa0k",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This power core template is programmed to grant exceptional power when its mech is at greatest risk.</p>\n<p>Rate +0; Initial +0; Maximum +0</p>\n<p><strong>Special</strong> Whenever the mech gains a system failure condition, the mech gains [[/r 1d4]] Power Points. The mech can exceed its PP maximum in this way, but any excess PP not expended by the end of its next turn are lost.</p>\n<p><strong>Cost</strong> 1 x tier</p>"
+    },
+    "equipped": false,
+    "initial": {
+      "base": 0,
+      "value": 0
+    },
+    "maximum": {
+      "base": 0,
+      "value": 0
+    },
+    "mechPointCost": 1,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "",
+    "rate": {
+      "base": 0,
+      "value": 0
+    },
+    "source": "TR, p. 102"
+  }
+}

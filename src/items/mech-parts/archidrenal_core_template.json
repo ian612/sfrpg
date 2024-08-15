@@ -1,0 +1,49 @@
+{
+  "_id": "WXVvhT443krolY6G",
+  "name": "Archidrenal Core Template",
+  "type": "mechPowerCoreTemplate",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Q98Ywgf35jKWSa0k",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Necrografts interface with the operator’s body, drawing on their life force to amplify the mech’s abilities.</p>\n<p><strong>Prerequisite</strong> Can be applied only to a core with a rate greater than 1.</p>\n<p>Rate +0; Initial –1; Maximum +0</p>\n<p><strong>Special</strong> Once per round as a free action, an operator can take Hit Point damage equal to [[3*@details.tier]] 3 × the mech’s tier to generate an additional 1 PP. This damage can’t be reduced but can be healed normally. This damage reduces the operator’s Hit Points without affecting stamina.</p>\n<p><strong>Cost</strong> 0.5 x tier</p>"
+    },
+    "equipped": false,
+    "initial": {
+      "base": -1,
+      "value": 0
+    },
+    "maximum": {
+      "base": 0,
+      "value": 0
+    },
+    "mechPointCost": 0.5,
+    "modifiers": [],
+    "ppAbilities": [],
+    "prerequisite": "",
+    "rate": {
+      "base": 0,
+      "value": 0
+    },
+    "source": "AP#53, p. 152"
+  }
+}

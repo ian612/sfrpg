@@ -1,0 +1,57 @@
+{
+  "_id": "HQbccd6FbQjh3Nz0",
+  "name": "Reinforced Frame",
+  "type": "mechUpgrade",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "is4WZMfqb48xmPdk",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>Effect</strong> Increase the mech frame’s base HP by 5, and increase its HP advancement by 1.</p>\n<p><strong>Cost</strong> 1 × tier</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 1,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "source": "TR, p. 108",
+    "special": "Increase the mech frame’s base HP by 5, and increase its HP advancement by 1."
+  }
+}

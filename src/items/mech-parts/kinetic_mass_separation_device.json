@@ -1,0 +1,57 @@
+{
+  "_id": "ZfohVGTvmkH6ilfM",
+  "name": "Kinetic Mass Separation Device",
+  "type": "mechAuxiliarySystem",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "ErhWJ7D61H76feuD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This device immediately converts a mech’s act of destruction into ammo.</p>\n<p><strong>Effect</strong> After destroying a target with a CR greater than or equal to [[@details.tier-2]] the mech’s tier – 2, the KMSD instantly returns all battery charges, missile weapons, and kinetic ammunition for two weapons to full standard ammunition count. The targeted creature or construct must be within the mech’s attack range. No additional PP is generated at the end of the round during which a KMSD charge is completed.</p>\n<p><strong>Cost</strong> 2 × tier</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 2,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "",
+    "source": "AP#53, pp. 152-153"
+  }
+}

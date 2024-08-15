@@ -1,0 +1,70 @@
+{
+  "_id": "RV0XpW4RJZkLjS1m",
+  "name": "Malfunctioning Upper Limbs",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "TkcfBqUjfyUxrcDu",
+  "img": "systems/sfrpg/icons/conditions/burning.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "permanent",
+      "value": "0"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>A mech with malfunctioning upper limbs takes a –2 penalty to attack rolls with weapons mounted in upper-limb slots, as well as to any combat maneuvers that don’t use a mech weapon.</p>"
+    },
+    "enabled": true,
+    "modifiers": [
+      {
+        "_id": "587fd3b6-424b-4066-adc0-805d5e41f9ce",
+        "name": "Malfunctioning Upper Limbs",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "all-attacks",
+        "enabled": true,
+        "max": -2,
+        "modifier": "-2",
+        "modifierType": "formula",
+        "notes": "Weapons mounted in Upper Limbs, and combat maneuvers not using a weapon",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": ""
+      }
+    ],
+    "ppAbilities": [],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR, p. 114"
+  }
+}

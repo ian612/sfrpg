@@ -1,0 +1,63 @@
+{
+  "_id": "DYrLvwJHhXxFaf10",
+  "name": "Massive Target Penetrating Weapon",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 1,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "medium",
+    "damageType": {
+      "andOr": "and",
+      "primary": "fire",
+      "secondary": "piercing"
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>Type</strong> ranged; <strong>Range</strong> 200 ft.; <strong>Special</strong> —</p>\n<p><strong>Damage</strong> medium; <strong>Damage Type</strong> F&amp;P; <strong>Critical</strong> —</p>\n<p><strong>Slots</strong> 2 (frame); <strong>Capacity</strong> 1</p>\n<p><strong>Charged Extreme Projectile (3 PP)</strong> As a full action, the mech reconfigures its torso into an extended barrel then immediately shoots with that weapon, dealing extreme damage. While configured in this mode, the mech can't fly, and all other movement speeds are reduced to 10 feet. The mech can use a standard action to end this configuration.</p>\n<p><strong>Cost</strong> 4 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 4,
+    "modifiers": [],
+    "ppAbilities": {
+      "0": {
+        "description": "<p>As a full action, the mech reconfigures its torso into an extended barrel then immediately shoots with that weapon, dealing extreme damage. While configured in this mode, the mech can't fly, and all other movement speeds are reduced to 10 feet. The mech can use a standard action to end this configuration.</p>"
+      }
+    },
+    "range": {
+      "unit": "ft",
+      "value": 200
+    },
+    "slots": {
+      "allowed": {
+        "frame": true,
+        "lowerLimb": false,
+        "upperLimb": false
+      },
+      "number": 2
+    },
+    "source": "AP#53, p. 153",
+    "specialEffect": "",
+    "weaponType": "ranged"
+  }
+}

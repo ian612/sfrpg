@@ -1,0 +1,68 @@
+{
+  "_id": "XIg4TFvu3MxAZ3Hv",
+  "name": "Reconnaissance Array",
+  "type": "mechAuxiliarySystem",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "ErhWJ7D61H76feuD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>Prerequisite</strong>: The mech must have a <span style=\"text-decoration:underline\"><span style=\"text-decoration:underline\">recon</span></span> frame.</p>\n<p>Installed directly into a mech’s sensing and heads-up display systems, a reconnaissance array gives the mech a +2 bonus to Perception checks and a +5 bonus to Computers checks when using the scan action (page 114).</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 0,
+    "modifiers": [
+      {
+        "_id": "f7b92c67-7f2e-4f72-8539-37d05fec051d",
+        "name": "Reconnaissance Array",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "skill",
+        "enabled": true,
+        "max": 2,
+        "modifier": "2",
+        "modifierType": "constant",
+        "notes": "",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": "per"
+      },
+      {
+        "_id": "6a1d63f7-ecd4-48c8-bf3e-b1cca8d59a72",
+        "name": "Recon Array - Scan",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "skill",
+        "enabled": true,
+        "max": 5,
+        "modifier": "5",
+        "modifierType": "formula",
+        "notes": "When using Scan action",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": "com"
+      }
+    ],
+    "ppAbilities": [],
+    "prerequisite": "Must have a Recon frame",
+    "source": "TR, p. 107"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "_id": "3EkYyH2Z4qSlaKyK",
+  "name": "Phantom",
+  "type": "mechFrame",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "YthpiXclrLkZs5ia",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "recon",
+    "abilityMods": {
+      "parts": []
+    },
+    "attributes": {
+      "speed": {
+        "burrowing": {
+          "base": null
+        },
+        "climbing": {
+          "base": null
+        },
+        "flying": {
+          "base": null,
+          "baseManeuverability": "-1"
+        },
+        "land": {
+          "base": 80
+        },
+        "mainMovement": "land",
+        "special": "",
+        "swimming": {
+          "base": null
+        }
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Huge mech (phase, recon)</p>\n<p><strong>Base HP</strong> 10;<strong>HP Advancement</strong> 7;<strong>Hardness</strong> 0</p>\n<p><strong>EAC</strong>+2;<strong>KAC</strong>+2;<strong>Fort</strong>+0;<strong>Ref</strong>+2</p>\n<p><strong>Speed</strong> 80 ft.;<strong>Strength</strong>+2</p>\n<p><strong>Frame Slots</strong> 1;<strong>Aux Slots</strong> 4</p>\n<p><strong>Operators</strong> 1–2</p>\n<p><strong>Cost</strong> 2.5 × tier</p>"
+    },
+    "eac": 2,
+    "equipped": false,
+    "hardness": 0,
+    "hp": {
+      "advancement": 7,
+      "base": 10
+    },
+    "kac": 2,
+    "mechPointCost": 2.5,
+    "modifiers": [],
+    "operators": {
+      "max": 2,
+      "min": 1
+    },
+    "ppAbilities": [],
+    "saves": {
+      "fort": 0,
+      "reflex": 2
+    },
+    "size": "huge",
+    "slots": {
+      "auxiliary": 4,
+      "frame": 1,
+      "lowerLimb": 0,
+      "upperLimb": 0
+    },
+    "source": "TR, p. 100",
+    "strength": 2
+  }
+}

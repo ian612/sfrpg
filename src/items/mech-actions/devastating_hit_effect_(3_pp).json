@@ -1,0 +1,52 @@
+{
+  "_id": "WpBDSCunl2wlBFJ4",
+  "name": "Devastating Hit Effect (3 PP)",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "img": "systems/sfrpg/icons/feats/fusillade.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "round",
+      "value": "1"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>After hitting a creature with an attack, but before dealing damage, the mech increases its weapon’s damage value by one step against that creature (e.g. medium damage instead deals high damage). A weapon that already deals extreme damage instead adds 1 additional damage for every damage die rolled for the attack. This ability can’t be used for weapons that attack an intersection rather than a creature, such as weapons with the explode weapon special property.</p>"
+    },
+    "enabled": true,
+    "modifiers": [],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR, p. 113"
+  }
+}

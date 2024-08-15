@@ -1,0 +1,52 @@
+{
+  "_id": "cM3GTM4GafNVVQKw",
+  "name": "Overcome Malfunction Effect (2 PP)",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "img": "systems/sfrpg/icons/feats/percussive_maintenance.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "round",
+      "value": "1"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>At the beginning of its turn, a mech can either spend 2 PP to ignore the malfunctioning condition for any one component or spend 4 PP to treat one component’s inoperable condition as malfunctioning.</p>"
+    },
+    "enabled": true,
+    "modifiers": [],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR. p. 114"
+  }
+}

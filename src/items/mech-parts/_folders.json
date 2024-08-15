@@ -1,0 +1,191 @@
+[
+  {
+    "_id": "AqpK9Ib7uQrHYNfd",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723729855489,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723729855508,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Frame Variants",
+    "sort": 100000,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "EnWsZFx5vFiWBi2u",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723730044209,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723730044209,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Power Cores",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "ErhWJ7D61H76feuD",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723729297742,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723729297742,
+      "systemId": "sfrpg",
+      "systemVersion": "0.26.1"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Auxiliary Systems",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "Jz98dJBLiXyVtiV1",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723730456257,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723730456257,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Weapons",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "Q98Ywgf35jKWSa0k",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723730052040,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723730052040,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Power Core Templates",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "YthpiXclrLkZs5ia",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723729848244,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723729848244,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Frames",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "gaHCvsYqWhC3BW3j",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723730414328,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723730423929,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Computer Modules",
+    "sort": 100000,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "is4WZMfqb48xmPdk",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723730380615,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723730380615,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Upgrades",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "wtbLbryovzum6q6X",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723729903194,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723729918347,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Limbs",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  }
+]

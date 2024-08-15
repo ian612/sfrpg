@@ -1,0 +1,68 @@
+{
+  "_id": "MAQCCnkCwafBDVvC",
+  "name": "Resist Effect (1 PP)",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "img": "systems/sfrpg/icons/feats/enchanced_resistance.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "round",
+      "value": "0"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Before attempting a saving throw, the mech can activate this ability to roll 1d4 and add the result as a resistance bonus to the saving throw.</p>"
+    },
+    "enabled": true,
+    "modifiers": [
+      {
+        "_id": "1f0382fc-721e-42b0-a927-36080846828f",
+        "name": "Resist",
+        "type": "insight",
+        "condition": "",
+        "effectType": "saves",
+        "enabled": true,
+        "max": 4,
+        "modifier": "1d4",
+        "modifierType": "constant",
+        "notes": "",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": ""
+      }
+    ],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR, p. 113"
+  }
+}

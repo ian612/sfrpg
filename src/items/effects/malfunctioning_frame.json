@@ -1,0 +1,84 @@
+{
+  "_id": "6CsKO68ucLP5q9Fp",
+  "name": "Malfunctioning Frame",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "TkcfBqUjfyUxrcDu",
+  "img": "systems/sfrpg/icons/conditions/burning.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "permanent",
+      "value": "0"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>A mech with a malfunctioning frame takes a –2 penalty to attack rolls with weapons mounted in frame slots, and the mech halves its hardness, if it has any.</p>\n<p><em>NOTE: Energy Resistance reduction is not automated</em></p>"
+    },
+    "enabled": true,
+    "modifiers": [
+      {
+        "_id": "a2b412cd-7be8-48b1-accd-15632e844ace",
+        "name": "Malfunctioning Frame",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "all-attacks",
+        "enabled": true,
+        "max": -2,
+        "modifier": "-2",
+        "modifierType": "formula",
+        "notes": "For Frame-mounted weapons",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": ""
+      },
+      {
+        "_id": "a021acec-cafb-4b9a-9482-9b5b0799c368",
+        "name": "Malfunctioning Frame (Hardness)",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "damage-reduction",
+        "enabled": true,
+        "max": 0,
+        "modifier": "-1*floor(@traits.damageMitigation.damageReductionFirst.value/2)",
+        "modifierType": "constant",
+        "notes": "",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": ""
+      }
+    ],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR, p. 114"
+  }
+}

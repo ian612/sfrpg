@@ -1,0 +1,52 @@
+{
+  "_id": "yxdVR2tcaxFfSbWJ",
+  "name": "Maneuver Effect (1 PP)",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "img": "systems/sfrpg/icons/feats/defensive_roll.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "round",
+      "value": "1"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Choose one skill. Until the beginning of the mech’s next turn, operators add any insight bonuses they have that apply to that skill to the mech’s checks with that skill.</p>"
+    },
+    "enabled": true,
+    "modifiers": [],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR, p. 113"
+  }
+}

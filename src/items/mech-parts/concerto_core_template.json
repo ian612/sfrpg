@@ -1,0 +1,49 @@
+{
+  "_id": "lpio9ioltQ0ryKET",
+  "name": "Concerto Core Template",
+  "type": "mechPowerCoreTemplate",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Q98Ywgf35jKWSa0k",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This power core integrates with an onboard computer to convert musical input into combat maneuvers.</p>\n<p>Rate +0; Initial +0; Maximum +0</p>\n<p><strong>Special</strong> Operators use Profession (musician) for any skill checks to operate this mech except for checks to scan or repair damage. In addition, the mech gains a roadie that acts as an additional operator and gives the mech one additional action each round.</p>\n<p><strong>Cost</strong> 0.5 x tier</p>"
+    },
+    "equipped": false,
+    "initial": {
+      "base": 0,
+      "value": 0
+    },
+    "maximum": {
+      "base": 0,
+      "value": 0
+    },
+    "mechPointCost": 0.5,
+    "modifiers": [],
+    "ppAbilities": [],
+    "prerequisite": "",
+    "rate": {
+      "base": 0,
+      "value": 0
+    },
+    "source": "AP#53, p. 152"
+  }
+}

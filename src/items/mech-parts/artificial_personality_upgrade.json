@@ -1,0 +1,128 @@
+{
+  "_id": "uUBpVQdA8GfzYc9q",
+  "name": "Artificial Personality Upgrade",
+  "type": "feat",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "gaHCvsYqWhC3BW3j",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "ability": null,
+    "abilityMods": {
+      "parts": []
+    },
+    "actionTarget": "",
+    "actionType": "",
+    "activation": {
+      "type": "",
+      "condition": "",
+      "cost": 0
+    },
+    "area": {
+      "effect": "",
+      "shapable": false,
+      "shape": "",
+      "units": "",
+      "value": 0
+    },
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "effect": "",
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "damageNotes": "",
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>An Artificial personality is a program designed to allow a computer to hold conversations in plain language with both users and creatures that lack access. Such computers are often given a name and are capable of parsing expressions, slang, social cues, tone of voice, and similar elements beyond a literal understanding of spoken or written words. They can respond appropriately through algorithms and lists of billions of known phrases and expressions, developed by programmers over centuries to allow for extremely natural-sounding conversations. Such computers can even display what appear to be emotions and insights. However, unlike androids, computers with Artificial personalities have not attained true consciousness. The ability of an Artificial personality to hold a conversation, learn names and habits, and even give advice is based purely on its complex code and extensive lexicons.</p>\n<p>The primary advantage of an Artificial personality is that an authorized user can operate the computer by giving simple spoken or typed commands in plain language and receive information from the computer the same way. On Starships traveling far from civilized systems for months or years at a time, some owners also appreciate hearing a friendly voice and having someone to talk to, despite knowing that the “someone” isn’t an actual conscious being. Artificial personalities are sophisticated enough that the computer can attempt Bluff, Diplomacy, Intimidate, and Sense Motive checks with a total bonus equal to 2 × its tier.</p>\n<p>[[/r 1d20+@details.cr]]{Bluff, Diplomacy, Intimidate, Sense Motive check}</p>"
+    },
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
+    "details": {
+      "category": "feat",
+      "combat": false,
+      "specialAbilityType": ""
+    },
+    "duration": {
+      "units": "text",
+      "value": null
+    },
+    "formula": "",
+    "isActive": null,
+    "modifiers": [],
+    "properties": {},
+    "range": {
+      "additional": "",
+      "per": "",
+      "units": "",
+      "value": null
+    },
+    "recharge": {
+      "charged": false,
+      "value": null
+    },
+    "requirements": "Computer Module",
+    "rollNotes": "",
+    "save": {
+      "type": "",
+      "dc": null,
+      "descriptor": ""
+    },
+    "source": "CRB, p. 215",
+    "target": {
+      "type": "",
+      "value": null
+    },
+    "uses": {
+      "max": null,
+      "per": null,
+      "value": null
+    }
+  }
+}

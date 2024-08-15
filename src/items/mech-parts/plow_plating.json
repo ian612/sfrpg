@@ -1,0 +1,73 @@
+{
+  "_id": "4daOwUehqy5a2LK3",
+  "name": "Plow Plating",
+  "type": "mechAuxiliarySystem",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "ErhWJ7D61H76feuD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Consisting of specialized reinforcements to the mech’s lower limbs, this system allows a mech to plow past obstacles. The mech treats all @UUID[Compendium.sfrpg.rules.JournalEntry.2mmspP39EOiog9zD.JournalEntryPage.OpSxLHltqqCYJOfE#difficult-terrain]{difficult terrain} as normal terrain.</p>\n<p><strong>Bulldoze (2 PP)</strong> The mech can activate this ability when it attempts a bull rush or reposition combat maneuver. The mech gains a +2 bonus to the attack roll, and if the combat maneuver succeeds, the target also takes damage equal to [[@details.tier + @abilities.str.mod]] the mech’s tier plus its Strength modifier.</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 0,
+    "modifiers": [
+      {
+        "_id": "562fc7c1-abd0-4744-9f9a-5e88a7e958b7",
+        "name": "Bulldoze 2PP",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "melee-attacks",
+        "enabled": true,
+        "max": 2,
+        "modifier": "2",
+        "modifierType": "constant",
+        "notes": "When Bulldoze activated for Bull rush or Reposition combat maneuvers",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": ""
+      }
+    ],
+    "ppAbilities": [
+      {
+        "name": "Bulldoze",
+        "abilityType": "mwak",
+        "activation": {
+          "requiresActivation": true,
+          "toggleable": false
+        },
+        "cost": {
+          "value": 2,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p>The mech can activate this ability when it attempts a bull rush or reposition combat maneuver. The mech gains a +2 bonus to the attack roll, and if the combat maneuver succeeds, the target also takes damage equal to [[@details.tier + @abilities.str.mod]] the mech’s tier plus its Strength modifier.</p>",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "",
+    "source": "TR, p. 107"
+  }
+}

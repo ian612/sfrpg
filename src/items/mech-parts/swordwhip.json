@@ -1,0 +1,63 @@
+{
+  "_id": "5akvvNdx4oWpk6WT",
+  "name": "Swordwhip",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 0,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "medium",
+    "damageType": {
+      "andOr": "none",
+      "primary": "slashing",
+      "secondary": ""
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This gleaming sword’s blade can separate into a segmented whip of incandescent steel.</p>\n<p><strong>Type</strong> melee; <strong>Special</strong> —</p>\n<p><strong>Damage</strong> medium; <strong>Damage Type</strong> S; <strong>Critical</strong> —</p>\n<p><strong>Slots</strong> 1 (upper limb)</p>\n<p><strong>Whip Mode (1 PP)</strong> As a move action, the mech reconfigures the swordwhip from a solid blade into a fiery, shearing lash for 1 round. In this form, the swordwhip gains the reach and trip special weapon properties; it gains the burn critical hit effect, and it deals a combination of fire and slashing damage.</p>\n<p><strong>Cost</strong> 2.5 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 2.5,
+    "modifiers": [],
+    "ppAbilities": {
+      "0": {
+        "description": "<p><span style=\"font-family: 'Exo 2', sans-serif\">As a move action, the mech reconfigures the swordwhip from a solid blade into a fiery, shearing lash for 1 round. In this form, the swordwhip gains the reach and trip special weapon properties; it gains the burn critical hit effect, and it deals a combination of fire and slashing damage.</span></p>"
+      }
+    },
+    "range": {
+      "unit": "ft",
+      "value": 0
+    },
+    "slots": {
+      "allowed": {
+        "frame": false,
+        "lowerLimb": false,
+        "upperLimb": true
+      },
+      "number": 1
+    },
+    "source": "TR, p. 106",
+    "specialEffect": "",
+    "weaponType": "melee"
+  }
+}

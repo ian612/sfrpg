@@ -1,0 +1,37 @@
+{
+  "_id": "BknZ5qiaFcviH9JS",
+  "name": "Superior Computer",
+  "type": "mechUpgrade",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "is4WZMfqb48xmPdk",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>Effect</strong> The mech’s onboard computer has a tier equal to [[max(1,floor(@details.tier/2))]] = half the mech’s tier (minimum 1). The computer also gains the @UUID[Compendium.mech-things.mech-upgrades.Item.9WzBqXSkUXsNuK7X]{alarm countermeasure} and one of the following upgrades or countermeasures: @UUID[Compendium.mech-things.mech-upgrades.Item.uUBpVQdA8GfzYc9q]{artificial personality}, @UUID[Compendium.mech-things.mech-upgrades.Item.kAvc4XbZNoXoMnxN]{feedback}, @UUID[Compendium.mech-things.mech-upgrades.Item.G0PE1SyH47FsxYsT]{hardened}, @UUID[Compendium.mech-things.mech-upgrades.Item.PVdEZl3QZqaC7Y1j]{security II}, or @UUID[Compendium.mech-things.mech-upgrades.Item.mZ3kGNzGu5HtgNBG]{shock grid (rank 2)}.</p>\n<p><strong>Cost</strong> 1/2 × tier</p>\n<p><strong>Special</strong> Purchasing this upgrade doesn’t increase the cost of subsequent superior computer upgrades.</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 0.5,
+    "modifiers": [],
+    "ppAbilities": [],
+    "source": "TR, p. 108",
+    "special": "The mech’s onboard computer has a tier equal to 1 = half the mech’s tier (minimum 1)."
+  }
+}

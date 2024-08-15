@@ -1,0 +1,78 @@
+{
+  "_id": "HIWfLxNXsOvN1Vwg",
+  "name": "Tough Arms",
+  "type": "mechLimb",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "wtbLbryovzum6q6X",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "upper",
+    "abilityMods": {
+      "parts": []
+    },
+    "attributes": {
+      "speed": {}
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>These shield-like arms deflect and resist incoming attacks.</p>\n<p><strong>Hit Point Advancement</strong> +1; <strong>EAC</strong> +2; <strong>KAC</strong> +2</p>\n<p><strong>Upper Limb Slots</strong> 2; <strong>Melee Attack</strong> +0; <strong>Ranged Attack</strong> +0</p>\n<p><strong>Cost</strong> 1 x tier</p>"
+    },
+    "eac": 2,
+    "equipped": false,
+    "hp": {
+      "advancement": 1,
+      "base": 0
+    },
+    "kac": 2,
+    "mechPointCost": 1,
+    "melee": 0,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "ranged": 0,
+    "saves": {
+      "fort": 0,
+      "reflex": 0
+    },
+    "slots": {
+      "auxiliary": 0,
+      "frame": 0,
+      "lowerLimb": 0,
+      "upperLimb": 2
+    },
+    "source": "TR, p. 101",
+    "special": ""
+  }
+}

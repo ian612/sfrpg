@@ -1,0 +1,97 @@
+{
+  "_id": "fDgo4jrGAQ1n2XgT",
+  "name": "Auger",
+  "type": "mechLimb",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "wtbLbryovzum6q6X",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "lower",
+    "abilityMods": {
+      "parts": []
+    },
+    "attributes": {
+      "speed": {
+        "burrowing": {
+          "base": 40
+        },
+        "climbing": {
+          "base": null
+        },
+        "flying": {
+          "base": null,
+          "baseManeuverability": "-1"
+        },
+        "land": {
+          "base": -10
+        },
+        "mainMovement": "land",
+        "special": "",
+        "swimming": {
+          "base": null
+        }
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>A whirlwind of blades, borers, gears, and scoops designed for mining form this mech base.</p>\n<p><strong>Base HP</strong> +4; <strong>Hit Point Advancement</strong> +1</p>\n<p><strong>EAC</strong> +0; <strong>KAC</strong> +2; <strong>Fort</strong> +1; <strong>Ref</strong> +0</p>\n<p><strong>Lower Limb Slots</strong> 0; <strong>Speed</strong> -10 ft.; <strong>Other Movement</strong> burrow 40 ft</p>\n<p><strong>Excavate (2 PP)</strong> As a standard action, the mech increases its burrow speed to its full movement speed, creating a 25-foot-wide tunnel. Any creature occupying a space it burrows through must succeed at a Reflex save or be pushed to the nearest available space and take medium bludgeoning damage, as a mech weapon with a level equal to the mech’s tier. The Reflex save DC equals 12 + 1/2 × the mech’s tier. On a success, the creature chooses the space they’re moved to and doesn’t take damage. Any creature without a burrow speed automatically fails the save.</p>\n<p><strong>Cost</strong> 2 × tier</p>"
+    },
+    "eac": 0,
+    "equipped": false,
+    "hp": {
+      "advancement": 1,
+      "base": 4
+    },
+    "kac": 2,
+    "mechPointCost": 2,
+    "melee": 0,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "ranged": 0,
+    "saves": {
+      "fort": 1,
+      "reflex": 0
+    },
+    "slots": {
+      "auxiliary": 0,
+      "frame": 0,
+      "lowerLimb": 0,
+      "upperLimb": 2
+    },
+    "source": "AP#53, p. 152",
+    "special": ""
+  }
+}

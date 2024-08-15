@@ -1,0 +1,97 @@
+{
+  "_id": "W9xIu4fJO8nuMs8n",
+  "name": "Biped, Fast",
+  "type": "mechLimb",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "wtbLbryovzum6q6X",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "lower",
+    "abilityMods": {
+      "parts": []
+    },
+    "attributes": {
+      "speed": {
+        "burrowing": {
+          "base": null
+        },
+        "climbing": {
+          "base": null
+        },
+        "flying": {
+          "base": null,
+          "baseManeuverability": "-1"
+        },
+        "land": {
+          "base": 20
+        },
+        "mainMovement": "land",
+        "special": "",
+        "swimming": {
+          "base": null
+        }
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>These lean and powerful legs enable sudden bursts of speed.</p>\n<p><strong>Base HP</strong> +2; <strong>Hit Point Advancement</strong> +0</p>\n<p><strong>EAC</strong> +1; <strong>KAC</strong> +1; <strong>Fort</strong> +0; <strong>Ref</strong> +1</p>\n<p><strong>Lower Limb Slots</strong> 0; <strong>Speed</strong> +20 ft; <strong>Other Movement</strong> None</p>\n<p><strong>Sprint (1 PP)</strong> The mech gains a +10-foot enhancement bonus to its speed for 1 round.</p>\n<p><strong>Cost</strong> 1 x tier</p>"
+    },
+    "eac": 1,
+    "equipped": false,
+    "hp": {
+      "advancement": 0,
+      "base": 2
+    },
+    "kac": 1,
+    "mechPointCost": 1,
+    "melee": 0,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "Sprint",
+        "abilityType": "util",
+        "activation": {
+          "requiresActivation": true,
+          "toggleable": false
+        },
+        "cost": {
+          "value": 1,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p><span style=\"font-family: 'Exo 2', sans-serif\">The mech gains a +10-foot enhancement bonus to its speed for 1 round.</span></p>",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "ranged": 0,
+    "saves": {
+      "fort": 0,
+      "reflex": 1
+    },
+    "slots": {
+      "auxiliary": 0,
+      "frame": 0,
+      "lowerLimb": 0,
+      "upperLimb": 0
+    },
+    "source": "TR, p. 101",
+    "special": ""
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "_id": "ymfdnjb4JDY1doLD",
+  "name": "EMP Cannon",
+  "type": "mechAuxiliarySystem",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "ErhWJ7D61H76feuD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This electromagnetic pulse cannon destabilizes enemy mechs’ sophisticated machinery. Attacks with an EMP cannon target EAC, and the DC of Fortitude saves to resist its effects equal 12 + 1/2 your mech’s tier.</p>\n<p><strong>Jam Weapon (3 PP)</strong> The mech makes a ranged attack against another mech within 120 feet as a standard action, optionally targeting one weapon the mech has. If the attack hits, the selected weapon (or a randomly selected weapon without the analog property) becomes nonfunctional for 1 minute unless the targeted mech succeeds at a Fortitude save. At the end of each of its turns, the targeted mech can attempt a new saving throw to end the effect.</p>\n<p><strong>Kill Engine (4 PP)</strong> The mech makes a ranged attack against another mech within 120 feet as a standard action, selecting one of the targeted mech’s movement types. If the attack hits, the selected movement type’s speed is reduced to 0 feet for 1 round unless the targeted mech succeeds at a Fortitude save. As a standard action, the targeted mech can attempt a new saving throw to end this effect.</p>\n<p><strong>Sabotage Power (3 PP)</strong> The mech makes a ranged attack against another mech within 120 feet as a standard action, targeting its power core. If the attack hits, the targeted mech can’t regain or expend Power Points for 1 round unless it succeeds at a Fortitude save.</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 0,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "Jam Weapon",
+        "abilityType": "rwak",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": 3,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p><span style=\"font-family: 'Exo 2', sans-serif\">The mech makes a ranged attack against another mech within 120 feet as a standard action, optionally targeting one weapon the mech has. If the attack hits, the selected weapon (or a randomly selected weapon without the analog property) becomes nonfunctional for 1 minute unless the targeted mech succeeds at a Fortitude save. At the end of each of its turns, the targeted mech can attempt a new saving throw to end the effect.</span></p>",
+        "save": {
+          "type": "fort",
+          "dc": null
+        }
+      },
+      {
+        "name": "Kill Engine",
+        "abilityType": "rwak",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": 4,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p><span style=\"font-family: 'Exo 2', sans-serif\">The mech makes a ranged attack against another mech within 120 feet as a standard action, selecting one of the targeted mech’s movement types. If the attack hits, the selected movement type’s speed is reduced to 0 feet for 1 round unless the targeted mech succeeds at a Fortitude save. As a standard action, the targeted mech can attempt a new saving throw to end this effect.</span></p>",
+        "save": {
+          "type": "fort",
+          "dc": null
+        }
+      },
+      {
+        "name": "Sabotage Power",
+        "abilityType": "rwak",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": 3,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p><span style=\"font-family: 'Exo 2', sans-serif\">The mech makes a ranged attack against another mech within 120 feet as a standard action, targeting its power core. If the attack hits, the targeted mech can’t regain or expend Power Points for 1 round unless it succeeds at a Fortitude save.</span></p>",
+        "save": {
+          "type": "fort",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "",
+    "source": "TR, pp. 106-107"
+  }
+}

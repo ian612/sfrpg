@@ -1,0 +1,69 @@
+{
+  "_id": "yWdo8IWdF8SlrAFC",
+  "name": "Corpsegnawer Core Template",
+  "type": "mechPowerCoreTemplate",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Q98Ywgf35jKWSa0k",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Eoxian engineers pioneered this core template, granting the mech an insatiable hunger for souls.</p>\n<p>Rate +0; Initial +0; Maximum +0</p>\n<p><strong>Special</strong> As a standard action, the mech can draw the residual life energy out of a creature within its reach that died within the past minute. The power core’s rate increases by 1, which lasts 1 round for every 4 levels or CR the dead creature possessed. The mech can’t draw energy from the same creature more than once, and the creature’s level or CR must be at least half the mech’s tier [[max(1,floor(@details.tier/2))]] (minimum 1). A mech can’t increase its rate by more than 1 in this way.</p>\n<p><strong>Cost</strong> 0.5 x tier</p>"
+    },
+    "equipped": false,
+    "initial": {
+      "base": 0,
+      "value": 0
+    },
+    "maximum": {
+      "base": 0,
+      "value": 0
+    },
+    "mechPointCost": 0.5,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "",
+    "rate": {
+      "base": 0,
+      "value": 0
+    },
+    "source": "TR, p. 102"
+  }
+}

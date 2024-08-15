@@ -1,0 +1,59 @@
+{
+  "_id": "53Fwwv3qOuN2PXPK",
+  "name": "Plasma Sword",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 0,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "severe wound",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "high",
+    "damageType": {
+      "andOr": "and",
+      "primary": "electricity",
+      "secondary": "fire"
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This sword blazes with fiery, crackling energy designed to singe cleanly through targets.</p>\n<p><strong>Type</strong> melee; <strong>Special</strong> thrown (20 ft.)</p>\n<p><strong>Damage</strong> high; <strong>Damage Type</strong> E&amp;F; <strong>Critical</strong> severe wound</p>\n<p><strong>Slots</strong> 1 (upper limb)</p>\n<p><strong>Cost</strong> 3.5 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 3.5,
+    "modifiers": [],
+    "ppAbilities": [],
+    "range": {
+      "unit": "ft",
+      "value": 0
+    },
+    "slots": {
+      "allowed": {
+        "frame": false,
+        "lowerLimb": false,
+        "upperLimb": true
+      },
+      "number": 1
+    },
+    "source": "TR, p. 105",
+    "specialEffect": "thrown (20 ft.)",
+    "weaponType": "melee"
+  }
+}

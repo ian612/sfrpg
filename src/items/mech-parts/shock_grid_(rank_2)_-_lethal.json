@@ -1,0 +1,151 @@
+{
+  "_id": "mfpVvzx2m1DNgqT6",
+  "name": "Shock Grid (rank 2) - Lethal",
+  "type": "feat",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "gaHCvsYqWhC3BW3j",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "ability": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "actionTarget": "",
+    "actionType": "save",
+    "activation": {
+      "type": "special",
+      "condition": "",
+      "cost": 0
+    },
+    "area": {
+      "effect": "",
+      "shapable": false,
+      "shape": "sphere",
+      "units": "ft",
+      "value": "10"
+    },
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "effect": "",
+      "parts": []
+    },
+    "damage": {
+      "parts": [
+        {
+          "name": "",
+          "formula": "10d6",
+          "group": null,
+          "isPrimarySection": true,
+          "types": {
+            "acid": false,
+            "bludgeoning": false,
+            "cold": false,
+            "electricity": true,
+            "fire": false,
+            "healing": false,
+            "piercing": false,
+            "slashing": false,
+            "sonic": false
+          }
+        }
+      ],
+      "primaryGroup": null
+    },
+    "damageNotes": "Stun",
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>The computer and its surrounding environment are protected by a grid of conductive material that transmits a shock to anyone who fails to access the system. This has two settings: one meant to stun and one meant to kill. Normally, the stun setting happens first, with a warning about lethal force should the intruder make another attempt. The stun setting forces all creatures within 10 feet of the terminal to succeed at a DC22 Fortitude saving throw or be @UUID[Compendium.sfrpg.conditions.Item.CvsDp0GvojxiF2jz]{stunned} for 1 round. The lethal setting affects nearby creatures like the stun setting but also deals 10d6 electricity damage to all creatures within 10 feet of the computer, allowing a Reflex DC22 save for half damage.</p>"
+    },
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
+    "details": {
+      "category": "feat",
+      "combat": false,
+      "specialAbilityType": "ex"
+    },
+    "duration": {
+      "units": "text",
+      "value": ""
+    },
+    "formula": "",
+    "isActive": null,
+    "modifiers": [],
+    "properties": {},
+    "range": {
+      "additional": "",
+      "per": "",
+      "units": "none",
+      "value": ""
+    },
+    "recharge": {
+      "charged": false,
+      "value": null
+    },
+    "requirements": "Computer Module",
+    "rollNotes": "",
+    "save": {
+      "type": "reflex",
+      "dc": "22",
+      "descriptor": "half"
+    },
+    "skillCheck": {
+      "type": "",
+      "dc": ""
+    },
+    "source": "CRB, p. 215",
+    "target": {
+      "type": "",
+      "value": ""
+    },
+    "uses": {
+      "max": "",
+      "per": "",
+      "value": null
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "_id": "PmLAc8i78JCNtFVD",
+  "name": "Malfunctioning Lower Limbs",
+  "type": "effect",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "TkcfBqUjfyUxrcDu",
+  "img": "systems/sfrpg/icons/conditions/burning.webp",
+  "system": {
+    "type": "effect",
+    "abilityMods": {
+      "parts": []
+    },
+    "activeDuration": {
+      "activationTime": 0,
+      "endsOn": "onTurnStart",
+      "expiryInit": 0,
+      "expiryMode": {
+        "type": "turn",
+        "turn": "parent"
+      },
+      "unit": "permanent",
+      "value": "0"
+    },
+    "context": {
+      "origin": {
+        "actorUuid": "",
+        "itemUuid": ""
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>A mech with malfunctioning lower limbs halves movement speeds not provided by an auxiliary system, and the mech takes a –2 penalty to attack rolls with weapons mounted in lower limb slots.</p>"
+    },
+    "enabled": true,
+    "modifiers": [
+      {
+        "_id": "6ae275ec-f4f8-4c24-9080-0f773ef7af41",
+        "name": "Malfunctioning Lower Limbs",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "all-attacks",
+        "enabled": true,
+        "max": -2,
+        "modifier": "-2",
+        "modifierType": "formula",
+        "notes": "Attacks from Weapons mounted in Lower Limbs",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": ""
+      },
+      {
+        "_id": "165a94a5-2796-4314-8ecf-665a2a45f777",
+        "name": "Malfunctioning Lower Limbs (Land Spd)",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "specific-speed",
+        "enabled": true,
+        "max": 0,
+        "modifier": "-1*Floor(@attributes.speed.land.value/2)",
+        "modifierType": "constant",
+        "notes": "",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": "land"
+      },
+      {
+        "_id": "18ee6465-a780-48b1-abe2-6febc7c0bc60",
+        "name": "Malfunctioning Lower Limbs (Flt Spd)",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "specific-speed",
+        "enabled": true,
+        "max": 0,
+        "modifier": "-1*floor(@attributes.speed.flying.value/2)",
+        "modifierType": "constant",
+        "notes": "",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": "flying"
+      },
+      {
+        "_id": "7cd2093b-0ac4-4d8e-b5c0-4f42d27c71f2",
+        "name": "Malfunctioning Lower Limbs (Climb Spd)",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "specific-speed",
+        "enabled": true,
+        "max": 0,
+        "modifier": "-1*floor(@attributes.speed.climbing.value/2)",
+        "modifierType": "constant",
+        "notes": "",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": "climbing"
+      }
+    ],
+    "requirements": "",
+    "showOnToken": true,
+    "source": "TR, p. 114"
+  }
+}

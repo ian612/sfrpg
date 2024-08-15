@@ -1,0 +1,79 @@
+{
+  "_id": "uTLQMCozz5WnSKeI",
+  "name": "Shears",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 0,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "Wound",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "low",
+    "damageType": {
+      "andOr": "none",
+      "primary": "slashing",
+      "secondary": ""
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>These wicked blades can slice enemies like scissors.</p>\n<p><strong>Type</strong> melee; <strong>Special</strong> <span>—</span></p>\n<p><strong>Damage</strong> low; <strong>Damage Type</strong> S; <strong>Critical</strong> wound</p>\n<p><strong>Slots</strong> 1 (upper limb or lower limb)</p>\n<p><strong>Surgical</strong> When using shears to perform a called shot action, the mech reduces the action’s PP cost by 1.</p>\n<p><strong>Cost</strong> 2.5 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 2.5,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "Surgical",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p><span style=\"font-family: 'Exo 2', sans-serif\">When using shears to perform a called shot action, the mech reduces the action’s PP cost by 1.</span></p>",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "range": {
+      "unit": "ft",
+      "value": 0
+    },
+    "slots": {
+      "allowed": {
+        "frame": false,
+        "lowerLimb": true,
+        "upperLimb": true
+      },
+      "number": 1
+    },
+    "source": "TR, p. 105",
+    "specialEffect": "",
+    "weaponType": "melee"
+  }
+}

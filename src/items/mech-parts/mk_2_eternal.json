@@ -1,0 +1,49 @@
+{
+  "_id": "xir2I6FreVzip1l3",
+  "name": "Mk 2 Eternal",
+  "type": "mechPowerCore",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "EnWsZFx5vFiWBi2u",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>PP</strong> 6 (1/turn, max 13)</p>\n<p><strong>Cost</strong> 2 x tier</p>\n<p>A mech’s power core generates all the energy necessary to pilot the mech and operate its major functions. Each power core also generates some excess energy, measured as Power Points (PP; see TR, page 113), which an operator can expend to enhance the mech’s performance and execute extraordinary maneuvers. Each power core has: a rate, representing the number of PP it generates at the end of its turn; an initial value, representing the number of PP a mech has when it begins an encounter; and a maximum (shown in parentheses), representing the maximum PP the core can store during combat. A mech can use only a single power core.</p>\n<p>Optionally, a power core can acquire one power core template that modifies some of its statistics or provides additional ways to generate or use Power Points.</p>"
+    },
+    "equipped": false,
+    "initial": {
+      "base": 6,
+      "value": 0
+    },
+    "maximum": {
+      "base": 13,
+      "value": 0
+    },
+    "mechPointCost": 2,
+    "modifiers": [],
+    "ppAbilities": [],
+    "rate": {
+      "base": 1,
+      "value": 0
+    },
+    "rating": 2,
+    "source": "TR, p. 102"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "xtT0Mqzl9LIks2Kf",
+  "name": "Gyroidal Drill Bit",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 0,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "bleed",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "high",
+    "damageType": {
+      "andOr": "none",
+      "primary": "piercing",
+      "secondary": ""
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>Type</strong> melee; <strong>Special</strong> shatter</p>\n<p><strong>Damage</strong> high; <strong>Damage Type</strong> P; <strong>Critical</strong> bleed</p>\n<p><strong>Slots</strong> 2 (frame)</p>\n<p><strong>Special</strong> The first time a gyroidal drill bit deals damage to a target, the weapon gains the penetrating special property (Core Rulebook 160). If the gyroidal drill bit damages the same target the next round, it loses this property and the amount of hardness the weapon ignores instead equals 3 × the mech's tier [[3*@details.tier]].</p>\n<p><strong>Cost</strong> 3.5 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 3.5,
+    "modifiers": [],
+    "ppAbilities": [],
+    "range": {
+      "unit": "ft",
+      "value": 0
+    },
+    "slots": {
+      "allowed": {
+        "frame": true,
+        "lowerLimb": false,
+        "upperLimb": false
+      },
+      "number": 2
+    },
+    "source": "AP#53, p. 153",
+    "specialEffect": "shatter, penetrating",
+    "weaponType": "melee"
+  }
+}

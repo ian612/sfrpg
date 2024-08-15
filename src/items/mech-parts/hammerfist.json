@@ -1,0 +1,59 @@
+{
+  "_id": "A8iT8szFZ3qg8hS8",
+  "name": "Hammerfist",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 0,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "low",
+    "damageType": {
+      "andOr": "none",
+      "primary": "bludgeoning",
+      "secondary": ""
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This block of thrice-forged adamantine alloy features serrated edges and can be affixed to the ends of a mech’s limbs and used to pummel enemies.</p>\n<p><strong>Type</strong> melee; <strong>Special</strong> analog, penetrating</p>\n<p><strong>Damage</strong> low; <strong>Damage Type</strong> B; <strong>Critical</strong> —</p>\n<p><strong>Slots</strong> 1 (upper limb or lower limb)</p>\n<p><strong>Cost</strong> 2 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 2,
+    "modifiers": [],
+    "ppAbilities": [],
+    "range": {
+      "unit": "ft",
+      "value": 0
+    },
+    "slots": {
+      "allowed": {
+        "frame": false,
+        "lowerLimb": true,
+        "upperLimb": true
+      },
+      "number": 1
+    },
+    "source": "TR, p. 104",
+    "specialEffect": "analog, penetrating",
+    "weaponType": "melee"
+  }
+}

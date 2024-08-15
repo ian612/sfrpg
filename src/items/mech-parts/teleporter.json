@@ -1,0 +1,57 @@
+{
+  "_id": "cXvIATDVPtwi4Tvi",
+  "name": "Teleporter",
+  "type": "mechAuxiliarySystem",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "ErhWJ7D61H76feuD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>Prerequisite</strong>: The mech must have a <span style=\"text-decoration:underline\"><span style=\"text-decoration:underline\">phase</span></span> frame.</p>\n<p>Technomagical conduits weave through every part of the mech, constantly analyzing the mech’s position and calculating dozens of other possible positions nearby. With a burst of energy, the mech can teleport to any of these destinations.</p>\n<p><strong>Phase (2+ PP)</strong> As a standard action, the mech instantly teleports itself and its operators to any point within 60 feet that it can see, as per @UUID[Compendium.sfrpg.spells.Item.mUIuCkFeMLKnOypt]{dimension door}. For each additional PP expended when activating this ability, the range increases by 60 feet.</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 0,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "Phase",
+        "abilityType": "util",
+        "activation": {
+          "requiresActivation": true,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": true
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p>As a standard action, the mech instantly teleports itself and its operators to any point within 60 feet that it can see, as per @UUID[Compendium.sfrpg.spells.Item.mUIuCkFeMLKnOypt]{dimension door}. For each additional PP expended when activating this ability, the range increases by 60 feet.</p>",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "Must have a Phase Frame",
+    "source": "TR, p. 107"
+  }
+}

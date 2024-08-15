@@ -1,0 +1,81 @@
+{
+  "_id": "K5jpadO48DQ8z6cg",
+  "name": "Furyjumper",
+  "type": "mechFrame",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "YthpiXclrLkZs5ia",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "phase",
+    "abilityMods": {
+      "parts": []
+    },
+    "attributes": {
+      "speed": {
+        "burrowing": {
+          "base": null
+        },
+        "climbing": {
+          "base": null
+        },
+        "flying": {
+          "base": null,
+          "baseManeuverability": "-1"
+        },
+        "land": {
+          "base": 40
+        },
+        "mainMovement": "land",
+        "special": "",
+        "swimming": {
+          "base": null
+        }
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Colossal mech (phase)</p>\n<p><strong>Base HP</strong> 10;<strong>HP Advancement</strong> 10;<strong>Hardness</strong> 1</p>\n<p><strong>EAC</strong>+1;<strong>KAC</strong>+1;<strong>Fort</strong>+0;<strong>Ref</strong>+1</p>\n<p><strong>Speed</strong> 40 ft.;<strong>Strength</strong>+5</p>\n<p><strong>Frame Slots</strong> 3;<strong>Aux Slots</strong> 5</p>\n<p><strong>Operators</strong> 2–6</p>\n<p><strong>Cost</strong> 4.5 × tier</p>"
+    },
+    "eac": 1,
+    "equipped": false,
+    "hardness": 1,
+    "hp": {
+      "advancement": 10,
+      "base": 10
+    },
+    "kac": 1,
+    "mechPointCost": 4.5,
+    "modifiers": [],
+    "operators": {
+      "max": 6,
+      "min": 2
+    },
+    "ppAbilities": [],
+    "saves": {
+      "fort": 0,
+      "reflex": 1
+    },
+    "size": "colossal",
+    "slots": {
+      "auxiliary": 5,
+      "frame": 3,
+      "lowerLimb": 0,
+      "upperLimb": 0
+    },
+    "source": "TR, p. 100",
+    "strength": 5
+  }
+}

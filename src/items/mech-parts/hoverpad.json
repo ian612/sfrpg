@@ -1,0 +1,77 @@
+{
+  "_id": "0S5Vx69hDthSaxqQ",
+  "name": "Hoverpad",
+  "type": "mechLimb",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "wtbLbryovzum6q6X",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "lower",
+    "abilityMods": {
+      "parts": []
+    },
+    "attributes": {
+      "speed": {
+        "burrowing": {
+          "base": null
+        },
+        "climbing": {
+          "base": null
+        },
+        "flying": {
+          "base": 10,
+          "baseManeuverability": "1"
+        },
+        "land": {
+          "base": null
+        },
+        "mainMovement": "flying",
+        "special": "Max Elevation 5 ft.",
+        "swimming": {
+          "base": null
+        }
+      }
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>In place of legs, the mech rides atop a broad anti-gravity array.</p>\n<p><strong>Base HP</strong> +0; <strong>Hit Point Advancement</strong> +0</p>\n<p><strong>EAC</strong> +1; <strong>KAC</strong> +1; <strong>Fort</strong> +0; <strong>Ref</strong> +0</p>\n<p><strong>Lower Limb Slots</strong> 0; <strong>Speed</strong> +0 ft; <strong>Other Movement</strong> Fly +10 ft. (perfect, maximum elevation 5 ft.)</p>\n<p><strong>Cost</strong> 1 x tier</p>"
+    },
+    "eac": 1,
+    "equipped": false,
+    "hp": {
+      "advancement": 0,
+      "base": 0
+    },
+    "kac": 1,
+    "mechPointCost": 1,
+    "melee": 0,
+    "modifiers": [],
+    "ppAbilities": [],
+    "ranged": 0,
+    "saves": {
+      "fort": 0,
+      "reflex": 0
+    },
+    "slots": {
+      "auxiliary": 0,
+      "frame": 0,
+      "lowerLimb": 0,
+      "upperLimb": 0
+    },
+    "source": "TR, p. 101",
+    "special": ""
+  }
+}

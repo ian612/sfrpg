@@ -1,0 +1,63 @@
+{
+  "_id": "t1eYeZOc3auJL2Gh",
+  "name": "Frostspear",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 0,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "staggered",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "low",
+    "damageType": {
+      "andOr": "and",
+      "primary": "cold",
+      "secondary": "piercing"
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>Icy waves drift from this wicked weapon, which can be thrown or jabbed at enemies.</p>\n<p><strong>Type</strong> melee; <strong>Special</strong> reach, thrown (40 ft.)</p>\n<p><strong>Damage</strong> low; <strong>Damage Type</strong> C&amp;P; <strong>Critical</strong> staggered</p>\n<p><strong>Slots</strong> 2 (upper limb)</p>\n<p><strong>Cold Snap (2 PP)</strong> As a standard action, the mech makes an attack against multiple targets in an area as though the frostspear had the line weapon special property. The length of the line equals the twice the mech’s reach with the frostspear.</p>\n<p><strong>Cost</strong> 2.5 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 2.5,
+    "modifiers": [],
+    "ppAbilities": {
+      "0": {
+        "description": "<p>As a standard action, the mech makes an attack against multiple targets in an area as though the frostspear had the line weapon special property. The length of the line equals the twice the mech’s reach with the frostspear.</p>"
+      }
+    },
+    "range": {
+      "unit": "ft",
+      "value": 0
+    },
+    "slots": {
+      "allowed": {
+        "frame": false,
+        "lowerLimb": false,
+        "upperLimb": true
+      },
+      "number": 2
+    },
+    "source": "TR, p. 104",
+    "specialEffect": "reach, thrown (40 ft.)",
+    "weaponType": "melee"
+  }
+}

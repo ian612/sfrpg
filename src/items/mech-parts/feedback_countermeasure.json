@@ -1,0 +1,128 @@
+{
+  "_id": "kAvc4XbZNoXoMnxN",
+  "name": "Feedback Countermeasure",
+  "type": "feat",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "gaHCvsYqWhC3BW3j",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "ability": null,
+    "abilityMods": {
+      "parts": []
+    },
+    "actionTarget": "",
+    "actionType": "",
+    "activation": {
+      "type": "",
+      "condition": "",
+      "cost": 0
+    },
+    "area": {
+      "effect": "",
+      "shapable": false,
+      "shape": "",
+      "units": "",
+      "value": 0
+    },
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "effect": "",
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "damageNotes": "",
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This countermeasure unleashes insidious virus software into any system that tries to hack it, causing damage to that system and its programming. If you fail a check to hack the computer by 5 or more, any device used in the attempt to break into the system is infected and becomes unreliable, resulting in a –5 penalty to all skill checks involving the infected equipment. You can remove a virus from an infected system if you succeed at a Computers check with the same DC as hacking the computer that has the feedback countermeasure. At the GM’s discretion, feedback viruses can have other effects instead, such as granting a +5 circumstance bonus to anyone attempting to hack the infected system.</p>"
+    },
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
+    "details": {
+      "category": "feat",
+      "combat": false,
+      "specialAbilityType": ""
+    },
+    "duration": {
+      "units": "text",
+      "value": null
+    },
+    "formula": "",
+    "isActive": null,
+    "modifiers": [],
+    "properties": {},
+    "range": {
+      "additional": "",
+      "per": "",
+      "units": "",
+      "value": null
+    },
+    "recharge": {
+      "charged": false,
+      "value": null
+    },
+    "requirements": "Computer Module",
+    "rollNotes": "",
+    "save": {
+      "type": "",
+      "dc": null,
+      "descriptor": ""
+    },
+    "source": "CRB, p. 215",
+    "target": {
+      "type": "",
+      "value": null
+    },
+    "uses": {
+      "max": null,
+      "per": null,
+      "value": null
+    }
+  }
+}

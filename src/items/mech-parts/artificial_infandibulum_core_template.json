@@ -1,0 +1,69 @@
+{
+  "_id": "eXawuUjxjRSt3hAW",
+  "name": "Artificial Infandibulum Core Template",
+  "type": "mechPowerCoreTemplate",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Q98Ywgf35jKWSa0k",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This power core is a reimagining of ancient magitech.</p>\n<p><strong>Prerequisite</strong> Can be applied only to an eternal core.</p>\n<p>Rate +0; Initial –1; Maximum –1</p>\n<p><strong>Special</strong> All the mech’s weapons count as magical. If a weapon runs out of ammunition, an operator can spend all of the mech’s current PP (minimum 2) to fully reload that weapon. Each energy weapon built into the mech’s frame can be activated twice per round (although only once per operator), but the second activation for each weapon deals the next lower level of damage for the weapon. An operator firing an energy weapon that deals only electricity, fire, or sonic damage can switch the weapon’s damage type to any one of these three types as a move action; critical effects, such as burn, function normally but deal the same type of damage as the attack. Finally, the mech’s energy weapons have a gravitation effect (Starfinder Armory 28): any target struck (but not necessarily damaged) by the mech’s energy weapon must succeed at a Reflex save (DC = [[10+floor(@details.tier/2)+@abilities.str.mod]] 10 + 1/2 × the mech’s tier + the mech’s Strength modifier) or be moved 20 feet away from the mech.</p>\n<p><strong>Cost</strong> 2 x tier</p>"
+    },
+    "equipped": false,
+    "initial": {
+      "base": -1,
+      "value": 0
+    },
+    "maximum": {
+      "base": -1,
+      "value": 0
+    },
+    "mechPointCost": 2,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "Reload Weapon",
+        "abilityType": "util",
+        "activation": {
+          "requiresActivation": true,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": true
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "",
+    "rate": {
+      "base": 0,
+      "value": 0
+    },
+    "source": "AP#53, p. 152"
+  }
+}

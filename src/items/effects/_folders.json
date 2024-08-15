@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "TkcfBqUjfyUxrcDu",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "12.330",
+      "createdTime": 1723729562378,
+      "duplicateSource": null,
+      "lastModifiedBy": "4lgqGsfkYRw2SGUq",
+      "modifiedTime": 1723729562378,
+      "systemId": "sfrpg",
+      "systemVersion": "0.27.0"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Mech Effects",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  }
+]

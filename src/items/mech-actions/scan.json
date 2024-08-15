@@ -1,0 +1,128 @@
+{
+  "_id": "AKoa4vzxgT4G5HRz",
+  "name": "Scan",
+  "type": "feat",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "img": "systems/sfrpg/icons/feats/telepathic_spy.webp",
+  "system": {
+    "type": "",
+    "ability": null,
+    "abilityMods": {
+      "parts": []
+    },
+    "actionTarget": "",
+    "actionType": "",
+    "activation": {
+      "type": "",
+      "condition": "",
+      "cost": 0
+    },
+    "area": {
+      "effect": "",
+      "shapable": false,
+      "shape": "",
+      "units": "",
+      "value": 0
+    },
+    "attackBonus": 0,
+    "chatFlavor": "",
+    "critical": {
+      "effect": "",
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "damageNotes": "",
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>The mech uses its sensor array to study one creature, mech, or object it is observing with a precise sense. Against a creature, this functions as a check to identify a creature, using the mech’s @Check[type:computers] bonus in place of the skill typically used to identify creatures of that type. If the check succeeds, the mech also gains a <strong>+1 insight bonus</strong> to the next attack it makes against that creature before the end of its next turn.</p>\n<p>If the mech scans a mech or object, the mech attempts a Computers check; against an unattended mech or object, the DC is 10, and against a wielded object or piloted mech, the DC equals 10 + the target’s tier or item level. If it succeeds, the mech identifies two of the following pieces of information about the mech or object (operator’s choice): its hardness, maximum Hit Points, resistances (if any), EAC, KAC, number of passengers or operators, Strength DC to break, speed, full speed (vehicle only), systems or auxiliary systems, or weapons. For every 5 by which the Computers check exceeds the DC, the mech identifies one additional piece of information.</p>\n<p>Repeated scans reveal little information unless the mech expends additional energy. Each additional attempt to scan a target requires the mech expend 1 PP for each previous time the mech has attempted to scan that target within the last hour.</p>"
+    },
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
+    "details": {
+      "category": "feat",
+      "combat": false,
+      "specialAbilityType": ""
+    },
+    "duration": {
+      "units": "text",
+      "value": null
+    },
+    "formula": "",
+    "isActive": null,
+    "modifiers": [],
+    "ppAbilities": [],
+    "properties": {},
+    "range": {
+      "additional": "",
+      "per": "",
+      "units": "",
+      "value": null
+    },
+    "recharge": {
+      "charged": false,
+      "value": null
+    },
+    "requirements": "",
+    "rollNotes": "",
+    "save": {
+      "type": "",
+      "dc": null,
+      "descriptor": ""
+    },
+    "source": "TR, p. 113",
+    "target": {
+      "type": "",
+      "value": null
+    },
+    "uses": {
+      "max": null,
+      "per": null,
+      "value": null
+    }
+  }
+}

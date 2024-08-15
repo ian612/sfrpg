@@ -1,0 +1,57 @@
+{
+  "_id": "n692X6BsfoV8y9GP",
+  "name": "Plasma Shock Circuits",
+  "type": "mechAuxiliarySystem",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "ErhWJ7D61H76feuD",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>These circuits channel the dissipating force of a mech’s shields, transforming the energy into offensive power.</p>\n<p><strong>Energized Retort (2 PP)</strong> As a reaction when the mech takes damage that causes it to lose Shield Points, the mech channels the shields’ lost energy into one of its weapons that deals energy damage. The next time the weapon deals damage before the end of the mech’s next turn, the weapon deals additional damage equal to half the number of SP the mech lost from the triggering attack.</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 0,
+    "modifiers": [],
+    "ppAbilities": [
+      {
+        "name": "Energized Retort",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": 2,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "<p>As a reaction when the mech takes damage that causes it to lose Shield Points, the mech channels the shields’ lost energy into one of its weapons that deals energy damage. The next time the weapon deals damage before the end of the mech’s next turn, the weapon deals additional damage equal to half the number of SP the mech lost from the triggering attack.</p>",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "prerequisite": "",
+    "source": "TR, p. 107"
+  }
+}

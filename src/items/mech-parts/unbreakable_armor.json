@@ -1,0 +1,88 @@
+{
+  "_id": "T1u6hLvNzbyGZ7lB",
+  "name": "Unbreakable Armor",
+  "type": "mechUpgrade",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "is4WZMfqb48xmPdk",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "critical": {
+      "parts": []
+    },
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p><strong>Effect</strong> The mech gains a +1 bonus to its KAC and to its Fortitude saving throws.</p>\n<p><strong>Cost</strong> 2 × tier</p>"
+    },
+    "equipped": false,
+    "mechPointCost": 2,
+    "modifiers": [
+      {
+        "_id": "be4377d8-b38b-4a47-96c9-d50174198885",
+        "name": "Unbreakable Armor",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "ac",
+        "enabled": true,
+        "max": 1,
+        "modifier": "1",
+        "modifierType": "constant",
+        "notes": "",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": "kac"
+      },
+      {
+        "_id": "ae4020d8-5f5a-4f3d-9bc9-24edecafcfa5",
+        "name": "Unbreakable Armor",
+        "type": "untyped",
+        "condition": "",
+        "effectType": "save",
+        "enabled": true,
+        "max": 1,
+        "modifier": "1",
+        "modifierType": "constant",
+        "notes": "",
+        "source": "",
+        "subtab": "misc",
+        "valueAffected": "fort"
+      }
+    ],
+    "ppAbilities": [
+      {
+        "name": "",
+        "abilityType": "",
+        "activation": {
+          "requiresActivation": false,
+          "toggleable": false
+        },
+        "cost": {
+          "value": null,
+          "variable": false
+        },
+        "damage": "",
+        "damageTypes": {},
+        "description": "",
+        "save": {
+          "type": "",
+          "dc": null
+        }
+      }
+    ],
+    "source": "TR, p. 108",
+    "special": "The mech gains a +1 bonus to its KAC and to its Fortitude saving throws."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "Wwe9KHMhWBNfXljr",
+  "name": "Battle staff",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 0,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "low",
+    "damageType": {
+      "andOr": "none",
+      "primary": "bludgeoning",
+      "secondary": ""
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This rod of forged steel is an impenetrable defensive tool that can deliver devastating blows.</p>\n<p><strong>Type</strong> melee; <strong>Special</strong> analog, reach, trip</p>\n<p><strong>Damage</strong> low; <strong>Damage Type</strong> B; <strong>Critical</strong> —</p>\n<p><strong>Slots</strong> 2 (upper limb)</p>\n<p><strong>Cost</strong> 2 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 2,
+    "modifiers": [],
+    "ppAbilities": [],
+    "range": {
+      "unit": "ft",
+      "value": 0
+    },
+    "slots": {
+      "allowed": {
+        "frame": false,
+        "lowerLimb": false,
+        "upperLimb": true
+      },
+      "number": 2
+    },
+    "source": "TR, p. 103",
+    "specialEffect": "analog, reach, trip",
+    "weaponType": "melee"
+  }
+}

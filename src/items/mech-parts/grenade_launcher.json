@@ -1,0 +1,59 @@
+{
+  "_id": "tAAYO5UXdnaV8wX7",
+  "name": "Grenade Launcher",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 3,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "low",
+    "damageType": {
+      "andOr": "none",
+      "primary": "none",
+      "secondary": ""
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This pressurized cannon fires grenades over vast distances.</p>\n<p><strong>Type</strong> ranged; <strong>Range</strong> 120 ft.; <strong>Special</strong> —</p>\n<p><strong>Damage</strong> varies; <strong>Damage Type</strong> varies; <strong>Critical</strong> —</p>\n<p><strong>Slots</strong> 1 (frame); <strong>Capacity</strong> 3</p>\n<p><strong>Special</strong> A grenade launcher doesn’t deal damage based on its level. Instead, its damage and effects are based on the grenades it fires. When resupplying ammunition, the grenade launcher selects any combination of grenades whose individual levels don’t exceed the grenade launcher’s level + 2. Each time a mech reloads its grenade launcher, it loads any combination of 3 grenades it currently has available. For example, a mech with an 8th-level grenade launcher could carry five mk 3 frag grenades (level 8) and four mk 2 cryo grenades (level 10), loading any combination of three grenades each time it reloads.</p>\n<p><strong>Cost</strong> 2.5 × level</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 2.5,
+    "modifiers": [],
+    "ppAbilities": [],
+    "range": {
+      "unit": "ft",
+      "value": 120
+    },
+    "slots": {
+      "allowed": {
+        "frame": true,
+        "lowerLimb": false,
+        "upperLimb": false
+      },
+      "number": 1
+    },
+    "source": "TR, p. 104",
+    "specialEffect": "",
+    "weaponType": "ranged"
+  }
+}

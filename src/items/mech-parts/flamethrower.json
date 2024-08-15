@@ -1,0 +1,63 @@
+{
+  "_id": "n6LKYfRVeTuXrbTA",
+  "name": "Flamethrower",
+  "type": "mechWeapon",
+  "_stats": {
+    "coreVersion": 12,
+    "systemId": "sfrpg",
+    "systemVersion": "0.27.0"
+  },
+  "folder": "Jz98dJBLiXyVtiV1",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "type": "",
+    "abilityMods": {
+      "parts": []
+    },
+    "capacity": 5,
+    "critical": {
+      "parts": []
+    },
+    "criticalEffect": "Burn",
+    "damage": {
+      "parts": []
+    },
+    "damageLevel": "high",
+    "damageType": {
+      "andOr": "none",
+      "primary": "fire",
+      "secondary": ""
+    },
+    "description": {
+      "chat": "",
+      "gmnotes": "",
+      "short": "",
+      "unidentified": "",
+      "value": "<p>This rotating nozzle spews gouts of bone-melting flame from a fuel pack installed deep inside a mech.</p>\n<p><strong>Type</strong> ranged; <strong>Range</strong> 60 ft or 100 ft.; <strong>Special</strong> ignite and either blast or line</p>\n<p><strong>Damage</strong> high; <strong>Damage Type</strong> F; <strong>Critical</strong> burn</p>\n<p><strong>Slots</strong> 1 (upper limb); <strong>Capacity</strong> 5</p>\n<p><strong>Cost</strong> 4.5 × level</p>\n<p><strong>Gout</strong> Each time the mech makes an attack with the flamethrower, the weapon gains the line weapon special property and a range of 100 feet, or it gains the blast weapon special property and a range of 60 feet.</p>"
+    },
+    "equipped": false,
+    "level": 1,
+    "mechPointCost": 4.5,
+    "modifiers": [],
+    "ppAbilities": {
+      "0": {
+        "description": "<p><span style=\"font-family: 'Exo 2', sans-serif\">Each time the mech makes an attack with the flamethrower, the weapon gains the line weapon special property and a range of 100 feet, or it gains the blast weapon special property and a range of 60 feet.</span></p>"
+      }
+    },
+    "range": {
+      "unit": "ft",
+      "value": 100
+    },
+    "slots": {
+      "allowed": {
+        "frame": false,
+        "lowerLimb": false,
+        "upperLimb": true
+      },
+      "number": 1
+    },
+    "source": "TR, p. 104",
+    "specialEffect": "ignite, either blast (60) or line (100)",
+    "weaponType": "ranged"
+  }
+}

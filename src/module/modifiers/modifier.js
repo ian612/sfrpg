@@ -4,7 +4,7 @@ import { generateUUID } from "../utils/utilities.js";
 import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "./types.js";
 
 /**
- * A data object that hold information about a specific modifier.
+ * A data object that holds information about a specific modifier.
  *
  * @param {Object}        data               The data for the modifier.
  * @param {String}        data.name          The name for the modifier. Only useful for identifying the modifier.
@@ -35,7 +35,10 @@ export default class SFRPGModifier extends foundry.abstract.DataModel {
         return super._initializeSource(source, options);
     }
 
-    // Slight hack to keep modifiers on the database or exported to JSON minimal and clean.
+    /*
+     * Slight hack to keep modifiers on the database or exported to JSON minimal and clean.
+     * Deletes unnecessary or blank fields and sections, as well as container information.
+     */
     toObject(source = true) {
         if (source) {
             const obj = foundry.utils.deepClone(this._source);
@@ -47,7 +50,9 @@ export default class SFRPGModifier extends foundry.abstract.DataModel {
         return this.schema.toObject(this);
     }
 
-    // Remove empty optional data
+    /*
+     * Remove empty optional data
+     */
     static cleanData(source = {}, options = {}) {
         if (!this._hasDamageSection(source)) source.damage = null;
         if (!source.limitTo) source.limitTo = null;
@@ -55,6 +60,7 @@ export default class SFRPGModifier extends foundry.abstract.DataModel {
         return super.cleanData(source, options);
     }
 
+    // TODO: Add a docstring here
     _initialize(options = {}) {
         super._initialize(options);
 
@@ -70,6 +76,9 @@ export default class SFRPGModifier extends foundry.abstract.DataModel {
         }
     }
 
+    /*
+     * Defines the data schema for sfrpg modifiers.
+     */
     static defineSchema() {
         const fields = foundry.data.fields;
         return {
@@ -173,26 +182,45 @@ export default class SFRPGModifier extends foundry.abstract.DataModel {
         };
     }
 
+    /*
+     * Gets the uuid of the containing actor.
+     */
     get actor() {
         return this.parent instanceof ActorSFRPG ? this.parent : this.parent.actor;
     }
 
+    /*
+     * Gets the uuid of the containing item.
+     */
     get item() {
         return this.parent instanceof ItemSFRPG ? this.parent : null;
     }
 
+    /*
+     * Gets the uuid of the containing token.
+     */
     get token() {
         return this.actor.isToken ? this.actor.token : this.actor.getActiveTokens(true, true);
     }
 
+    /**
+     * Gets whether a modifier is a damage section
+     * @returns {Boolean} true/false, whether the object has a damage section or not
+     */
     get hasDamageSection() {
         return this.constructor._hasDamageSection(this);
     }
 
+    /**
+     * Tests whether a damage section exists on the modifier.
+     * @param  {Object}   obj The modifier object to check
+     * @returns {Boolean} true/false, whether the object has a damage section or not
+     */
     static _hasDamageSection(obj) {
         return (obj.damage && Object.values(obj.damage.damageTypes).some(type => !!type)) || false;
     }
 
+    // TODO: add a docstring here
     async toggle(active = null) {
         const parentMods = this.parent.system.modifiers;
 

@@ -20,7 +20,7 @@ export class Closure {
     /**
      * Evaluates the closure against a certain fact
      *
-     * @param {Ojbect} fact               a fact
+     * @param {Object} fact               a fact
      * @param {Context} context           an execution context.
      * @param {Object} context.parameters the execution parameters, if any
      * @param {Engine} context.engine     the rules engine.

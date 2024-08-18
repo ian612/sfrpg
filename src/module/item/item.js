@@ -1000,12 +1000,15 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
     }
 
     /**
-     * This method cycles through the list of modifiers that are available and checks if they are
+     * Cycles through the list of modifiers that are available and checks if they are
      * relevant to the current attack being rolled
+     *
      * @param {Boolean} isWeapon If the item is a weapon or not
      * @returns {Array} An array of modifiers that are relevant to the roll
      */
     getAppropriateAttackModifiers(isWeapon) {
+
+        // Add modifier tags based on the type of attack
         const acceptedModifiers = [SFRPGEffectType.ALL_ATTACKS];
         if (["msak", "rsak"].includes(this.system.actionType)) {
             acceptedModifiers.push(SFRPGEffectType.SPELL_ATTACKS);
@@ -1015,23 +1018,30 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
             acceptedModifiers.push(SFRPGEffectType.MELEE_ATTACKS);
         }
 
+        // Add modifier tags based on if the item being used is a weapon
         if (isWeapon) {
             acceptedModifiers.push(SFRPGEffectType.WEAPON_ATTACKS);
             acceptedModifiers.push(SFRPGEffectType.WEAPON_PROPERTY_ATTACKS);
             acceptedModifiers.push(SFRPGEffectType.WEAPON_CATEGORY_ATTACKS);
         }
 
+        // Get the pile of all modifiers that exist on the actor
         let modifiers = this.actor.getAllModifiers();
+
+        // Filter the modifiers to only include the relevant ones based on the item's & roll's attributes
         modifiers = modifiers.filter(mod => {
+
             // Remove inactive constant and damage section mods. Keep all situational mods, regardless of status.
             if (!mod.enabled && mod.modifierType !== SFRPGModifierType.FORMULA) return false;
 
+            // Remove mods that are limited to affecting their parent item or container if that is not this item
             if (mod.limitTo === "parent" && mod.item !== this) return false;
             if (mod.limitTo === "container") {
                 const parentItem = getItemContainer(this.actor.items, mod.item);
                 if (parentItem?.id !== this.id) return false;
             }
 
+            // Remove mods that don't have the correct weapon type, property, or category
             if (mod.effectType === SFRPGEffectType.WEAPON_ATTACKS) {
                 if (mod.valueAffected !== this.system?.weaponType) {
                     return false;
@@ -1046,6 +1056,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
                 }
             }
 
+            // Keep the mod if it matches one of the accepted types
             return acceptedModifiers.includes(mod.effectType);
         });
 

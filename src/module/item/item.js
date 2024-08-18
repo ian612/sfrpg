@@ -861,18 +861,20 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
      * disableDeductAmmo: Setting this to true will prevent ammo being deducted if applicable.
      */
     async rollAttack(options = {}) {
-        const itemData = this.system;
-        const isWeapon = ["weapon", "shield"].includes(this.type);
 
-        const actorData = this.actor.system;
+        // Verify that we're in the right place calling this. If not, go to the right method.
         if (!this.hasAttack) {
             return ui.notifications.error("You may not make an Attack Roll with this Item.");
         }
-
         if (this.type === "starshipWeapon") return this._rollStarshipAttack(options);
         if (this.type === "vehicleAttack") return this._rollVehicleAttack(options);
 
-        // Determine ability score modifier
+        // Collect the needed data from the actor and item used to make the roll
+        const itemData = this.system;
+        const actorData = this.actor.system;
+        const isWeapon = ["weapon", "shield"].includes(this.type);
+
+        // Determine relevant ability score modifier
         let abl = itemData.ability;
         if (!abl && (this.actor.type === "npc" || this.actor.type === "npc2")) abl = "";
         else if (!abl && (this.type === "spell")) abl = actorData.attributes.spellcasting || "int";
@@ -881,10 +883,13 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
 
         // Define Roll parts
         const parts = [];
-
+        // Attack bonus specified on the item itself
         if (Number.isNumeric(itemData.attackBonus) && itemData.attackBonus !== 0) parts.push("@item.attackBonus");
+        // Relevant ability score modifier
         if (abl) parts.push(`@abilities.${abl}.mod`);
+        // Base attack bonus, if relevant
         if (["character", "drone"].includes(this.actor.type)) parts.push("@attributes.baseAttackBonus.value");
+        // Penalty if not proficient with the weapon
         if (isWeapon) {
             const proficiencyKey = SFRPG.weaponTypeProficiency[this.system.weaponType];
             const proficient = itemData.proficient || this.actor?.system?.traits?.weaponProf?.value?.includes(proficiencyKey);
@@ -994,6 +999,12 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         });
     }
 
+    /**
+     * This method cycles through the list of modifiers that are available and checks if they are
+     * relevant to the current attack being rolled
+     * @param {Boolean} isWeapon If the item is a weapon or not
+     * @returns {Array} An array of modifiers that are relevant to the roll
+     */
     getAppropriateAttackModifiers(isWeapon) {
         const acceptedModifiers = [SFRPGEffectType.ALL_ATTACKS];
         if (["msak", "rsak"].includes(this.system.actionType)) {
@@ -2115,4 +2126,3 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         });
     }
 }
-

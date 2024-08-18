@@ -874,6 +874,10 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         const actorData = this.actor.system;
         const isWeapon = ["weapon", "shield"].includes(this.type);
 
+        // Define Roll parts
+        const parts = [];
+        const rolledMods = [];
+
         // Determine relevant ability score modifier
         let abl = itemData.ability;
         if (!abl && (this.actor.type === "npc" || this.actor.type === "npc2")) abl = "";
@@ -881,8 +885,6 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         else if (itemData.properties?.operative && actorData.abilities.dex.value > actorData.abilities.str.value) abl = "dex";
         else if (!abl) abl = "str";
 
-        // Define Roll parts
-        const parts = [];
         // Attack bonus specified on the item itself
         if (Number.isNumeric(itemData.attackBonus) && itemData.attackBonus !== 0) parts.push("@item.attackBonus");
         // Relevant ability score modifier
@@ -898,36 +900,18 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
             }
         }
 
-        let modifiers = this.getAppropriateAttackModifiers(isWeapon);
-
+        // Collect a list of modifiers that should be applied to the roll
         const stackModifiers = new StackModifiers();
-        modifiers = await stackModifiers.processAsync(modifiers, null, {actor: this.actor});
+        const modifiers = await stackModifiers.processAsync(
+            this.getAppropriateAttackModifiers(isWeapon),
+            null,
+            {actor: this.actor}
+        );
 
-        const rolledMods = [];
-        const addModifier = (bonus, parts) => {
-            if (bonus.modifierType === SFRPGModifierType.FORMULA) {
-                rolledMods.push(bonus);
-                return;
-            }
-            const computedBonus = bonus.modifier;
-            parts.push({score: computedBonus, explanation: bonus.name});
-            return computedBonus;
-        };
+        // Add relevant values to the correct roll parts variable
+        this._modifiersToRollParts(modifiers, parts, rolledMods);
 
-        Object.entries(modifiers).reduce((sum, mod) => {
-            if (mod[1] === null || mod[1].length < 1) return 0;
-
-            if ([SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(mod[0])) {
-                for (const bonus of mod[1]) {
-                    addModifier(bonus, parts);
-                }
-            } else {
-                addModifier(mod[1], parts);
-            }
-
-            return 0;
-        }, 0);
-
+        // TODO: Continue rewriting from here
         // Define Critical threshold
         const critThreshold = 20;
         // if ( this.type === "weapon" ) critThreshold = this.actor.getFlag("sfrpg", "weaponCriticalThreshold") || 20;
@@ -997,6 +981,44 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
             },
             onClose: this._onAttackRollClose.bind(this, options)
         });
+    }
+
+    /**
+     * Takes the list of all modifiers places them into the appropriate array of either constant
+     * roll parts or dynamic roll parts (i.e. those with static numbers or randomized dice terms)
+     *
+     * @private
+     * @param {Object} modifiersByBonus list of all the bonus types and the modifier(s) of each
+     * @param {Array}  constantRollParts an array containing all the constant roll parts
+     * @param {Array}  dynamicRollParts an array containing all the dynamic roll parts
+     */
+    _modifiersToRollParts(modifiersByBonus, constantRollParts, dynamicRollParts) {
+        // Put all bonuses with modifiers to evaluate into a new object, where the value is iterable
+        const validBonuses = {};
+        for (const [bonusType, modifiers] of Object.entries(modifiersByBonus)) {
+            if (modifiers) {
+                if (Array.isArray(modifiers)) {
+                    if (modifiers.length > 0) {
+                        validBonuses[bonusType] = modifiers;
+                    }
+                }
+                else {
+                    validBonuses[bonusType] = [modifiers];
+                }
+            }
+        }
+
+        // Cycle through the bonus types with valid modifiers and sort them to the correct roll parts array
+        for (const modifierArray of Object.values(validBonuses)) {
+            for (const modifier of modifierArray) {
+                if (modifier.modifierType === SFRPGModifierType.FORMULA) {
+                    dynamicRollParts.push(modifier);
+                }
+                else {
+                    constantRollParts.push({score:modifier.modifier, explanation: modifier.name});
+                }
+            }
+        }
     }
 
     /**

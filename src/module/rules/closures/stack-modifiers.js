@@ -20,6 +20,8 @@ export default class StackModifiers extends Closure {
      * @returns {Object}           An object containing only those modifiers allowed based on the stacking rules.
      */
     process(mods, context, options = { actor: null }) {
+        // TODO: It might make sense to rename this to something like processStatic() to make
+        // it more obvious what it's used for.
         const modifiers = mods;
         for (const modifier of modifiers) {
             const actor = options.actor;
@@ -60,6 +62,8 @@ export default class StackModifiers extends Closure {
      * @returns {Object}        An object containing only those modifiers allowed based on the stacking rules.
      */
     async processAsync(mods, context, options = { actor: null }) {
+        // TODO: It might make sense to rename this to something like processDynamic() to make
+        // it more obvious what it's used for.
         const modifiers = mods;
         if (modifiers.length > 0) {
             for (const modifier of modifiers) {

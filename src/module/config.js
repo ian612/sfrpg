@@ -147,7 +147,10 @@ SFRPG.abilityActivationTypes = {
 /**
  * The value above which a roll is a critical hit.
  */
-SFRPG.critThreshold = 20;
+SFRPG.critThreshold = {
+    critical: 20,
+    fumble: 1
+};
 
 SFRPG.skillProficiencyLevels = {
     0: "",

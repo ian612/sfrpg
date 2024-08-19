@@ -978,7 +978,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
                 secrets: this.isOwner
             }),
             speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-            critical: SFRPG.critThreshold,
+            critical: SFRPG.critThreshold.critical,
             chatMessage: options.chatMessage,
             rollOptions: rollOptions,
             dialogOptions: {

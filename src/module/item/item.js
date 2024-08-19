@@ -861,20 +861,40 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
      * disableDeductAmmo: Setting this to true will prevent ammo being deducted if applicable.
      */
     async rollAttack(options = {}) {
-
-        // Verify that we're in the right place calling this. If not, go to the right method.
+        /** Verify that we're in the right place and we're good to make this roll. */
+        // If we're accessing this from the wrong item type, go to the appropriate method instead
         if (!this.hasAttack) {
             return ui.notifications.error("You may not make an Attack Roll with this Item.");
         }
         if (this.type === "starshipWeapon") return this._rollStarshipAttack(options);
         if (this.type === "vehicleAttack") return this._rollVehicleAttack(options);
 
-        // Collect the needed data from the actor and item used to make the roll
+        // Warn the user if there is no ammo left
+        const usage = this.system.usage?.value || 0;
+        const availableCapacity = this.getCurrentCapacity();
+        if (availableCapacity < usage) {
+            ui.notifications.warn(game.i18n.format("SFRPG.ItemNoAmmo", {name: this.name}));
+        }
+
+        /** Collect actor and item data from which to get modifiers and build the roll context. */
+        // Collect the needed data from this item and its parent actor
         const itemData = this.system;
         const actorData = this.actor.system;
         const isWeapon = ["weapon", "shield"].includes(this.type);
 
-        // Define Roll parts
+        // Add some extra information to itemData to make evaluation simpler later
+        itemData.hasSave = this.hasSave;
+        itemData.hasSkill = this.hasSkill;
+        itemData.hasArea = this.hasSkill;
+        itemData.hasDamage = this.hasDamage;
+        itemData.hasCapacity = this.hasCapacity();
+
+        // Define Roll Data
+        const rollData = foundry.utils.deepClone(actorData);
+        rollData.item = itemData;
+
+        /** Define the static and dynamic roll parts. */
+        // TODO: Rename these to something more descriptive
         const parts = [];
         const rolledMods = [];
 
@@ -885,12 +905,16 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         else if (itemData.properties?.operative && actorData.abilities.dex.value > actorData.abilities.str.value) abl = "dex";
         else if (!abl) abl = "str";
 
+        // Add constant bonuses to the roll parts
         // Attack bonus specified on the item itself
         if (Number.isNumeric(itemData.attackBonus) && itemData.attackBonus !== 0) parts.push("@item.attackBonus");
+
         // Relevant ability score modifier
         if (abl) parts.push(`@abilities.${abl}.mod`);
+
         // Base attack bonus, if relevant
         if (["character", "drone"].includes(this.actor.type)) parts.push("@attributes.baseAttackBonus.value");
+
         // Penalty if not proficient with the weapon
         if (isWeapon) {
             const proficiencyKey = SFRPG.weaponTypeProficiency[this.system.weaponType];
@@ -900,6 +924,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
             }
         }
 
+        /** Process and compile modifiers to the roll. */
         // Collect a list of modifiers that should be applied to the roll
         const stackModifiers = new StackModifiers();
         const modifiers = await stackModifiers.processAsync(
@@ -911,54 +936,35 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         // Add relevant values to the correct roll parts variable
         this._modifiersToRollParts(modifiers, parts, rolledMods);
 
-        // TODO: Continue rewriting from here
-        // Define Critical threshold
-        const critThreshold = 20;
-        // if ( this.type === "weapon" ) critThreshold = this.actor.getFlag("sfrpg", "weaponCriticalThreshold") || 20;
-
-        const rollOptions = {};
-
-        if (this.system.actionTarget) {
-            rollOptions.actionTarget = this.system.actionTarget;
-            rollOptions.actionTargetSource = SFRPG.actionTargets;
-        }
-
-        // Define Roll Data
-        const rollData = foundry.utils.deepClone(actorData);
-        // Add hasSave to roll
-        itemData.hasSave = this.hasSave;
-        itemData.hasSkill = this.hasSkill;
-        itemData.hasArea = this.hasSkill;
-        itemData.hasDamage = this.hasDamage;
-        itemData.hasCapacity = this.hasCapacity();
-
-        rollData.item = itemData;
-        const title = game.settings.get('sfrpg', 'useCustomChatCards') ? game.i18n.format("SFRPG.Rolls.AttackRoll") : game.i18n.format("SFRPG.Rolls.AttackRollFull", {name: this.name});
-
-        // Warn the user if there is no ammo left
-        const usage = itemData.usage?.value || 0;
-        const availableCapacity = this.getCurrentCapacity();
-        if (availableCapacity < usage) {
-            ui.notifications.warn(game.i18n.format("SFRPG.ItemNoAmmo", {name: this.name}));
-        }
-
-        const rollContext = RollContext.createItemRollContext(this, this.actor, {itemData: itemData});
-
-        /** Create global attack modifiers. */
+        // Create global attack modifiers to be shown on the attack roll dialog
         const additionalModifiers = foundry.utils.deepClone(SFRPG.globalAttackRollModifiers).map(mod => {
             const modInstance = {bonus: new SFRPGModifier(mod.bonus, {parent: this, globalModifier: true})};
             return modInstance;
         });
 
-        /** Apply bonus rolled mods from relevant attack roll formula modifiers. */
+        // Add selectable and rolled rolled modifiers to the attack roll dialog
         for (const rolledMod of rolledMods) {
-            additionalModifiers.push({
-                bonus: rolledMod
-            });
+            additionalModifiers.push({bonus: rolledMod});
         }
 
+        /** Build data to pass to the roll helper. */
+        // Construct rollOptions that determine what the attack is targeting (KAC, EAC, etc.)
+        const rollOptions = {};
+        if (this.system.actionTarget) {
+            rollOptions.actionTarget = this.system.actionTarget;
+            rollOptions.actionTargetSource = SFRPG.actionTargets;
+        }
+
+        // Create the context for the roll
+        const rollContext = RollContext.createItemRollContext(this, this.actor, {itemData: itemData});
+        // const rollContextNew = 1; // TODO: rewrite the rollContext class
+
+        // Add the selectable modifiers to the roll context
         rollContext.addContext("additional", {name: "additional"}, {modifiers: { bonus: "n/a", rolledMods: additionalModifiers } });
         parts.push("@additional.modifiers.bonus");
+
+        // Create the title for the roll
+        const title = game.settings.get('sfrpg', 'useCustomChatCards') ? game.i18n.format("SFRPG.Rolls.AttackRoll") : game.i18n.format("SFRPG.Rolls.AttackRollFull", {name: this.name});
 
         // Call the roll helper utility
         return DiceSFRPG.d20Roll({
@@ -972,7 +978,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
                 secrets: this.isOwner
             }),
             speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-            critical: critThreshold,
+            critical: SFRPG.critThreshold,
             chatMessage: options.chatMessage,
             rollOptions: rollOptions,
             dialogOptions: {

@@ -144,6 +144,11 @@ SFRPG.abilityActivationTypes = {
     "special": "SFRPG.AbilityActivationTypesSpecial"
 };
 
+/**
+ * The value above which a roll is a critical hit.
+ */
+SFRPG.critThreshold = 20;
+
 SFRPG.skillProficiencyLevels = {
     0: "",
     3: "SFRPG.SkillProficiencyLevelClassSkill"

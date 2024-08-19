@@ -163,7 +163,7 @@ export class DiceSFRPG {
     * @param {DialogOptions}        data.dialogOptions Modal dialog options
     */
     static async d20Roll({ event = new Event(''), parts, rollContext, title, speaker, flavor, advantage = true, rollOptions = {},
-        critical = 20, fumble = 1, chatMessage = true, onClose, dialogOptions, actorContextKey = "actor" }) {
+        critical = SFRPG.critThreshold, fumble = 1, chatMessage = true, onClose, dialogOptions, actorContextKey = "actor" }) {
 
         flavor = `${title}${(flavor ? " <br> " + flavor : "")}`;
 

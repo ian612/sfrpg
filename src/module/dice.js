@@ -230,8 +230,8 @@ export class DiceSFRPG {
         };
         const formula = parts.map(partMapper).join(" + ");
 
-        // Use the roll tree to generate an additional modifier selection dialog box, evaluate
-        // the roll, and return the result
+        /* Use the roll tree to generate an additional modifier selection dialog box, evaluate
+        the roll, and return the result */
         return await tree.buildRoll(formula, rollContext, async (button, rollMode, unusedFinalFormula, node, rollMods, bonus = null) => {
             // Return a null value and call the onClose callback if the roll is cancelled
             if (button === "cancel") {
@@ -249,7 +249,7 @@ export class DiceSFRPG {
                 dieRoll = "2d20kh";
             }
 
-
+            // TODO-Ian: Continue comments from here
             const finalFormula = await this._calcStackingFormula(node, rollMods, bonus, rollContext.allContexts[actorContextKey]?.entity);
 
             finalFormula.finalRoll = `${dieRoll} + ${finalFormula.finalRoll}`;

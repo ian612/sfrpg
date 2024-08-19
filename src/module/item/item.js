@@ -894,7 +894,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         rollData.item = itemData;
 
         /** Define the static and dynamic roll parts. */
-        // TODO: Rename these to something more descriptive
+        // TODO-Ian: Rename these to something more descriptive
         const parts = [];
         const rolledMods = [];
 
@@ -963,7 +963,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
 
         // Create the context for the roll
         const rollContext = RollContext.createItemRollContext(this, this.actor, {itemData: itemData});
-        // const rollContextNew = 1; // TODO: rewrite the rollContext class
+        // const rollContextNew = 1; // TODO-Ian: rewrite the rollContext class
 
         // Add the selectable modifiers to the roll context
         rollContext.addContext("additional", {name: "additional"}, {modifiers: { bonus: "n/a", rolledMods: additionalModifiers } });

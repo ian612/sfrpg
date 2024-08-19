@@ -60,7 +60,7 @@ export default class SFRPGModifier extends foundry.abstract.DataModel {
         return super.cleanData(source, options);
     }
 
-    // TODO: Add a docstring here
+    // TODO-Ian: Add a docstring here
     _initialize(options = {}) {
         super._initialize(options);
 
@@ -220,7 +220,7 @@ export default class SFRPGModifier extends foundry.abstract.DataModel {
         return (obj.damage && Object.values(obj.damage.damageTypes).some(type => !!type)) || false;
     }
 
-    // TODO: add a docstring here
+    // TODO-Ian: add a docstring here
     async toggle(active = null) {
         const parentMods = this.parent.system.modifiers;
 

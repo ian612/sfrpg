@@ -35,7 +35,7 @@ export default class RollTree {
         }
 
         /** Verify variable contexts, replace bad ones with 0. */
-        const variableMatches = new Set(this.formula.match(/@([a-zA-Z.0-9_\-]+)/g));
+        const variableMatches = new Set(this.formula.match(/@([a-zA-Z.0-9_-]+)/g));
         for (const variable of variableMatches) {
             const [context, remainingVariable] = RollNode.getContextForVariable(variable, contexts);
             if (!context) {
@@ -45,6 +45,7 @@ export default class RollTree {
             }
         }
 
+        // TODO-Ian: Continue comments from here
         const allRolledMods = this.populate();
 
         if (this.options.skipUI) {

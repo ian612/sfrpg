@@ -162,11 +162,28 @@ export class DiceSFRPG {
     * @param {onD20DialogClosed}    data.onClose       Callback for actions to take when the dialog form is closed
     * @param {DialogOptions}        data.dialogOptions Modal dialog options
     */
-    static async d20Roll({ event = new Event(''), parts, rollContext, title, speaker, flavor, advantage = true, rollOptions = {},
-        critical = SFRPG.critThreshold, fumble = 1, chatMessage = true, onClose, dialogOptions, actorContextKey = "actor" }) {
+    static async d20Roll({
+        event = new Event(''),
+        parts,
+        rollContext,
+        title,
+        speaker,
+        flavor,
+        advantage = true,
+        rollOptions = {},
+        critical = SFRPG.critThreshold.critical,
+        fumble = SFRPG.critThreshold.fumble,
+        chatMessage = true,
+        onClose,
+        dialogOptions,
+        actorContextKey = "actor"
+    }) {
 
+        /** Continue putting together the d20 roll. */
+        // Assemble flavor text
         flavor = `${title}${(flavor ? " <br> " + flavor : "")}`;
 
+        // Verify that the roll context that's been passed to d20Roll is valid
         if (!rollContext?.isValid()) {
             console.log(['Invalid rollContext', rollContext]);
             return null;
@@ -182,7 +199,8 @@ export class DiceSFRPG {
             buttons["Normal"] = { id: "normal", label: game.i18n.format("SFRPG.Rolls.Dice.Roll") };
         }
 
-        const options = {
+        // Construct the roll tree
+        const tree = new RollTree({
             debug: false,
             buttons: buttons,
             defaultButton: "normal",
@@ -191,8 +209,9 @@ export class DiceSFRPG {
             mainDie: "1d20",
             dialogOptions: dialogOptions,
             useRawStrings: false
-        };
+        });
 
+        // Define a helper function for mapping parts
         const partMapper = (part) => {
             if (part instanceof Object) {
                 if (part.explanation) {
@@ -211,8 +230,10 @@ export class DiceSFRPG {
         };
         const formula = parts.map(partMapper).join(" + ");
 
-        const tree = new RollTree(options);
+        // Use the roll tree to generate an additional modifier selection dialog box, evaluate
+        // the roll, and return the result
         return await tree.buildRoll(formula, rollContext, async (button, rollMode, unusedFinalFormula, node, rollMods, bonus = null) => {
+            // Return a null value and call the onClose callback if the roll is cancelled
             if (button === "cancel") {
                 if (onClose) {
                     onClose(null, null, null);
@@ -220,12 +241,14 @@ export class DiceSFRPG {
                 return null;
             }
 
+            // Die formula, depending on which button was clicked
             let dieRoll = "1d20";
             if (button === "disadvantage") {
                 dieRoll = "2d20kl";
             } else if (button === "advantage") {
                 dieRoll = "2d20kh";
             }
+
 
             const finalFormula = await this._calcStackingFormula(node, rollMods, bonus, rollContext.allContexts[actorContextKey]?.entity);
 

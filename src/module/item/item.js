@@ -966,7 +966,7 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         // Create the title for the roll
         const title = game.settings.get('sfrpg', 'useCustomChatCards') ? game.i18n.format("SFRPG.Rolls.AttackRoll") : game.i18n.format("SFRPG.Rolls.AttackRollFull", {name: this.name});
 
-        // Call the roll helper utility
+        // Call the roll helper utility to return a roll object
         return DiceSFRPG.d20Roll({
             event: options.event,
             parts: parts,

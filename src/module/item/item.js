@@ -910,10 +910,16 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         if (Number.isNumeric(itemData.attackBonus) && itemData.attackBonus !== 0) parts.push("@item.attackBonus");
 
         // Relevant ability score modifier
-        if (abl) parts.push(`@abilities.${abl}.mod`);
+        if (abl) parts.push({
+            score: `@abilities.${abl}.mod`,
+            explanation: game.i18n.localize(SFRPG.abilities[abl])
+        });
 
         // Base attack bonus, if relevant
-        if (["character", "drone"].includes(this.actor.type)) parts.push("@attributes.baseAttackBonus.value");
+        if (["character", "drone"].includes(this.actor.type)) parts.push({
+            score: "@attributes.baseAttackBonus.value",
+            explanation: game.i18n.localize("SFRPG.BaseAttackBonusTitle")
+        });
 
         // Penalty if not proficient with the weapon
         if (isWeapon) {

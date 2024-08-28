@@ -193,19 +193,27 @@ export default class RollTree {
         return {button, rollMode, bonus, parts, callbackResult};
     }
 
+    /**
+     * Method used to populate the roll tree with roll nodes
+     *
+     * @returns Stuff
+     */
     populate() {
         if (this.options.debug) {
             console.log(`Resolving '${this.formula}'`);
             console.log(this.contexts);
         }
 
+        // Create a new root node on the tree that contains the entire roll formula. Clear the rest of the nodes and rollMods
         this.rootNode = new RollNode(this, this.formula, null, null, false, true, null, this.options);
         this.nodes = {};
         this.rollMods = [];
 
+        // Store the root node in the nodes object
         this.nodes[this.formula] = this.rootNode;
         this.rootNode.populate(this.nodes, this.contexts);
 
+        // Collect a list of all the rolled or selectable (dynamic) modifiers
         const allRolledMods = RollTree.getAllRolledModifiers(this.nodes);
 
         for (const [key, value] of Object.entries(this.nodes)) {

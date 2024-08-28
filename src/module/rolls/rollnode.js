@@ -2,35 +2,53 @@ import { SFRPGModifierType } from "../modifiers/types.js";
 
 export default class RollNode {
     constructor(tree, formula, baseValue, referenceModifier, isVariable, isEnabled, parentNode = null, options = {}) {
+        // Parameters
         this.tree = tree;
         this.formula = formula;
         this.baseValue = baseValue;
         this.referenceModifier = referenceModifier;
         this.isVariable = isVariable;
         this.isEnabled = isEnabled;
+        this.parentNode = parentNode;
+        this.options = options;
+
+        // Additional values
         this.resolvedValue = undefined;
         this.childNodes = {};
-        this.parentNode = parentNode;
         this.nodeContext = null;
         this.variableTooltips = null;
         this.rollTooltips = null;
         this.calculatedMods = null;
-        this.options = options;
     }
 
+    /**
+     * Recursive method to populate all nodes of a roll tree. This initially starts with the root
+     * node, which includes the entirety of the static roll formula. This formula (the property
+     * name) is parsed, segment by segment, and evaluated, with each set of evaluated information
+     * packed into the tree as roll nodes. Modifiers are likewise gathered alongside the nodes
+     * that they affect so they can be applied to the roll.
+     *
+     * @param {object} nodes The formula for the Roll
+     * @param {RollContext} contexts The data context for this roll
+     */
     populate(nodes, contexts) {
+        // if the node has already been deemed as a variable, evaluate its value
         if (this.isVariable) {
+            // choose the correct context from those available for which to evaluate the variable
             const [context, remainingVariable] = RollNode.getContextForVariable(this.formula, contexts);
             this.nodeContext = context;
 
+            // collect relevant modifiers and tooltip strings for this node
             const availableRolledMods = RollNode.getRolledModifiers(remainingVariable, this.getContext());
             this.calculatedMods = RollNode.getCalculatedModifiers(remainingVariable, this.getContext());
             this.variableTooltips = RollNode.getTooltips(remainingVariable, this.getContext());
             this.rollTooltips = RollNode.getTooltips(remainingVariable, this.getContext(), ".rollTooltip");
 
+            // cycle through the list of available rolled (non-constant) modifiers
             for (const mod of availableRolledMods) {
                 const modKey = mod.bonus._id ?? (mod.bonus.modifier[0] === '@' ? mod.bonus.modifier.substring(1) : mod.bonus.name);
 
+                // if the modifier already has been used to construct a node in the roll tree, then don't create a new one
                 let existingNode = nodes[modKey];
                 if (!existingNode) {
                     const childNode = new RollNode(this.tree, mod.bonus.modifier, null, mod.bonus, false, mod.bonus.enabled, this, this.options);
@@ -39,6 +57,7 @@ export default class RollNode {
                 }
                 this.childNodes[modKey] = existingNode;
             }
+            // TODO-Ian: Continue comments from here
         } else {
             const variableMatches = new Set(this.formula.match(/@([a-zA-Z.0-9_-]+)/g));
             for (const fullVariable of variableMatches) {

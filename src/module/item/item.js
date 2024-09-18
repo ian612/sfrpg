@@ -504,8 +504,8 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
 
         // Item type specific properties
         const props = [];
-        const fn = this[`_${this.type}ChatData`];
-        if (fn) fn.bind(this)(data, labels, props);
+        const fn = this[`_itemChatData`];
+        if (fn) fn.bind(this)(this.type, data, labels, props);
 
         // General equipment properties
         const equippableTypes = ["weapon", "equipment", "shield"];
@@ -599,258 +599,191 @@ export class ItemSFRPG extends Mix(Item).with(ItemActivationMixin, ItemCapacityM
         return containedItems;
     }
 
-    /* -------------------------------------------- */
-
     /**
-     * Prepare chat card data for equipment type items
-     * @private
-     */
-    _equipmentChatData(data, labels, props) {
-        props.push(
-            {name: CONFIG.SFRPG.armorTypes[data.armor.type], tooltip: null},
-            {name: labels.eac || null, tooltip: null},
-            {name: labels.kac || null, tooltip: null}
-        );
-    }
-
-    /* -------------------------------------------- */
-
-    /**
-     * Prepare chat card data for weapon type items
-     * @private
-     */
-    _weaponChatData(data, labels, props) {
-        props.push(
-            {name: CONFIG.SFRPG.weaponTypes[data.weaponType], tooltip: null},
-            ...Object.entries(data.properties).filter(e => e[1] === true)
-                .map(e => ({name: CONFIG.SFRPG.weaponProperties[e[0]], tooltip: CONFIG.SFRPG.weaponPropertiesTooltips[e[0]]})
-                )
-        );
-    }
-
-    /* -------------------------------------------- */
-
-    /**
-     * Prepare chat card data for consumable type items
-     * @private
-     */
-    _consumableChatData(data, labels, props) {
-        props.push(
-            {name: CONFIG.SFRPG.consumableTypes[data.consumableType], tooltip: null},
-            {name: this.getRemainingUses() + "/" + this.getMaxUses() + ` ${game.i18n.localize("SFRPG.FeaturesCharges")}`, tooltip: null}
-        );
-        data.hasCharges = this.getRemainingUses() >= 0;
-    }
-
-    /* -------------------------------------------- */
-
-    /**
-     * Prepare chat card data for goods type items
-     * @private
-     */
-    _goodsChatData(data, labels, props) {
-        props.push(
-            {name: CONFIG.SFRPG.itemTypes["goods"], tooltip: null},
-            data.bulk ? {name: `${game.i18n.localize("SFRPG.InventoryBulk")} ${data.bulk}`, tooltip: null} : null
-        );
-    }
-
-    /**
-     * Prepare chat card data for technological type items
-     * @param {Object} data The items data
+     * Prepare chat card data for items based on their types
+     * @param {string} itemType The type of the item
+     * @param {Object} data The item's data
      * @param {Object} labels Any labels for the item
      * @param {Object} props The items properties
      */
-    _technologicalChatData(data, labels, props) {
-        props.push(
-            {name: game.i18n.localize("TYPES.Item.technological"), tooltip: null},
-            data.bulk ? {name: `${game.i18n.localize("SFRPG.InventoryBulk")} ${data.bulk}`, tooltip: null} : null,
-            data.hands ? {name: `${game.i18n.localize("SFRPG.Items.Description.Hands")} ${data.hands}`, tooltip: null} : null
-        );
-    }
-
-    /**
-     * Prepare chat card data for hybrid type items
-     * @param {Object} data The items data
-     * @param {Object} labels Any labels for the item
-     * @param {Object} props The items properties
-     */
-    _hybridChatData(data, labels, props) {
-        props.push(
-            {name: game.i18n.localize("TYPES.Item.hybrid"), tooltip: null},
-            data.bulk ? {name: `${game.i18n.localize("SFRPG.InventoryBulk")} ${data.bulk}`, tooltip: null} : null,
-            data.hands ? {name: `${game.i18n.localize("SFRPG.Items.Description.Hands")} ${data.hands}`, tooltip: null} : null
-        );
-    }
-
-    /**
-     * Prepare chat card data for magic type items
-     * @param {Object} data The items data
-     * @param {Object} labels Any labels for the item
-     * @param {Object} props The items properties
-     */
-    _magicChatData(data, labels, props) {
-        props.push(
-            {name: game.i18n.localize("TYPES.Item.magic"), tooltip: null},
-            data.bulk ? {name: `${game.i18n.localize("SFRPG.InventoryBulk")} ${data.bulk}`, tooltip: null} : null,
-            data.hands ? {name: `${game.i18n.localize("SFRPG.Items.Description.Hands")} ${data.hands}`, tooltip: null} : null
-        );
-    }
-
-    /**
-     * Prepare chat card data for armor upgrades
-     * @param {Object} data The items data
-     * @param {Object} labels Any labels for the item
-     * @param {Object} props The items properties
-     */
-    _upgradeChatData(data, labels, props) {
+    _itemChatData(itemType, data, labels, props) {
+        // Declaration for upgrades
         let allowedArmorType = "";
+        // Declaraction for shield items
+        let wieldedBonus = 0;
+        let alignedBonus = 0;
 
-        if (data.allowedArmorType === 'any') {
-            allowedArmorType = game.i18n.localize("SFRPG.Any");
-        } else {
-            allowedArmorType = CONFIG.SFRPG.allowedArmorTypes[data.allowedArmorType];
-        }
+        console.log('Woo it works.');
+        switch (itemType) {
+            case "equipment":
+                props.push(
+                    {name: CONFIG.SFRPG.armorTypes[data.armor.type], tooltip: null},
+                    {name: labels.eac || null, tooltip: null},
+                    {name: labels.kac || null, tooltip: null}
+                );
+                break;
+            case "weapon":
+                props.push(
+                    {name: CONFIG.SFRPG.weaponTypes[data.weaponType], tooltip: null},
+                    ...Object.entries(data.properties).filter(e => e[1] === true)
+                        .map(e => ({name: CONFIG.SFRPG.weaponProperties[e[0]], tooltip: CONFIG.SFRPG.weaponPropertiesTooltips[e[0]]})
+                        )
+                );
+                break;
+            case "consumable":
+                props.push(
+                    {name: CONFIG.SFRPG.consumableTypes[data.consumableType], tooltip: null},
+                    {name: this.getRemainingUses() + "/" + this.getMaxUses() + ` ${game.i18n.localize("SFRPG.FeaturesCharges")}`, tooltip: null}
+                );
+                data.hasCharges = this.getRemainingUses() >= 0;
+                break;
+            case "goods":
+                props.push(
+                    {name: CONFIG.SFRPG.itemTypes["goods"], tooltip: null},
+                    data.bulk ? {name: `${game.i18n.localize("SFRPG.InventoryBulk")} ${data.bulk}`, tooltip: null} : null
+                );
+                break;
+            case "technological":
+                props.push(
+                    {name: game.i18n.localize("TYPES.Item.technological"), tooltip: null},
+                    data.bulk ? {name: `${game.i18n.localize("SFRPG.InventoryBulk")} ${data.bulk}`, tooltip: null} : null,
+                    data.hands ? {name: `${game.i18n.localize("SFRPG.Items.Description.Hands")} ${data.hands}`, tooltip: null} : null
+                );
+                break;
+            case "hybrid":
+                props.push(
+                    {name: game.i18n.localize("TYPES.Item.hybrid"), tooltip: null},
+                    data.bulk ? {name: `${game.i18n.localize("SFRPG.InventoryBulk")} ${data.bulk}`, tooltip: null} : null,
+                    data.hands ? {name: `${game.i18n.localize("SFRPG.Items.Description.Hands")} ${data.hands}`, tooltip: null} : null
+                );
+                break;
+            case "magic":
+                props.push(
+                    {name: game.i18n.localize("TYPES.Item.magic"), tooltip: null},
+                    data.bulk ? {name: `${game.i18n.localize("SFRPG.InventoryBulk")} ${data.bulk}`, tooltip: null} : null,
+                    data.hands ? {name: `${game.i18n.localize("SFRPG.Items.Description.Hands")} ${data.hands}`, tooltip: null} : null
+                );
+                break;
+            case "upgrade":
+                if (data.allowedArmorType === 'any') {
+                    allowedArmorType = game.i18n.localize("SFRPG.Any");
+                } else {
+                    allowedArmorType = CONFIG.SFRPG.allowedArmorTypes[data.allowedArmorType];
+                }
 
-        props.push(
-            {name: game.i18n.localize("TYPES.Item.upgrade"), tooltip: null},
-            data.slots ? {name: `${game.i18n.localize("SFRPG.Items.Upgrade.Slots")} ${data.slots}`, tooltip: null} : null,
-            {name: `${game.i18n.localize("SFRPG.Items.Upgrade.AllowedArmorType")}: ${allowedArmorType}`, tooltip: null}
-        );
-    }
+                props.push(
+                    {name: game.i18n.localize("TYPES.Item.upgrade"), tooltip: null},
+                    data.slots ? {name: `${game.i18n.localize("SFRPG.Items.Upgrade.Slots")} ${data.slots}`, tooltip: null} : null,
+                    {name: `${game.i18n.localize("SFRPG.Items.Upgrade.AllowedArmorType")}: ${allowedArmorType}`, tooltip: null}
+                );
+                break;
+            case "augmentation":
+                props.push(
+                    {name:game.i18n.localize("TYPES.Item.augmentation"), tooltip: null},
+                    data.type ? {name: CONFIG.SFRPG.augmentationTypes[data.type], tooltip: null} : null,
+                    data.system ? {name: CONFIG.SFRPG.augmentationSystems[data.system], tooltip: null} : null
+                );
+                break;
+            case "fusion":
+                props.push(
+                    {name: game.i18n.localize("TYPES.Item.fusion"), tooltip: null},
+                    data.level ? {name: `${game.i18n.localize("SFRPG.LevelLabelText")} ${data.level}`, tooltip: null} : null
+                );
+                break;
+            case "shield":
+                wieldedBonus = (data.proficient ? data.bonus.wielded : 0) || 0;
+                alignedBonus = (data.proficient ? data.bonus.aligned : 0) || 0;
 
-    _augmentationChatData(data, labels, props) {
-        props.push(
-            {name:game.i18n.localize("TYPES.Item.augmentation"), tooltip: null},
-            data.type ? {name: CONFIG.SFRPG.augmentationTypes[data.type], tooltip: null} : null,
-            data.system ? {name: CONFIG.SFRPG.augmentationSystems[data.system], tooltip: null} : null
-        );
-    }
-
-    /**
-     * Prepare chat card data for weapon fusions
-     * @param {Object} data The items data
-     * @param {Object} labels Any labels for the item
-     * @param {Object} props The items properties
-     */
-    _fusionChatData(data, labels, props) {
-        props.push(
-            {name: game.i18n.localize("TYPES.Item.fusion"), tooltip: null},
-            data.level ? {name: `${game.i18n.localize("SFRPG.LevelLabelText")} ${data.level}`, tooltip: null} : null
-        );
-    }
-
-    _starshipWeaponChatData(data, labels, props) {
-        props.push(
-            {name: game.i18n.localize("TYPES.Item.starshipWeapon"), tooltip: null},
-            data.weaponType ? {name: CONFIG.SFRPG.starshipWeaponTypes[data.weaponType], tooltip: null} : null,
-            data.class ? {name: CONFIG.SFRPG.starshipWeaponClass[data.class], tooltip: null} : null,
-            data.range ? {name: CONFIG.SFRPG.starshipWeaponRanges[data.range], tooltip: null} : null,
-            data.mount.mounted ? {name: game.i18n.localize("SFRPG.Items.ShipWeapon.Mounted"), tooltip: null} : {name: game.i18n.localize("SFRPG.Items.ShipWeapon.NotMounted"), tooltip: null},
-            data.speed > 0 ? {name: game.i18n.format("SFRPG.Items.ShipWeapon.Speed", {speed: data.speed}), tooltip: null} : null
-        );
-    }
-
-    /**
-     * Prepare chat card data for shield type items
-     * @param {Object} data The items data
-     * @param {Object} labels Any labels for the item
-     * @param {Object} props The items properties
-     */
-    _shieldChatData(data, labels, props) {
-        const wieldedBonus = (data.proficient ? data.bonus.wielded : 0) || 0;
-        const alignedBonus = (data.proficient ? data.bonus.aligned : 0) || 0;
-
-        props.push(
-            { name: game.i18n.localize("SFRPG.Items.Shield.Shield"), tooltip: null },
-            {
-                title: game.i18n.localize("SFRPG.Items.Shield.AcMaxDexLabel"),
-                name: (data.dex || 0).signedString(),
-                tooltip: null
-            },
-            {
-                title: game.i18n.localize("SFRPG.Items.Shield.ArmorCheckLabel"),
-                name: (data.acp || 0).signedString(),
-                tooltip: null
-            },
-            {
-                title: game.i18n.localize("SFRPG.Items.Shield.Bonus"),
-                name: game.i18n.format("SFRPG.Items.Shield.Bonuses", {
-                    wielded: wieldedBonus.signedString(),
-                    aligned: alignedBonus.signedString()
-                }),
-                tooltip: null
-            },
-            data.proficient
-                ? { name: game.i18n.localize("SFRPG.Items.Proficient"), tooltip: null }
-                : { name: game.i18n.localize("SFRPG.Items.NotProficient"), tooltip: null }
-        );
-    }
-
-    /* -------------------------------------------- */
-
-    /**
-     * Render a chat card for Spell type data
-     * @return {Object}
-     * @private
-     */
-    _spellChatData(data, labels, props) {
-
-        // Spell properties
-        props.push(
-            {name: labels.level, tooltip: null}
-        );
-    }
-
-    /* -------------------------------------------- */
-
-    /**
-     * Prepare chat card data for items of the "Feat" type
-     */
-    _featChatData(data, labels, props) {
-        // Feat properties
-        props.push(
-            {name: data.requirements, tooltip: null}
-        );
-    }
-
-    _themeChatData(data, labels, props) {
-        props.push(
-            {name: game.i18n.localize("TYPES.Item.theme"), tooltip: null},
-            data.abilityMod.ability ? {name: `Ability ${CONFIG.SFRPG.abilities[data.abilityMod.ability]}`, tooltip: null} : null,
-            data.skill ? {name: `Skill ${CONFIG.SFRPG.skills[data.skill]}`, tooltip: null} : null
-        );
-    }
-
-    _raceChatData(data, labels, props) {
-        props.push(
-            {name: game.i18n.localize("TYPES.Item.race"), tooltip: null},
-            data.type ? {name: data.type, tooltip: null} : null,
-            data.subtype ? {name: data.subtype, tooltip: null} : null
-        );
-    }
-
-    _vehicleAttackChatData(data, label, props) {
-        props.push(
-            data.ignoresHardness ? game.i18n.localize("SFRPG.VehicleAttackSheet.Details.IgnoresHardness") + " " + data.ignoresHardness : null
-        );
-    }
-
-    _vehicleSystemChatData(data, label, props) {
-
-        if (data.senses &&  data.senses.usedForSenses) {
-            // We deliminate the senses by `,` and present each sense as a separate property
-            const sensesDeliminated = data.senses.senses.split(",");
-            for (let index = 0; index < sensesDeliminated.length; index++) {
-                const sense = sensesDeliminated[index];
-                props.push(sense);
-            }
+                props.push(
+                    { name: game.i18n.localize("SFRPG.Items.Shield.Shield"), tooltip: null },
+                    {
+                        title: game.i18n.localize("SFRPG.Items.Shield.AcMaxDexLabel"),
+                        name: (data.dex || 0).signedString(),
+                        tooltip: null
+                    },
+                    {
+                        title: game.i18n.localize("SFRPG.Items.Shield.ArmorCheckLabel"),
+                        name: (data.acp || 0).signedString(),
+                        tooltip: null
+                    },
+                    {
+                        title: game.i18n.localize("SFRPG.Items.Shield.Bonus"),
+                        name: game.i18n.format("SFRPG.Items.Shield.Bonuses", {
+                            wielded: wieldedBonus.signedString(),
+                            aligned: alignedBonus.signedString()
+                        }),
+                        tooltip: null
+                    },
+                    data.proficient
+                        ? { name: game.i18n.localize("SFRPG.Items.Proficient"), tooltip: null }
+                        : { name: game.i18n.localize("SFRPG.Items.NotProficient"), tooltip: null }
+                );
+                break;
+            case "spell":
+                props.push(
+                    {name: labels.level, tooltip: null}
+                );
+                break;
+            case "feat":
+                props.push(
+                    {name: data.requirements, tooltip: null}
+                );
+                break;
+            case "theme":
+                props.push(
+                    {name: game.i18n.localize("TYPES.Item.theme"), tooltip: null},
+                    data.abilityMod.ability ? {name: `Ability ${CONFIG.SFRPG.abilities[data.abilityMod.ability]}`, tooltip: null} : null,
+                    data.skill ? {name: `Skill ${CONFIG.SFRPG.skills[data.skill]}`, tooltip: null} : null
+                );
+                break;
+            case "race":
+                props.push(
+                    {name: game.i18n.localize("TYPES.Item.race"), tooltip: null},
+                    data.type ? {name: data.type, tooltip: null} : null,
+                    data.subtype ? {name: data.subtype, tooltip: null} : null
+                );
+                break;
+            case "starshipWeapon":
+                props.push(
+                    {name: game.i18n.localize("TYPES.Item.starshipWeapon"), tooltip: null},
+                    data.weaponType ? {name: CONFIG.SFRPG.starshipWeaponTypes[data.weaponType], tooltip: null} : null,
+                    data.class ? {name: CONFIG.SFRPG.starshipWeaponClass[data.class], tooltip: null} : null,
+                    data.range ? {name: CONFIG.SFRPG.starshipWeaponRanges[data.range], tooltip: null} : null,
+                    data.mount.mounted ? {name: game.i18n.localize("SFRPG.Items.ShipWeapon.Mounted"), tooltip: null} : {name: game.i18n.localize("SFRPG.Items.ShipWeapon.NotMounted"), tooltip: null},
+                    data.speed > 0 ? {name: game.i18n.format("SFRPG.Items.ShipWeapon.Speed", {speed: data.speed}), tooltip: null} : null
+                );
+                break;
+            case "vehicleAttack":
+                props.push(
+                    data.ignoresHardness ? game.i18n.localize("SFRPG.VehicleAttackSheet.Details.IgnoresHardness") + " " + data.ignoresHardness : null
+                );
+                break;
+            case "vehicleSystem":
+                if (data.senses &&  data.senses.usedForSenses) {
+                    // We deliminate the senses by `,` and present each sense as a separate property
+                    const sensesDeliminated = data.senses.senses.split(",");
+                    for (let index = 0; index < sensesDeliminated.length; index++) {
+                        const sense = sensesDeliminated[index];
+                        props.push(sense);
+                    }
+                }
+                break;
+            default:
+                break;
         }
     }
 
     /* -------------------------------------------- */
     /*  Item Rolls - Attack, Damage, Saves, Checks  */
     /* -------------------------------------------- */
+
+    /**
+     * An updated version of rollAttack
+     * @param {Object} options data to pass to the roll to determine specific behavior
+     */
+    async rollAttackNew(options = {}) {
+        console.log("hello");
+    }
 
     /**
      * Place an attack roll using an item (weapon, feat, spell, or equipment)

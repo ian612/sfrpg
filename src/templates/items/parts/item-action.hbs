@@ -44,38 +44,57 @@
                 </div>
             {{/if}}
 
-            {{!-- Saving Throw --}}
-            <div class="form-group input-select">
-                <label>{{ localize "SFRPG.Items.Action.SavingThrow" }}</label>
-                <div class="form-fields">
-                    <input type="text" class="wide-form-field" name="system.save.dc" value="{{itemData.save.dc}}" data-dtype="String" placeholder="{{placeholders.saveDC.formula}}"/>
-                    <select name="system.save.type">
-                        {{selectOption "" "" selected=itemData.save.type}}
-                        {{selectOptions config.saves selected=itemData.save.type}}
-                    </select>
-                    <select name="system.save.descriptor">
-                        {{selectOptions config.saveDescriptors selected=itemData.save.descriptor}}
-                    </select>
-                </div>
-            </div>
-
             {{!-- Skill Check --}}
-            <div class="form-group input-select">
-                <label>{{localize "SFRPG.Items.Action.SkillCheck"}}</label>
-                <div class="form-fields">
-                    <input type="text" class="wide-form-field" name="system.skillCheck.dc" value="{{itemData.skillCheck.dc}}" data-dtype="String" placeholder="{{placeholders.saveDC.formula}}"/>
-                    <select name="system.skillCheck.type">
-                        {{selectOption "" "" selected=itemData.skillCheck.type}}
-                        {{selectOptions config.skills selected=itemData.skillCheck.type}}
-                    </select>
+            {{#if (or (eq itemData.actionType "skill") (eq itemData.actionType "util"))}}
+                <div class="form-group input-select">
+                    <label>{{localize "SFRPG.Items.Action.SkillCheck"}}</label>
+                    <div class="form-fields">
+                        <input type="text" class="wide-form-field" name="system.skillCheck.dc" value="{{itemData.skillCheck.dc}}" data-dtype="String" placeholder="{{placeholders.saveDC.formula}}"/>
+                        <select name="system.skillCheck.type">
+                            {{selectOption "" "" selected=itemData.skillCheck.type}}
+                            {{selectOptions config.skills selected=itemData.skillCheck.type}}
+                        </select>
+                    </div>
                 </div>
-            </div>
+            {{/if}}
 
             {{!-- Other Formula --}}
-            <div class="form-group">
-                <label>{{ localize "SFRPG.Items.Action.OtherFormula" }}</label>
-                <div class="form-fields">
-                    <input type="text" name="system.formula" value="{{itemData.formula}}" placeholder="Formula"/>
+            {{#if (or (eq itemData.actionType "other") (eq itemData.actionType "util"))}}
+                <div class="form-group">
+                    <label>{{ localize "SFRPG.Items.Action.OtherFormula" }}</label>
+                    <div class="form-fields">
+                        <input type="text" name="system.formula" value="{{itemData.formula}}" placeholder="Formula"/>
+                    </div>
+                </div>
+            {{/if}}
+
+            {{!-- Saving Throw Information --}}
+            <div class="bubble">
+                <div class="bubble-header">{{ localize "SFRPG.Items.Action.SavingThrow" }}</div>
+                <div class="bubble-info">
+                    <div class="form-group input-select">
+                        <label>Formula</label>
+                        <div class="form-fields">
+                            {{log this}}
+                            <input type="text" class="wide-form-field" name="system.save.dc" value="{{itemData.save.dc}}" data-dtype="String" placeholder="{{placeholders.saveDC.formula}}"/>
+                            <select name="system.save.type">
+                                {{selectOption "" "" selected=itemData.save.type}}
+                                {{selectOptions config.saves selected=itemData.save.type}}
+                            </select>
+                            <select name="system.save.descriptor">
+                                {{selectOptions config.saveDescriptors selected=itemData.save.descriptor}}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group input-select">
+                        <label data-tooltip="If no Formula is entered, the system automatically calculates the Save DC using this ability. If a Formula is entered, this selection has no effect.">Ability Score For Automatic DC Calculation</label>
+                        <div class="form-fields">
+                            <select name="system.save.ability">
+                                {{selectOption "" "Default Ability" selected=itemData.save.ability}}
+                                {{selectOptions config.abilities selected=itemData.save.ability}}
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
 

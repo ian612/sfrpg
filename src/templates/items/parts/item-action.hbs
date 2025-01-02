@@ -45,7 +45,7 @@
             {{/if}}
 
             {{!-- Skill Check --}}
-            {{#if (or (eq itemData.actionType "skill") (eq itemData.actionType "util"))}}
+            {{#if (or (or (eq itemData.actionType "skill") (eq itemData.actionType "util")) (eq itemData.actionType "skill"))}}
                 <div class="form-group input-select">
                     <label>{{localize "SFRPG.Items.Action.SkillCheck"}}</label>
                     <div class="form-fields">
@@ -59,7 +59,7 @@
             {{/if}}
 
             {{!-- Other Formula --}}
-            {{#if (or (eq itemData.actionType "other") (eq itemData.actionType "util"))}}
+            {{#if (eq itemData.actionType "other")}}
                 <div class="form-group">
                     <label>{{ localize "SFRPG.Items.Action.OtherFormula" }}</label>
                     <div class="form-fields">

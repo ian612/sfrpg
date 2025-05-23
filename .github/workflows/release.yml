@@ -31,28 +31,28 @@ jobs:
       - run: npm run copyLocalization
 
       # Substitute the Manifest and Download URLs in the module.json
-      - name: Update settings.json url
+      - name: Update system.json url
         uses: jossef/action-set-json-field@v2.1
         with:
-          file: src/system.json
+          file: static/system.json
           field: url
           value: https://github.com/${{github.repository}}
-      - name: Update settings.json manifest
+      - name: Update system.json manifest
         uses: jossef/action-set-json-field@v2.1
         with:
-          file: src/system.json
+          file: static/system.json
           field: manifest
           value: https://github.com/${{github.repository}}/releases/latest/download/module.json
-      - name: Update settings.json version
+      - name: Update system.json version
         uses: jossef/action-set-json-field@v2.1
         with:
-          file: src/system.json
+          file: static/system.json
           field: version
           value: ${{github.event.release.tag_name}}
-      - name: Update settings.json download
+      - name: Update system.json download
         uses: jossef/action-set-json-field@v2.1
         with:
-          file: src/system.json
+          file: static/system.json
           field: download
           value: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/sfrpg-${{github.event.release.tag_name}}.zip
 

@@ -20,8 +20,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
+  # This workflow contains a single job called "increment"
+  increment:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -45,7 +45,7 @@ jobs:
         with:
           file: static/system.json
           field: manifest
-          value: https://github.com/${{github.repository}}/releases/latest/download/module.json
+          value: https://github.com/${{github.repository}}/releases/latest/download/system.json
 
       - name: Update system.json version number
         uses: jossef/action-set-json-field@v2.1

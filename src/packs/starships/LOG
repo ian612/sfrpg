@@ -1,5 +1,5 @@
-2025/01/30-13:56:47.606 1518 Recovering log #3
-2025/01/30-13:56:47.617 1518 Level-0 table #5: started
-2025/01/30-13:56:47.646 1518 Level-0 table #5: 2506390 bytes OK
-2025/01/30-13:56:47.650 1518 Delete type=0 #3
-2025/01/30-13:56:47.650 1518 Delete type=3 #2
+2025/05/23-06:42:37.212648 7fbbf5fbd6c0 Recovering log #3
+2025/05/23-06:42:37.223863 7fbbf5fbd6c0 Level-0 table #5: started
+2025/05/23-06:42:37.251441 7fbbf5fbd6c0 Level-0 table #5: 2503630 bytes OK
+2025/05/23-06:42:37.253857 7fbbf5fbd6c0 Delete type=3 #2
+2025/05/23-06:42:37.253894 7fbbf5fbd6c0 Delete type=0 #3

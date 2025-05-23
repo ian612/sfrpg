@@ -14,7 +14,7 @@
     "maximum": 12
   },
   "url": "https://github.com/ian612/sfrpg",
-  "manifest": "https://github.com/ian612/sfrpg/releases/latest/download/module.json",
+  "manifest": "https://github.com/ian612/sfrpg/releases/latest/download/system.json",
   "download": "https://github.com/ian612/sfrpg/releases/download/0.28.0/sfrpg-0.28.0.zip",
   "flags": {
     "sfrpg": {

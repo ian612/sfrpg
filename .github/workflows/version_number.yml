@@ -1,6 +1,5 @@
-# This is a basic workflow that is manually triggered
-
-name: Increment Development Version
+# Increments the development version to a new one, preparing for another round of development
+name: Increment Version Number
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
@@ -20,8 +19,8 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
+  # This workflow contains a single job called "increment"
+  increment:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -45,7 +44,7 @@ jobs:
         with:
           file: static/system.json
           field: manifest
-          value: https://github.com/${{github.repository}}/releases/latest/download/module.json
+          value: https://github.com/${{github.repository}}/releases/latest/download/system.json
 
       - name: Update system.json version number
         uses: jossef/action-set-json-field@v2.1

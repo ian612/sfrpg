@@ -54,7 +54,7 @@ jobs:
         with:
           file: src/system.json
           field: download
-          value: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/module.zip
+          value: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/sfrpg-${{github.event.release.tag_name}}.zip
 
       # build src into dist
       - run: npm run build

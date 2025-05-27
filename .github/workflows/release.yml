@@ -50,6 +50,17 @@ jobs:
             # create package
             - run: npm run package
 
+            # delete old release files, if they're present
+            - name: Delete old release assets
+              uses: mknejp/delete-release-assets@v1
+              with:
+                  token: ${{ github.token }}
+                  tag: ${{github.event.release.tag_name}}
+                  fail-if-no-assets: false
+                  assets: |
+                      *.zip
+                      *.json
+
             # Update the release with the correct files we just generated
             - name: Update Release with Files
               id: create_version_release

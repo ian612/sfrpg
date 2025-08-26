@@ -2,6 +2,7 @@
   "_id": "FZUa2TMHcBArEmAQ",
   "name": "Bend Reality",
   "type": "spell",
+  "folder": "YFUdhCxA88Af1Uy1",
   "img": "systems/sfrpg/icons/spells/perfect_gravity.webp",
   "system": {
     "type": "",
@@ -50,6 +51,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -69,6 +71,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -87,6 +90,7 @@
     },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },

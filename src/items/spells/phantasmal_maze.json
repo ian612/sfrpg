@@ -2,6 +2,7 @@
   "_id": "yipFwwHzr12ehRPG",
   "name": "Phantasmal Maze",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "icons/magic/nature/trap-spikes-thorns-green.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "sphere",
       "units": "ft",
-      "value": 15
+      "value": "15"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -50,6 +52,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -69,6 +72,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -119,6 +123,11 @@
       "descriptor": "partial"
     },
     "school": "ill",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "IS pg. 95",
     "sr": true,
     "target": {
@@ -126,7 +135,7 @@
       "value": ""
     },
     "uses": {
-      "max": 0,
+      "max": "0",
       "per": "",
       "value": 0
     }

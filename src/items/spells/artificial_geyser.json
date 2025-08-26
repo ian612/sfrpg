@@ -2,6 +2,7 @@
   "_id": "SireQqbP3SJu8js0",
   "name": "Artificial Geyser",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "icons/magic/water/beam-ice-impact.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "line",
       "units": "ft",
-      "value": 20
+      "value": "20"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -42,6 +43,7 @@
           "name": "",
           "formula": "3d8",
           "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -58,6 +60,7 @@
           "name": "Burning",
           "formula": "1d6",
           "group": null,
+          "isPrimarySection": false,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -70,7 +73,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -83,6 +87,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -102,6 +107,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -143,7 +149,7 @@
       "additional": "",
       "per": "",
       "units": "ft",
-      "value": 60
+      "value": "60"
     },
     "rollNotes": "",
     "save": {
@@ -152,6 +158,11 @@
       "descriptor": "half"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "IS pg. 115",
     "sr": true,
     "target": {
@@ -159,7 +170,7 @@
       "value": ""
     },
     "uses": {
-      "max": 0,
+      "max": "0",
       "per": "",
       "value": 0
     }

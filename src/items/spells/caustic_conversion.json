@@ -2,6 +2,7 @@
   "_id": "nK0OS9Fn5ueJ3aOi",
   "name": "Caustic Conversion",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/caustic_conversion.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "cylinder",
-      "units": "medium",
-      "value": 100
+      "units": "ft",
+      "value": "100"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -41,6 +42,8 @@
         {
           "name": "",
           "formula": "4d4",
+          "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": true,
             "bludgeoning": false,
@@ -53,7 +56,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -63,9 +67,49 @@
       "unidentified": "",
       "value": "<p>You fling magical nanites that convert water vapor around your target into deadly acid. Make a ranged attack roll against your target’s EAC. If you hit, the target takes 4d4 acid damage and it takes 5 additional acid damage at the end of its turn each round for the spell’s duration.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "1 + 1*floor(@details.cl.value/3)"
     },
@@ -98,6 +142,11 @@
       "descriptor": "negate"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "CRB pg. 342",
     "sr": true,
     "target": {
@@ -105,7 +154,7 @@
       "value": "one creature or object"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

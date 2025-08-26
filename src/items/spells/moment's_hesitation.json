@@ -2,6 +2,7 @@
   "_id": "L63LiftbLndoJhHr",
   "name": "Moment's Hesitation",
   "type": "spell",
+  "folder": "GLXwds4O0VAbHzsX",
   "img": "systems/sfrpg/icons/spells/mind-probe.webp",
   "system": {
     "type": "",
@@ -51,6 +52,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -70,6 +72,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -88,6 +91,7 @@
     },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "1"
     },
@@ -122,7 +126,8 @@
     "school": "enc",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "EN pg. 123",
     "sr": false,

@@ -2,6 +2,7 @@
   "_id": "1Bp9w3mHIGlo5s7e",
   "name": "Memory Lapse",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/memory_lapse.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>You inspire a moment of confusion that causes a creature to forget what occurred over the last round if it fails its saving throw. If you have failed a skill check against that target since the beginning of your last turn, you can attempt that check again without a penalty (if you have the appropriate number of actions remaining), or simply avoid the normal consequences of that failed skill check. If the target was in the middle of a task that requires longer than a single round to accomplish, it must begin again. If you target a creature casting a spell with a casting time of 1 round or longer, they must attempt a second Will save to continue casting the spell or the spell fails.</p>\n<p>A creature you have injured in the last hour gains a +4 circumstance bonus to its Will saving throw.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -82,6 +123,11 @@
       "descriptor": "negate"
     },
     "school": "enc",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "AP #25 pg. 53",
     "sr": true,
     "target": {
@@ -89,7 +135,7 @@
       "value": "one living creature"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

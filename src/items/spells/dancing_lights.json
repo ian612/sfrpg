@@ -2,6 +2,7 @@
   "_id": "rSWg5JnN3mxzkatD",
   "name": "Dancing Lights",
   "type": "spell",
+  "folder": "GLXwds4O0VAbHzsX",
   "img": "systems/sfrpg/icons/spells/dancing_light.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>You create up to four lights that resemble small headlights or flashlights. The dancing lights must stay within a 10-foot-radius area in relation to each other but otherwise move as you desire: forward or back, up or down, straight or turning corners, or the like. The lights can move up to 100 feet per round. A light winks out if the distance between you and it exceeds the spell’s range.</p>\n<p>You can have only one <em>dancing lights</em> spell active at a time. If you cast this spell while another casting is still in effect, the previous casting is dispelled.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
       "units": "minute",
@@ -89,7 +129,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

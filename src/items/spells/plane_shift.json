@@ -2,6 +2,7 @@
   "_id": "yjClpQv6CCrRE4EC",
   "name": "Plane Shift",
   "type": "spell",
+  "folder": "1B1qsQ9pjPDXp9hO",
   "img": "systems/sfrpg/icons/spells/plane_shift.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>You move yourself or some other creature to another plane of existence or alternate dimension. If several willing or unconscious creatures are linked by hand in a circle, as many as eight can be affected by a single casting of&nbsp;plane shift. Arriving at a precise location on the intended plane is nigh impossible. From the Material Plane, you can reach any other plane (except for @UUID[Compendium.sfrpg.setting.Item.nb5A5e7HqTnvVjtX]{The Drift}), though you appear 5 to 500 miles (5d%) from the last place one of the targets (your choice) was located last time that target traveled to that plane. If it’s the first time traveling to a particular plane for all targets, you appear at a random location on the plane, though you can use other means of transit, such as&nbsp;interplanetary teleport, to travel on the new plane. Mystics must have an object attuned to a specific plane or native to that plane in order to use&nbsp;plane shift&nbsp;to travel to a plane. A technomancer requires a planar navigational program for a specific plane in order to travel to that plane with&nbsp;plane shift. Special rituals, jealously hoarded by powerful technomancers and mystics, can allow you to travel to specific locations on the chosen plane, or even to unknown worlds.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -82,6 +123,11 @@
       "descriptor": "negate"
     },
     "school": "con",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "CRB pg. 369",
     "sr": true,
     "target": {
@@ -89,7 +135,7 @@
       "value": "one creature, or up to eight willing or unconscious creatures"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

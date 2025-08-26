@@ -2,6 +2,7 @@
   "_id": "muDgBqHYvCkPUEoZ",
   "name": "Daegoxian Spore Cloud",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "systems/sfrpg/icons/spells/daegoxian_spore_cloud.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "sphere",
       "units": "ft",
-      "value": 20
+      "value": "20"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,9 +49,49 @@
       "unidentified": "",
       "value": "<p>You summon a concentrated cloud of Daegoxian spores, which renders living creatures docile and agreeable. Any creature that enters the cloud or begins its turn within the cloud must succeed at a Will save or be @UUID[Compendium.sfrpg.conditions.Item.7PPRS6krnvaTHbxh]{Fascinated} for [[/r 1d4]] rounds. A creature that succeeds at this save is immune to the effects of Daegoxian spore cloud for 24 hours.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -82,6 +124,11 @@
       "descriptor": "negate"
     },
     "school": "con",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "NS pg. 155",
     "sr": false,
     "target": {
@@ -89,7 +136,7 @@
       "value": "all creatures in the cloud"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

@@ -2,6 +2,7 @@
   "_id": "yBQ7jy3qf2Q9wkRc",
   "name": "Quick Change",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/quick_change.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>Adjacent creatures who are unaware of your true form are @UUID[Compendium.sfrpg.conditions.Item.MZ8OoH1GE9qDMyCD]{Flat-footed} until the beginning of their next turn. You can cast this spell if you are attacked, or if you attack. If you have the shapechanger subtype or are benefiting from a polymorph effect, you revert to your true form.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -89,7 +129,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

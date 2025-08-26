@@ -2,6 +2,7 @@
   "_id": "rkVTlYlFQESVWxbJ",
   "name": "Modify Outcome",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "systems/sfrpg/icons/spells/modify_outcome.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>You peer across the multiverse at the possible outcomes for this timeline, watching fate branch outward. When an ally within range fails an attack roll, skill check, saving throw, or ability check, you can spend 1 Resolve Point to attempt to shift their reality to one where they succeed instead. That ally can immediately reroll the failed check. A creature can’t benefit from this spell again until they take a 10-minute rest to recover Stamina Points.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -82,6 +123,11 @@
       "descriptor": "harmless"
     },
     "school": "div",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "NS pg. 156",
     "sr": false,
     "target": {
@@ -89,7 +135,7 @@
       "value": "one ally"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

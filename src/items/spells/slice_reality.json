@@ -2,6 +2,7 @@
   "_id": "MmPKosFJAHgEbz6u",
   "name": "Slice Reality",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/slice_reality.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -39,11 +40,24 @@
     "damage": {
       "parts": [
         {
+          "name": "",
           "formula": "2d6",
-          "operator": "",
-          "types": {}
+          "group": null,
+          "isPrimarySection": true,
+          "types": {
+            "acid": false,
+            "bludgeoning": false,
+            "cold": false,
+            "electricity": false,
+            "fire": false,
+            "healing": false,
+            "piercing": false,
+            "slashing": false,
+            "sonic": false
+          }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -53,7 +67,46 @@
       "unidentified": "",
       "value": "<p>You expose targets to churning entropy which turns parts of their body sickly and black. Each target takes 2d6 damage. A successful Fortitude save halves this damage.</p>\n<p>You can focus on only one target rather than multiple. If you target only a single creature with this spell, the target is also staggered for a number of rounds equal to your caster level.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -88,6 +141,11 @@
       "descriptor": "half"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "COM pg. 141",
     "sr": true,
     "target": {
@@ -95,7 +153,7 @@
       "value": "1 creature + 1 creature/3 levels"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

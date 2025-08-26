@@ -2,6 +2,7 @@
   "_id": "s7C69WOi4mbVo3gv",
   "name": "Groundling",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "systems/sfrpg/icons/spells/grounding.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>The target’s body forms an exoskeleton, and its appendages such as hands and feet become broad and pointed like spades. Armor that covers any of these appendages functions normally and molds to fit the appendages’ new shape. The target gains DR 5/ bludgeoning and a burrow speed equal to its land speed. This spell grants no ability to breathe while buried, so a breathing creature without @UUID[Compendium.sfrpg.rules.Item.WP7hddXW4mLXXXOg]{Environmental protections} might be at risk of suffocation.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": ""
     },
     "formula": "",
@@ -73,7 +113,7 @@
       "additional": "",
       "per": "",
       "units": "ft",
-      "value": null
+      "value": ""
     },
     "rollNotes": "",
     "save": {
@@ -89,7 +129,7 @@
       "value": "one willing creature touched"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

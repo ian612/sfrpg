@@ -2,6 +2,7 @@
   "_id": "iDTjFy4obHpZ3nBN",
   "name": "Wall Of Earth",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "icons/magic/earth/barrier-stone-explosion-debris.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": true,
       "shape": "cube",
       "units": "ft",
-      "value": 5
+      "value": "5"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>An earthen barrier springs into existence, anchored to surrounding solid surfaces or, at least, supported by a firm foundation. The stress of casting this spell requires you to spend 1 Resolve Point. The wall fails to manifest in any area already occupied by a creature or object, or where it’s likely to fall or collapse. However, the wall can fit into any space of surrounding nonliving material if its area is sufficient to do so.</p>\n<p>A typical wall of earth is 1 foot thick, but you can double the thickness by halving the area, or vice versa. You can crudely shape the wall in almost any way you desire, provided the shape you choose has enough support. Each 5-foot section of the wall has hardness 0 and 5 Hit Points per inch of thickness. A section of wall is breached if reduced to 0 Hit Points. If a creature tries to break through the wall with a single attack, the DC for the Strength check is 20.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -89,7 +129,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

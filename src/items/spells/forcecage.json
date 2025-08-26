@@ -2,6 +2,7 @@
   "_id": "7SbZvVGYxsUAqTuP",
   "name": "Forcecage",
   "type": "spell",
+  "folder": "1B1qsQ9pjPDXp9hO",
   "img": "systems/sfrpg/icons/classes/mechanic_trick.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "other",
       "units": "ft",
-      "value": 20
+      "value": "20"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,9 +49,49 @@
       "unidentified": "",
       "value": "<p>You create an immobile, invisible but hollow cube of force composed of bars or solid walls (your choice). Creatures within the area are caught and contained. Creatures partially within the area when the cage appears can attempt a Reflex saving throw to avoid being shunted into the cage in the nearest open space. Otherwise, the creature is shunted out of the cage into the nearest open space. You can allow creatures to be shunted out even when they fail the save. If the cage is too small to accommodate creatures inside, the spell fails. The force walls or bars extend into the Ethereal Plane, blocking ethereal travel. The cage has walls of force on every side. A barred version has bands, each a half-inch wide, with half-inch gaps between them— creatures within the cage have improved cover against attacks coming from outside the cage. The cell version has no gaps. This spell otherwise functions per the parameters of the @UUID[Compendium.sfrpg.spells.Item.dVM22xx7CiYWY8XX]{Wall of Force} spell.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -82,6 +124,11 @@
       "descriptor": "partial"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "GM pg. 74",
     "sr": false,
     "target": {
@@ -89,7 +136,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

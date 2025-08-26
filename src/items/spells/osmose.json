@@ -2,6 +2,7 @@
   "_id": "VqjCAsyUdpynXWS0",
   "name": "Osmose",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/classes/akashic_knownledge.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>Initially developed by impatient bantrid students, this spell has grown in popularity among those that want to consume a lot of information quickly. You touch one object and concentrate on a single data set contained within the object, such as a story, email, file, video, or website. You understand the gist of the data set and can quickly locate the most relevant pages or sections to your search. If the data set is written in a language you don’t know, or you attempt to gain information from a computer you don’t have access to, this spell automatically fails.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -89,7 +129,7 @@
       "value": "one data set contained within a touched object"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

@@ -2,6 +2,7 @@
   "_id": "uk49OnFMhCg9CSv1",
   "name": "Detect Radiation",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/detect_radiation.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "sphere",
       "units": "ft",
-      "value": 120
+      "value": "120"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>You detect radiation in the surrounding area, and you can determine the specific intensity of the radiation of one area or object within the spell’s area each round without taking an action (see Radiation on page 403 for more details). The spell can penetrate barriers, but 3 feet of dirt or wood, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or any force field blocks it.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "minute",
@@ -89,7 +129,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

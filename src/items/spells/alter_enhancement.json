@@ -2,6 +2,7 @@
   "_id": "NY8r5PjgPtJrfls3",
   "name": "Alter Enhancement",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/optimize_technology.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,9 +49,49 @@
       "unidentified": "",
       "value": "<p>You tap into the multiverse and find a reality with a forgotten object similar to the target of this spell, swapping that item with the target item. For the duration of the spell, you can select one weapon fusion or armor upgrade on the target item to replace with a weapon fusion or armor upgrade from the Core Rulebook. A fusion selected this way must be the same level of the original or lower. An upgrade selected this way must be the same type (hybrid, magical, or technological) as the original, be of the same level or lower. and occupy the same number of slots or fewer. At the end of the spell’s duration, the original item returns as it was when swapped, including its number of remaining charges, if any.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -82,6 +124,11 @@
       "descriptor": "object"
     },
     "school": "trs",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "NS pg. 155",
     "sr": true,
     "target": {
@@ -89,7 +136,7 @@
       "value": "one weapon with at least one weapon fusion or one suit of armor with at least one armor upgrade"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

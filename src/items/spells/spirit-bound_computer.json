@@ -2,6 +2,7 @@
   "_id": "y8gV7OICXyfxlSlO",
   "name": "Spirit-bound Computer",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/spirit_bound_computer.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>You divert a benevolent spirit from the River of Souls to inhabit a computer. You can communicate with the spirit while you concentrate; the spirit is trained in Computers and can make Computers checks you request with a total bonus equal to 3 + your caster level + your key ability score modifier.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "concentration, up to 1 minute/level"
     },
     "formula": "",
@@ -89,7 +129,7 @@
       "value": "one computer system"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

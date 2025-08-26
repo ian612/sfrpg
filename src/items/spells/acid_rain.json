@@ -2,6 +2,7 @@
   "_id": "3eLoVyCaQTDB1I6h",
   "name": "Acid Rain",
   "type": "spell",
+  "folder": "YFUdhCxA88Af1Uy1",
   "img": "systems/sfrpg/icons/spells/acid_rain.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "cylinder",
       "units": "ft",
-      "value": 20
+      "value": "20"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -41,6 +42,8 @@
         {
           "name": "",
           "formula": "3d6",
+          "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": true,
             "bludgeoning": false,
@@ -53,7 +56,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -63,9 +67,49 @@
       "unidentified": "",
       "value": "<p>You pull a downpour of elemental precipitation from an alternate reality. You then direct this acid rain to pour only onto your enemies, dealing them 3d6 acid damage each round. The acid splashes into and burns your foes’ eyes, coats them in slime, and clouds their other senses. Enemies must attempt a Fortitude save when exposed to the spell. On a failure, the creature has a 50% miss chance for its attacks while in the area. The rain causes spellcasters who fail the save to have a 20% chance of losing any spell they attempt to cast from within the area. When this spell ends, a thunderclap causes enemies still in the area who failed their Fortitude saves to be @UUID[Compendium.sfrpg.conditions.Item.aAQ6SW6iK0EVq8Ce]{Staggered} for 1 round.</p>\n<p>As a standard action, you can change the rain, causing it to deal a different type of energy damage, such as fiery sparks that deal fire damage or shards of ice that deal cold damage. This change in damage types leaves secondary effects unchanged. When the spell ends, the rain leaves no aftereffects.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -98,6 +142,11 @@
       "descriptor": "partial"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "COM pg. 133",
     "sr": false,
     "target": {
@@ -105,7 +154,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

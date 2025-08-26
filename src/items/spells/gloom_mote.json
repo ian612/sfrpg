@@ -2,6 +2,7 @@
   "_id": "AInneaaTOM6vd3a7",
   "name": "Gloom Mote",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/gloom_mote.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,9 +48,49 @@
       "unidentified": "",
       "value": "<p>You draw forth the energy of the Shadow Plane and form it into a floating mote of gloom. The mote creates dim light in a 5-foot radius. It also lowers the light level within 20 feet of it by one step, down to dim. As a move action, you can move the mote up to 60 feet in any direction. The mote winks out if the distance between you and it exceeds the spell’s range. You can have only one&nbsp;gloom mote&nbsp;spell active at a time. If you cast this spell while another&nbsp;gloom mote&nbsp;of yours is still in effect, the previous casting is dispelled.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -73,7 +114,7 @@
       "additional": "10",
       "per": "level",
       "units": "ft",
-      "value": 100
+      "value": "100"
     },
     "rollNotes": "",
     "save": {
@@ -89,7 +130,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

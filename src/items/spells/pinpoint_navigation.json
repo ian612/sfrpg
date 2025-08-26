@@ -2,6 +2,7 @@
   "_id": "e6iK8NCKZTNkDffh",
   "name": "Pinpoint Navigation",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "systems/sfrpg/icons/spells/know_coordinates.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>You focus your mind on time and space around you, gaining supernatural insight about your physical place in the universe. You gain a +10 bonus to Piloting checks to navigate and astrogate, and you can plot a course in half the normal time.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "hour",
@@ -89,7 +129,7 @@
       "value": "one humanoid"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

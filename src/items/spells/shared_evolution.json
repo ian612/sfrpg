@@ -2,6 +2,7 @@
   "_id": "FtuMUD0yoj7yygsf",
   "name": "Shared Evolution",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/baleful_polymorph_mass.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,9 +48,49 @@
       "unidentified": "",
       "value": "<p>You must be a barathu to learn this spell. When you cast it, you activate your early stage adaptation while also extending it to your allies. You can’t have used early stage adaptation since the start of your last turn, and once you cast this spell, you can’t use it until the start of your next turn. When you choose the adaptation, it applies both to you and to all the spell’s targets.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "1"
     },
@@ -73,7 +114,7 @@
       "additional": "",
       "per": "",
       "units": "ft",
-      "value": 30
+      "value": "30"
     },
     "rollNotes": "",
     "save": {
@@ -89,7 +130,7 @@
       "value": "you and up to one willing creature/level within 30 ft."
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

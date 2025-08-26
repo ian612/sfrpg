@@ -2,6 +2,7 @@
   "_id": "tzBzAK2mkdtaTRXw",
   "name": "Remove Condition, Lesser",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/remove_condition_lesser.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "touch",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>You remove any one of the following conditions affecting the target: <strong>@UUID[Compendium.sfrpg.conditions.Item.nywSVEeDvp1bk7L3]{Shaken}, @UUID[Compendium.sfrpg.conditions.Item.ZacF0l6IwqBwToTJ]{Sickened}, or @UUID[Compendium.sfrpg.conditions.Item.aAQ6SW6iK0EVq8Ce]{Staggered}</strong>. If the condition is the result of a @UUID[Compendium.sfrpg.rules.JaRMioj4isNp7r1P.JournalEntryPage.gBhZDjh30JEyh7DY]{Disease} or another ongoing effect, this spell removes the condition but does not cure the @UUID[Compendium.sfrpg.rules.JaRMioj4isNp7r1P.JournalEntryPage.gBhZDjh30JEyh7DY]{Disease} or ongoing effect, and the target can regain the condition from that effect as normal, potentially immediately.&nbsp;Lesser remove condition&nbsp;also doesn’t cure or remove other damage or conditions the target is suffering from any source, even the same source that caused the removed condition. Since this spell’s duration is instantaneous, it does not prevent the target from gaining the condition again.</p>\n<p>Casting this spell doesn’t provoke attacks of opportunity.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -72,8 +113,8 @@
     "range": {
       "additional": "",
       "per": "",
-      "units": null,
-      "value": null
+      "units": "none",
+      "value": ""
     },
     "rollNotes": "",
     "save": {
@@ -82,6 +123,11 @@
       "descriptor": "harmless"
     },
     "school": "con",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "CRB pg. 373",
     "sr": true,
     "target": {
@@ -89,7 +135,7 @@
       "value": "one creature"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

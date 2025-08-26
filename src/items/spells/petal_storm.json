@@ -2,6 +2,7 @@
   "_id": "8FkqnZQI2Ql5m2iR",
   "name": "Petal Storm",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "systems/sfrpg/icons/spells/charming_veneer.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "sphere",
       "units": "ft",
-      "value": 5
+      "value": "5"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -41,6 +42,8 @@
         {
           "name": "",
           "formula": "3d6",
+          "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -53,7 +56,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -63,10 +67,49 @@
       "unidentified": "",
       "value": "<p>You conjure a 5-foot storm of leaves and flower petals from another world, magically honing their edges to be sharp as razors. You create the storm in a square within range and can take a move action to move it up to 30 feet in any direction. If the storm enters (or is created in) a square containing a creature, the petal storm can’t move any farther that round and deals 3d6 slashing damage to that creature (Reflex negates). If you don’t move the storm, it remains where it is.</p>\n<p>Any creature that shares its space with the storm has concealment (attacks have a 20% miss chance).</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": ""
     },
     "formula": "",
@@ -98,6 +141,11 @@
       "descriptor": "negate"
     },
     "school": "con",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "AP #42 pg. 43",
     "sr": false,
     "target": {
@@ -105,7 +153,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

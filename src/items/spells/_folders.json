@@ -1,0 +1,156 @@
+[
+  {
+    "_id": "1B1qsQ9pjPDXp9hO",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "13.347",
+      "createdTime": 1756176756544,
+      "duplicateSource": null,
+      "exportSource": null,
+      "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
+      "modifiedTime": 1756177665768,
+      "systemId": "sfrpg",
+      "systemVersion": "0.28.3"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Level 6",
+    "sort": 100000,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "5QG1QaccJ76HTSED",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "13.347",
+      "createdTime": 1756176726674,
+      "duplicateSource": null,
+      "exportSource": null,
+      "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
+      "modifiedTime": 1756176726674,
+      "systemId": "sfrpg",
+      "systemVersion": "0.28.3"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Level 2",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "6BwyGSigx1KJKQPk",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "13.347",
+      "createdTime": 1756176742129,
+      "duplicateSource": null,
+      "exportSource": null,
+      "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
+      "modifiedTime": 1756176742129,
+      "systemId": "sfrpg",
+      "systemVersion": "0.28.3"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Level 3",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "CeyH9L5ullJvhala",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "13.347",
+      "createdTime": 1756176720087,
+      "duplicateSource": null,
+      "exportSource": null,
+      "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
+      "modifiedTime": 1756176720087,
+      "systemId": "sfrpg",
+      "systemVersion": "0.28.3"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Level 1",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "GLXwds4O0VAbHzsX",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "13.347",
+      "createdTime": 1756176712859,
+      "duplicateSource": null,
+      "exportSource": null,
+      "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
+      "modifiedTime": 1756176712859,
+      "systemId": "sfrpg",
+      "systemVersion": "0.28.3"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Level 0",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "I12wUng6YlrEEzGq",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "13.347",
+      "createdTime": 1756176746896,
+      "duplicateSource": null,
+      "exportSource": null,
+      "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
+      "modifiedTime": 1756176746896,
+      "systemId": "sfrpg",
+      "systemVersion": "0.28.3"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Level 4",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  },
+  {
+    "_id": "YFUdhCxA88Af1Uy1",
+    "_stats": {
+      "compendiumSource": null,
+      "coreVersion": "13.347",
+      "createdTime": 1756176751219,
+      "duplicateSource": null,
+      "exportSource": null,
+      "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
+      "modifiedTime": 1756176751219,
+      "systemId": "sfrpg",
+      "systemVersion": "0.28.3"
+    },
+    "color": null,
+    "description": "",
+    "flags": {},
+    "folder": null,
+    "name": "Level 5",
+    "sort": 0,
+    "sorting": "a",
+    "type": "Item"
+  }
+]

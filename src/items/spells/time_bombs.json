@@ -2,6 +2,7 @@
   "_id": "CMEd47K2nkGfW2mb",
   "name": "Time Bombs",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "systems/sfrpg/icons/spells/phantom_cycle.webp",
   "system": {
     "type": "",
@@ -69,6 +70,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -88,6 +90,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -140,7 +143,8 @@
     "school": "evo",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "EN pg. 128",
     "sr": false,

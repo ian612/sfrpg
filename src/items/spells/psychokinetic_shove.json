@@ -2,6 +2,7 @@
   "_id": "5Td74uXbYeXjFcF7",
   "name": "Psychokinetic Shove",
   "type": "spell",
+  "folder": "GLXwds4O0VAbHzsX",
   "img": "systems/sfrpg/icons/feats/agile_casting.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>A targeted creature takes 1 damage with the force description unless it succeeds at a Reflex saving throw. A creature that takes the damage is also subjected to a bull rush. Attempt the bull rush combat maneuver, using your caster level + your key ability score modifier as your attack bonus. You can push your target no more than 5 feet.</p>\n<p>An object must be unattended or held by you. It takes 1 damage with the force descriptor. You can also push it up to 10 feet away from you if it weighs 2 bulk or less or up to 5 feet away from you if it weighs up to 5 bulk. The object moves at a harmless velocity.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -73,7 +114,7 @@
       "additional": "",
       "per": "",
       "units": "ft",
-      "value": 30
+      "value": "30"
     },
     "rollNotes": "",
     "save": {
@@ -82,6 +123,11 @@
       "descriptor": "object"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "GM pg. 79",
     "sr": true,
     "target": {
@@ -89,7 +135,7 @@
       "value": "one creature or one object, see text"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

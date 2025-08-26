@@ -2,6 +2,7 @@
   "_id": "rH7Kwj8q1fSP9FCH",
   "name": "Crystal Mine",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "icons/magic/water/projectiles-ice-faceted-salvo-blue.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "sphere",
       "units": "ft",
-      "value": 10
+      "value": "10"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -42,6 +43,7 @@
           "name": "",
           "formula": "2d8",
           "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -58,6 +60,7 @@
           "name": "",
           "formula": "2d8",
           "group": null,
+          "isPrimarySection": false,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -70,7 +73,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -83,6 +87,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -102,6 +107,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -152,6 +158,11 @@
       "descriptor": "partial"
     },
     "school": "con",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "IS pg. 123",
     "sr": false,
     "target": {
@@ -159,7 +170,7 @@
       "value": ""
     },
     "uses": {
-      "max": 0,
+      "max": "0",
       "per": "",
       "value": 0
     }

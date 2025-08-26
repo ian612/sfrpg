@@ -2,6 +2,7 @@
   "_id": "OIjezWUrYdiv16Iz",
   "name": "Delay Countermeasures",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/delay_countermeasures.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,9 +48,49 @@
       "unidentified": "",
       "value": "<p>Countermeasures on the target computer are suppressed. If you trigger any suppressed countermeasure, you are still alerted that you have done so, but it activates only after the spell ends.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -89,7 +130,7 @@
       "value": "one computer"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

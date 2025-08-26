@@ -2,6 +2,7 @@
   "_id": "qA6jttVoTCCnVTam",
   "name": "Caustic Fissure",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/ectoplastmic_eruption.webp",
   "system": {
     "type": "",
@@ -69,6 +70,7 @@
     "descriptors": {
       "acid": true,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -88,6 +90,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -106,6 +109,7 @@
     },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -140,7 +144,8 @@
     "school": "evo",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "AP #48 pg. 51",
     "sr": false,

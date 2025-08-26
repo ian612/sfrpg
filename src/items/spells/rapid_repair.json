@@ -2,6 +2,7 @@
   "_id": "1CnhToMdnMd1PN4G",
   "name": "Rapid Repair",
   "type": "spell",
+  "folder": "YFUdhCxA88Af1Uy1",
   "img": "systems/sfrpg/icons/spells/rapid_repair.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -39,13 +40,24 @@
     "damage": {
       "parts": [
         {
+          "name": "",
           "formula": "2d8",
-          "operator": "",
+          "group": null,
+          "isPrimarySection": true,
           "types": {
-            "healing": true
+            "acid": false,
+            "bludgeoning": false,
+            "cold": false,
+            "electricity": false,
+            "fire": false,
+            "healing": true,
+            "piercing": false,
+            "slashing": false,
+            "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -55,7 +67,46 @@
       "unidentified": "",
       "value": "<p>On each round, the target construct or weapon regains 2d8 Hit Points. This does not stack with any fast healing the construct or weapon already has. You can’t target a construct or weapon that has been brought to 0 Hit Points or destroyed.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "minute",
@@ -90,6 +141,11 @@
       "descriptor": "harmless"
     },
     "school": "trs",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "CRB pg. 371",
     "sr": true,
     "target": {
@@ -97,7 +153,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

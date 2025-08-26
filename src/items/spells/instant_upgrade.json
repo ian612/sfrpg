@@ -2,6 +2,7 @@
   "_id": "8PaUEWogypdwP2aO",
   "name": "Instant Upgrade",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/instant_upgrade.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>You conjure bits of technology infused with magic to create one functional, temporary cybernetic augmentation with a level equal to or lower than your caster level. You decide which cybernetic augmentation to create when you cast this spell. The target must have the chosen system available for augmentation. If the target’s chosen system already has its maximum number of augmentations, this spell has no effect. The augmentation appears without harm and functions for the spell’s duration, dissipating harmlessly into nothing when the spell ends.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
       "units": "minute",
@@ -89,7 +129,7 @@
       "value": "one willing creature"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

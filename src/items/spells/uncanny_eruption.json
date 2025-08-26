@@ -2,6 +2,7 @@
   "_id": "CMuo0qF7DLoyQ7wC",
   "name": "Uncanny Eruption",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "systems/sfrpg/icons/classes/meteor_shower.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "sphere",
       "units": "ft",
-      "value": 20
+      "value": "20"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -41,6 +42,8 @@
         {
           "name": "",
           "formula": "2d6",
+          "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -53,7 +56,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -63,10 +67,49 @@
       "unidentified": "",
       "value": "<p>You form the crater of an active volcano at a target location, immediately exposing all creatures in the area to lava (Core Rulebook 403), dealing 2d6 fire damage immediately, and continuing to expose creatures who begin their turn in the area, who take the appropriate fire damage at the beginning of their turn. Damage from the lava continues for [[/r 1d3]] rounds after a creature leaves the area, but this additional damage is only 1d6 fire damage per round.</p>\n<p>In addition, every 1d4 rounds, creatures in or within 30 feet of the crater must succeed at a Reflex save or take an additional 5d6 fire damage as the crater periodically erupts.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "concentration + 1 round/level (D)"
     },
     "formula": "",
@@ -98,6 +141,11 @@
       "descriptor": "half"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "GEM pg. 75",
     "sr": false,
     "target": {
@@ -105,7 +153,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

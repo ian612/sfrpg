@@ -2,6 +2,7 @@
   "_id": "G6q7dYeTZxAvvZlU",
   "name": "Unseen Servant",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/unseen_servant.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>The spell conjures an invisible, mindless, shapeless force that performs simple tasks at your command (a move action). It can run and fetch things, open unstuck doors, and hold chairs, as well as clean and mend. The servant can perform only one activity at a time, but it repeats the same activity over and over again if told to do so as long as you remain within range. It has an effective Strength score of 2 (so it can lift up to 20 pounds or 2 bulk or drag up to 100 pounds or 10 bulk). It can trigger traps and such, but it can’t exert enough force to activate certain pressure plates and other devices. It can’t perform any task that requires a skill check with a DC higher than 10 or that requires a check using a skill that can’t be used untrained. This servant can’t fly, climb, or swim (though it can walk on water). Its land speed is 15 feet.</p>\n<p>The servant can’t attack in any way; it is never allowed to make attack rolls. It can’t be killed, but it dissipates if it takes 6 or more damage from area attacks; it gets no saving throws against attacks.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "hour",
@@ -89,7 +129,7 @@
       "value": "one invisible, mindless, shapeless servant"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

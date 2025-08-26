@@ -2,6 +2,7 @@
   "_id": "sq2qCpHUQJIgfVvo",
   "name": "Dismissal",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "systems/sfrpg/icons/spells/biotic_taclash.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>The spell instantly forces one or more extraplanar creatures off your current plane, whisking them away instantly—usually to the creature’s home plane, but there is a 20% chance of sending the target to a random plane other than its own. You can improve the spell’s chance of success by presenting one object or substance that the target fears, hates, or otherwise opposes; you gain a +1 circumstance bonus to your caster level check to overcome the target’s spell resistance (if any), and the save DC of the spell increases by 2. At the GM’s discretion, certain rare items might work twice as well, providing a +2 circumstance bonus to the caster level check to overcome spell resistance and increasing the spell’s save DC by 4.</p>\n<p><strong>4th</strong>: When you cast dismissal as a 4th-level spell, it affects one extraplanar creature.</p>\n<p><strong>5th</strong>: When you cast&nbsp;dismissal&nbsp;as a 5th-level spell, it affects a number of extraplanar creatures whose total CR can’t exceed your level + 2, no two of which can be more than 30 feet apart.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -82,6 +123,11 @@
       "descriptor": "negate"
     },
     "school": "abj",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "CRB pg. 350",
     "sr": true,
     "target": {
@@ -89,7 +135,7 @@
       "value": "see text"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

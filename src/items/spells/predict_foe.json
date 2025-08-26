@@ -2,6 +2,7 @@
   "_id": "DEeTPGEcAUU29gXe",
   "name": "Predict Foe",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/predict_foe.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>You reach into the target’s mind, extracting a sense of its immediate intentions. For the duration, you can warn a creature the target intends to attack, providing that creature with concealment against the attack. You convey this warning, verbally or telepathically (transcending language), as part of concentrating on this spell. You can continue to concentrate on this spell, and the effect continues if you do, even if the target leaves your line of sight.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "concentration, up to 1 round/level"
     },
     "formula": "",
@@ -89,7 +129,7 @@
       "value": "one creature"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

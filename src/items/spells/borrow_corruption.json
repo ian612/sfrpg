@@ -2,6 +2,7 @@
   "_id": "BQHFi2CRH4LnowYb",
   "name": "Borrow Corruption",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "systems/sfrpg/icons/spells/borrow_corruption.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,9 +48,49 @@
       "unidentified": "",
       "value": "<p>You touch a willing creature with at least one manifestation from corruption and expend 2 Resolve Points. If you do so, you temporarily gain any stains and gifts that corruption grants to the target, and the target retains them. If a gift you gain has limited uses, you can use the gift only by expending 1 Resolve Point for each use.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -89,7 +130,7 @@
       "value": "willing creature touched"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

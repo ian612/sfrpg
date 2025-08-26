@@ -2,6 +2,7 @@
   "_id": "RXSW72w5lzUFpaCq",
   "name": "Wall Of Fog",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "icons/magic/air/fog-gas-smoke-gray.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": true,
       "shape": "cube",
       "units": "ft",
-      "value": 20
+      "value": "20"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>A billowing wall of dense mist forms in a vertical plane, provided the wall is neither underwater nor in a vacuum. In those cases, the spell fails. Creatures and objects on one side of the wall have concealment (20% miss chance) from creatures on the opposite side of the wall. A moderate wind (11+ mph) disperses this fog in 2 rounds; a strong wind (21+ mph) disperses the fog in 1 round, although the wall returns if you’re still concentrating on it and the wind ends.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "concentration + 1 round/level"
     },
     "formula": "",
@@ -89,7 +129,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

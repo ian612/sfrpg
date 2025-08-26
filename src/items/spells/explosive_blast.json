@@ -2,6 +2,7 @@
   "_id": "WP0QPu6QvApGaQIG",
   "name": "Explosive Blast",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "systems/sfrpg/icons/spells/explosion_blast.webp",
   "system": {
     "type": "",
@@ -42,6 +43,7 @@
           "name": "",
           "formula": "9d6",
           "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -54,7 +56,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -87,6 +90,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -139,7 +143,8 @@
     "school": "evo",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "CRB pg. 354",
     "sr": true,

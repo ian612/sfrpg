@@ -2,6 +2,7 @@
   "_id": "oA8aekI5hWyC6HPO",
   "name": "Broadcast Message",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/incompetence.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "sphere",
       "units": "ft",
-      "value": 100
+      "value": "100"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>You broadcast a short telepathic message of up to 25 words to all creatures in the area. The message repeats each round for the duration. A technomancer casting this spell also broadcasts the message to all computers or constructs with the technological subtype that are designed to receive messages.</p>\n<p>You can spend additional time casting this spell to increase its area. If you do, for each additional full action spent to cast this spell, the emanation’s radius increases by 100 ft., to a maximum of 1,000 ft.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "concentration, up to 1 minute/level"
     },
     "formula": "",
@@ -89,7 +129,7 @@
       "value": "all creatures"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

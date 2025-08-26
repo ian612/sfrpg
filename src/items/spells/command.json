@@ -2,6 +2,7 @@
   "_id": "PVzsrE1TxBBjDLCa",
   "name": "Command",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/command.webp",
   "system": {
     "type": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -89,6 +91,7 @@
     },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "1"
     },
@@ -123,7 +126,8 @@
     "school": "enc",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "CRB pg. 343",
     "sr": true,

@@ -2,6 +2,7 @@
   "_id": "zeW5xSSB5YtzL0gT",
   "name": "Knock",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/knock.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>Knock&nbsp;opens barred, computer-sealed, locked, or stuck doors, as well as those subject to&nbsp;hold portal&nbsp;or&nbsp;security seal. When you complete the casting of this spell, attempt a caster level check (1d20 + your caster level) against the DC of the lock or computer seal with a +10 bonus. If successful,&nbsp;knock&nbsp;opens up to two means of closure. This spell opens secret doors (but doesn’t identify secret doors you haven’t found) as well as locked or trick-opening containers, starship doors, and similar secured entryways. It also loosens chains, shackles, or welds (provided they serve to hold something shut). If used to open a door closed with security seal, the spell doesn’t remove the seal but simply suspends its functioning for 10 minutes. In all other cases, the door does not relock itself or become stuck again on its own.&nbsp;Knock&nbsp;does not raise barred gates or similar impediments (such as a force field barrier) or open any door or container larger than the spell’s area, nor does it affect ropes, webs, and the like.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "instantaneous; see text"
     },
     "formula": "",
@@ -89,7 +129,7 @@
       "value": "one door, container, or portal with an area of up to 10 sq. ft./level"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

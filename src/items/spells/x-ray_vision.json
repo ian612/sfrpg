@@ -2,10 +2,11 @@
   "_id": "91g4kWQx4xcq0Oip",
   "name": "X-Ray Vision",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "icons/magic/perception/eye-ringed-glow-angry-large-teal.webp",
   "system": {
     "type": "",
-    "ability": null,
+    "ability": "",
     "abilityMods": {
       "parts": []
     },
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>You confer upon the target sense through (vision) with a range of 60 feet. This ability is blocked by materials one-fifth as dense as those that block normal sense through (2 feet of wood or plastic, 1 foot of stone, 2 inches of common metal, or 1 inch of lead or any starmetal), and it limits the target to black-and-white vision while in use. The target doesn’t gain the benefit of any other special visual senses (such as lowlight vision) while using x-ray vision, and the target can’t attempt sight-based Perception checks beyond 60 feet.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "minute",
@@ -82,6 +123,11 @@
       "descriptor": "half"
     },
     "school": "div",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "GM pg. 87",
     "sr": true,
     "target": {
@@ -89,7 +135,7 @@
       "value": "one creature"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

@@ -2,6 +2,7 @@
   "_id": "cCHafR90PlFuqnAm",
   "name": "Wall Of Air",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "systems/sfrpg/icons/feats/focused_sense.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,10 +49,49 @@
       "unidentified": "",
       "value": "<p>You cause a massive sheet of flowing air to appear. When you cast wall of air, choose whether the air flows upward or downward. This spell has different effects depending on the environment in which it is cast (below). You can place a wall of air so that it’s in multiple environments at once; in this case, it affects each environment separately. This spell can’t be cast in a vacuum.</p>\n<p><strong>In Atmosphere:</strong> The wall’s area is treated as a windstorm, which requires flying creatures to attempt Acrobatics checks to fly through it and imparts a –4 penalty on ranged attacks that deal kinetic damage. Attacks with archaic ranged weapons made through or within the wall of air automatically miss. Small or smaller creatures starting their turn in the wall’s area must succeed at a Reflex save or be knocked prone.</p>\n<p><strong>In Water:</strong> The wall of air creates a massive sheet of bubbles that provides concealment. A creature that moves through the wall of air must succeed at an Athletics check to swim in stormy conditions with the DC increased by your caster level; on a failure, it’s moved 10 feet in the direction you chose for the wall’s air to flow. In addition, any creature within a wall of air while underwater can breathe air as if in a normal atmosphere. This wall doesn’t adversely affect water-breathing creatures.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "concentration + 1 round/level (D)"
     },
     "formula": "",
@@ -82,6 +123,11 @@
       "descriptor": "partial"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "AP #36 pg. 53",
     "sr": false,
     "target": {
@@ -89,7 +135,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

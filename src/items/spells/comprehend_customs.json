@@ -2,6 +2,7 @@
   "_id": "64pkJDiNw8k5GF4d",
   "name": "Comprehend Customs",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/comprehend_customs.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>This spell grants you a +2 insight bonus to Culture checks you attempt during the duration. The insight you gain might help you greet someone properly, know whether physical contact (a handshake, for example) is appropriate, or how to eat without making a mess or insulting your host. In addition, when you attempt Diplomacy checks to change attitudes during the duration, you can lower the DC by 5. This spell does not replace careful study of a culture, nor does it give insight beyond events that occur during the duration.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "hour",
@@ -89,7 +129,7 @@
       "value": "you"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

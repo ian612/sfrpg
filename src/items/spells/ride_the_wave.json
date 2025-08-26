@@ -2,6 +2,7 @@
   "_id": "7Hty8IPqN3dPqSyr",
   "name": "Ride The Wave",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "systems/sfrpg/icons/spells/enervation.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -41,6 +42,8 @@
         {
           "name": "",
           "formula": "5d8",
+          "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": true,
@@ -53,7 +56,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -63,7 +67,46 @@
       "unidentified": "",
       "value": "<p>You briefly become a miniature River Between, coursing across the landscape in an instant.</p>\n<p>When you cast this spell, you transform into a stream of water and can move up to 120 feet with a supernatural fly speed (perfect maneuverability). This movement can pass through (but can’t end in) enemy spaces and doesn’t provoke attacks of opportunity. The transformation ends at the end ofyour movement. Creatures and objects whose space you pass through take 5d8 bludgeoning damage. A creature or object takes this damage only once even if you pass through its space multiple times</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -98,6 +141,11 @@
       "descriptor": "negate"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "DC pg. 123",
     "sr": false,
     "target": {
@@ -105,7 +153,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

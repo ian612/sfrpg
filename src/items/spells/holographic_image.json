@@ -2,6 +2,7 @@
   "_id": "kDFNOMx78KU1GGol",
   "name": "Holographic Image",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/holographic_image.webp",
   "system": {
     "type": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -123,7 +125,8 @@
     "school": "ill",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "CRB pg. 360",
     "sr": false,

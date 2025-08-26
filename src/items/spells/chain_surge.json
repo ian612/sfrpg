@@ -2,6 +2,7 @@
   "_id": "q7m7QpdzKF2PdsIg",
   "name": "Chain Surge",
   "type": "spell",
+  "folder": "1B1qsQ9pjPDXp9hO",
   "img": "systems/sfrpg/icons/spells/chain_surge.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -39,13 +40,24 @@
     "damage": {
       "parts": [
         {
+          "name": "",
           "formula": "13d12",
-          "operator": "",
+          "group": null,
+          "isPrimarySection": true,
           "types": {
-            "electricity": true
+            "acid": false,
+            "bludgeoning": false,
+            "cold": false,
+            "electricity": true,
+            "fire": false,
+            "healing": false,
+            "piercing": false,
+            "slashing": false,
+            "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -55,7 +67,46 @@
       "unidentified": "",
       "value": "<p>Choose a primary target as well as up to 10 secondary targets within 30 feet of the primary target. The primary target must be carrying or wielding some kind of equipment that uses electricity. This spell causes the primary target’s electrical equipment to surge with deadly electricity, which arcs out to strike the secondary targets, dealing 13d12 electricity damage to all targets chosen.</p>\n<p>If the primary target fails its Reflex save, the spell also shorts out one of that target’s electrical items (your choice) for 1 round, meaning the primary target can’t use it for that period. If the primary target negates the effect entirely (such as with evasion), the secondary targets also suffer no effects.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -90,6 +141,11 @@
       "descriptor": "half"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "CRB pg. 342",
     "sr": true,
     "target": {
@@ -97,7 +153,7 @@
       "value": "one primary target and up to 10 secondary targets, no two of which can be more than 30 ft. from the primary target"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

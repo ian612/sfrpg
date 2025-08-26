@@ -2,6 +2,7 @@
   "_id": "BmDJu1zh0Az2NQ6I",
   "name": "Shrapnel Shot",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/explosion_blast.webp",
   "system": {
     "type": "",
@@ -86,6 +87,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -105,6 +107,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -157,7 +160,8 @@
     "school": "con",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "EN pg. 126",
     "sr": false,

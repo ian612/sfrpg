@@ -2,6 +2,7 @@
   "_id": "x5av2pFoQq1a7FaB",
   "name": "Fantastical Transformation",
   "type": "spell",
+  "folder": "YFUdhCxA88Af1Uy1",
   "img": "systems/sfrpg/icons/spells/holographic_image.webp",
   "system": {
     "type": "",
@@ -86,6 +87,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -105,6 +107,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -123,6 +126,7 @@
     },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -157,7 +161,8 @@
     "school": "trs",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "EN pg. 122",
     "sr": true,

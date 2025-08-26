@@ -2,6 +2,7 @@
   "_id": "VdlnH13oPGQN9wij",
   "name": "Haunted Armor",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/haunted_armor.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,9 +49,49 @@
       "unidentified": "",
       "value": "<p>You divert a malevolent spirit from the River of Souls to haunt your opponent’s armor. This spell must target a suit of light, heavy, or powered armor. The armor becomes cumbersome, reducing the wearer’s speed by 10 feet and AC by 1. It also rattles, hisses, and screeches, imposing a –4 penalty on Stealth checks.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -82,6 +124,11 @@
       "descriptor": "negate"
     },
     "school": "nec",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "COM pg. 136",
     "sr": true,
     "target": {
@@ -89,7 +136,7 @@
       "value": "one worn suit of armor; see text"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

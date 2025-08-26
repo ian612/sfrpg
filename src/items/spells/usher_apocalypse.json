@@ -2,6 +2,7 @@
   "_id": "SNdyYdSKnJmVE0B5",
   "name": "Usher Apocalypse",
   "type": "spell",
+  "folder": "1B1qsQ9pjPDXp9hO",
   "img": "systems/sfrpg/icons/spells/usher_apocalypse.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "sphere",
       "units": "ft",
-      "value": 60
+      "value": "60"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -41,6 +42,8 @@
         {
           "name": "",
           "formula": "6d6",
+          "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -53,7 +56,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -63,9 +67,49 @@
       "unidentified": "",
       "value": "<p>You create a quasi-real apocalypse to tear through the area, causing several effects. When the spell first takes effect, illusory hellfire crashes to the ground, dealing 6d6 fire damage to your enemies in the area. Creatures can attempt a Will saving throw to disbelieve the fiery vision and take only half damage.</p>\n<p>Then, for the duration, two more effects continue. An illusion makes the ground appear to be unstable crust over lava, which your foes treat as difficult terrain. Grasping hands appear to reach out from the ground to grab at enemies. Each time an enemy starts its turn in the area, it must succeed at a Reflex saving throw or be unable to leave its space for the turn.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -98,6 +142,11 @@
       "descriptor": "half"
     },
     "school": "ill",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "COM pg. 142",
     "sr": true,
     "target": {
@@ -105,7 +154,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

@@ -2,6 +2,7 @@
   "_id": "fd635J8PEBfOt3Lx",
   "name": "Puncture Veil",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/puncture_veil.webp",
   "system": {
     "type": "",
@@ -86,6 +87,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -105,6 +107,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -157,7 +160,8 @@
     "school": "evo",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "COM pg. 140",
     "sr": true,

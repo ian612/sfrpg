@@ -2,6 +2,7 @@
   "_id": "nE27epaoiSx8iJP5",
   "name": "Identity Storm",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
   "system": {
     "type": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -50,6 +52,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -69,6 +72,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -87,6 +91,7 @@
     },
     "dismissible": false,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -121,7 +126,8 @@
     "school": "ill",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "PoC pg. 123",
     "sr": true,

@@ -2,6 +2,7 @@
   "_id": "QletAznKuyMlVezv",
   "name": "Spiritual Minion",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "systems/sfrpg/icons/classes/improved_resistant_energy.webp",
   "system": {
     "type": "",
@@ -51,6 +52,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -70,6 +72,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,

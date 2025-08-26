@@ -2,6 +2,7 @@
   "_id": "eGZnzk3SkZYOEsDC",
   "name": "Plurality Strike",
   "type": "spell",
+  "folder": "1B1qsQ9pjPDXp9hO",
   "img": "systems/sfrpg/icons/spells/displacement.webp",
   "system": {
     "type": "",
@@ -51,6 +52,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -70,6 +72,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,

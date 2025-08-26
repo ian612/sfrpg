@@ -2,6 +2,7 @@
   "_id": "S8cNpjd2gMJ6lffz",
   "name": "Etheric Shards",
   "type": "spell",
+  "folder": "6BwyGSigx1KJKQPk",
   "img": "systems/sfrpg/icons/spells/etheric_shards.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "other",
       "units": "ft",
-      "value": 10
+      "value": "10"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>You harden ethereal matter into interplanar blades that are invisible to those who cannot see into the Ethereal Plane. Movement through an area of etheric shards is halved, even for incorporeal creatures, and creatures entering a 5-foot cube filled with etheric shards take 1d8 slashing damage and must succeed at a Reflex saving throw or gain the @UUID[Compendium.sfrpg.conditions.Item.v9RNVTqyTyaPchvd]{Bleeding} 1 condition. The damage from this bleeding stacks with itself and other sources of @UUID[Compendium.sfrpg.conditions.Item.v9RNVTqyTyaPchvd]{Bleeding}. A creature that remains motionless within the area takes no damage, but such a creature is @UUID[Compendium.sfrpg.conditions.Item.MZ8OoH1GE9qDMyCD]{Flat-footed} unless it moves enough to defend itself, which forces it to take damage and attempt a saving throw.</p>\n<p>Etheric shards are a magical trap. A creature trained in Mysticism and within 30 feet of the area can attempt a DC 35 Perception check to sense the shards. The shards cannot be disabled, but they can be dispelled.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
       "units": "hour",
@@ -82,6 +123,11 @@
       "descriptor": "partial"
     },
     "school": "evo",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "AP #23 pg. 52",
     "sr": false,
     "target": {
@@ -89,7 +135,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

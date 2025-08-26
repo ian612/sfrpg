@@ -2,6 +2,7 @@
   "_id": "IVvO4mcUq3NwLJ9f",
   "name": "Charming Veneer",
   "type": "spell",
+  "folder": "GLXwds4O0VAbHzsX",
   "img": "systems/sfrpg/icons/spells/charming_veneer.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>You pull gossamer threads from other, more genteel realities and wrap the target in them, smoothing the edges of their personality and accentuating their charms. The target gains a +1 circumstance bonus to Charisma checks and Charisma-based skill checks. Additionally, a creature affected by this spell can attempt a Diplomacy check to gather information in only 10 minutes. Once any individual under the effects of a <em>charming veneer</em> spell you cast has used this benefit to gather information in a specific settlement or local region, no target of a <em>charming veneer</em> spell you cast can do so again for 24 hours.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "minute",
@@ -89,7 +129,7 @@
       "value": "one creature"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

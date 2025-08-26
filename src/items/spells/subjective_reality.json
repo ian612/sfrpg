@@ -2,6 +2,7 @@
   "_id": "IoR7MUe920ta3DzM",
   "name": "Subjective Reality",
   "type": "spell",
+  "folder": "1B1qsQ9pjPDXp9hO",
   "img": "systems/sfrpg/icons/spells/subjective_reality.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,9 +48,49 @@
       "unidentified": "",
       "value": "<p>Choose one object or creature you can see within long range (400 feet + 40 feet/level). You alter your perceptions to become convinced the target is an illusion. For you, the target becomes transparent and does not create sound or smell. Until the spell ends, you can move through the target unimpeded and the target can move through you. The target’s nonmagical attacks can’t harm you, and the target’s magical attacks deal half damage to you. The target’s non-damaging magical abilities have only a 50% chance of affecting you, and you are immune to all its sonic, @UUID[Compendium.sfrpg.rules.Item.PqV3OCbUTyk2upPD]{Language-dependent}, and scent-based attacks. However, your attacks deal no damage to the target, and your magical abilities don’t affect the target at all. You or the target can affect each other normally through intermediaries. For instance, while the target would be immune to the direct effects of your&nbsp;@UUID[Compendium.sfrpg.spells.Item.SysRFlYml1f1Eofd]{Charm Monster}&nbsp;spell, if you charmed another creature that then attacked the target creature, the target would not be immune to the damage from that attack.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -89,7 +130,7 @@
       "value": "one object or creature within long range (400 ft. + 40 ft./level)"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

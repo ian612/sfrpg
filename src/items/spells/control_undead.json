@@ -2,6 +2,7 @@
   "_id": "t3Bfc9mcAK9NsWbi",
   "name": "Control Undead",
   "type": "spell",
+  "folder": "1B1qsQ9pjPDXp9hO",
   "img": "systems/sfrpg/icons/spells/control_undead.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>This spell enables you to control undead creatures for a short period of time. You command them by voice and they understand you, no matter what language you speak. No matter what, the controlled undead do not attack you. At the end of the spell, the targets revert to their normal behavior.</p>\n<p>If any of the undead are under the control of a hostile creature, that controlling creature can attempt a Will saving throw (DC = the spell’s DC) to negate this spell’s effect if the creature failed its initial saving throw. Each undead under the control of another creature grants its controlling creature a separate saving throw to negate the effect for that undead.</p>\n<p>Intelligent undead creatures remember that you controlled them, and they may seek revenge after the spell’s duration ends.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "minute",
@@ -82,6 +123,11 @@
       "descriptor": "negate"
     },
     "school": "nec",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "CRB pg. 345",
     "sr": true,
     "target": {
@@ -89,7 +135,7 @@
       "value": "constructs of the technological subtype with individual CRs no greater than your level + 1 and a total CR no greater than twice your level, no two of which can be more than 30 ft. apart"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

@@ -2,6 +2,7 @@
   "_id": "3FvtIHmMIYonBSnd",
   "name": "Biotic Taclash, Lesser",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/biotic_taclash_lesser.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>You conjure a taclash made of organic, insectile nanites into your grasp. The created weapon functions as a standard taclash with the living weapon special property. You are considered to be proficient with this taclash, and you add 1-1/2 times your caster level to damage rolls with it in place of your Weapon Specialization bonus. In addition, the weapon has the nauseate critical hit effect.</p>\n<p>The biotic taclash functions only for you, and once you create it, you can neither drop it nor be disarmed of it. As a move action, you can stow the biotic taclash, causing its component nanites to discorporate into individual nanobots that disperse over your body but remain while the spell lasts. During that time, you can cause the nanites to reincorporate to form the weapon again by taking another move action.</p>\n<p>As a reaction when you strike a target with the biotic taclash, you can dismiss the spell to cause the weapon to discorporate into its component nanites, which then swarm over the target. The target must succeed at a Fortitude save or be @UUID[Compendium.sfrpg.conditions.Item.LoRydw1D4bqlbkA2]{Nauseated} for 1 round.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "1 round/level (D); see text"
     },
     "formula": "",
@@ -73,7 +113,7 @@
       "additional": "",
       "per": "",
       "units": "ft",
-      "value": null
+      "value": ""
     },
     "rollNotes": "",
     "save": {
@@ -89,7 +129,7 @@
       "value": ""
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

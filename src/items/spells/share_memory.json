@@ -2,6 +2,7 @@
   "_id": "2vjeLKWVi35DyjNn",
   "name": "Share Memory",
   "type": "spell",
+  "folder": "CeyH9L5ullJvhala",
   "img": "systems/sfrpg/icons/spells/share_memory.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>You allow the target to share a memory with you and up to five other creatures, all of whom must be willing and within 30 feet of the target when you cast this spell. You designate which memories the target shares when you cast this spell, although the target can guide you in this designation. The designated memory can be as specific as “the conversation you just had with the captain” or as vague as “your favorite childhood memory of being with your father.” For the duration, those sharing the memory experience it through the target’s senses as the target did. Anyone sharing the memory can cease participation at any time. If you end the effect for yourself, or the target ceases sharing, the spell ends. If the memory’s length exceeds the duration, it plays out while this spell lasts and then ends with the duration. This spell does not work on memories that have been magically altered or removed through spells such as&nbsp;displace memory&nbsp;or&nbsp;modify memory.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": true,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "concentration, up to 1 minute/level (D)"
     },
     "formula": "",
@@ -89,7 +129,7 @@
       "value": "one willing creature"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

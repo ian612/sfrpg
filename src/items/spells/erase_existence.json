@@ -2,6 +2,7 @@
   "_id": "RgAe1kolbJz2b7y0",
   "name": "Erase Existence",
   "type": "spell",
+  "folder": "1B1qsQ9pjPDXp9hO",
   "img": "systems/sfrpg/icons/spells/bilocation.webp",
   "system": {
     "type": "",
@@ -69,6 +70,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -88,6 +90,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -140,7 +143,8 @@
     "school": "nec",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "EN pg. 122",
     "sr": true,

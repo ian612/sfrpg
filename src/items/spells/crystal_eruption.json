@@ -2,6 +2,7 @@
   "_id": "tbMSCOuBwqttF0Cg",
   "name": "Crystal Eruption",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "icons/magic/water/barrier-ice-crystal-wall-green.webp",
   "system": {
     "type": "",
@@ -27,7 +28,7 @@
       "shapable": false,
       "shape": "cone",
       "units": "ft",
-      "value": 30
+      "value": "30"
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -42,6 +43,7 @@
           "name": "Base damage",
           "formula": "2d8",
           "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -58,6 +60,7 @@
           "name": "Terrain damage",
           "formula": "1d4",
           "group": null,
+          "isPrimarySection": false,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -70,7 +73,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -83,6 +87,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -102,6 +107,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -120,6 +126,7 @@
     },
     "dismissible": true,
     "duration": {
+      "endsOn": "onTurnStart",
       "units": "round",
       "value": "@details.cl.value"
     },
@@ -143,7 +150,7 @@
       "additional": "",
       "per": "",
       "units": "ft",
-      "value": 30
+      "value": "30"
     },
     "rollNotes": "",
     "save": {
@@ -152,6 +159,11 @@
       "descriptor": "half"
     },
     "school": "con",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "IS pg. 123",
     "sr": false,
     "target": {
@@ -159,7 +171,7 @@
       "value": ""
     },
     "uses": {
-      "max": 0,
+      "max": "0",
       "per": "",
       "value": 0
     }

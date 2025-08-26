@@ -2,6 +2,7 @@
   "_id": "byAI5MUa3DgiiXc9",
   "name": "Psychokinetic Hand",
   "type": "spell",
+  "folder": "GLXwds4O0VAbHzsX",
   "img": "systems/sfrpg/icons/spells/psychokenetic_hand.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,10 +48,49 @@
       "unidentified": "",
       "value": "<p>You point your finger at the target object, gaining the ability to lift it and move it at will from a distance. As a move action, you can propel the object as far as 15 feet in any direction, though the spell ends if the distance between you and the object ever exceeds the spell’s range. You can’t perform complex operations, such as firing a gun or using a computer, but you can shut a mechanical door or lid and work simple buttons to open or close automated doors or trigger an alarm.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
-      "units": "",
+      "units": "instantaneous",
       "value": "concentration"
     },
     "formula": "",
@@ -89,7 +129,7 @@
       "value": "one unattended object of no more than 10 lbs. or 1 bulk"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

@@ -2,6 +2,7 @@
   "_id": "LBtcKHJfXwy3nkEJ",
   "name": "Awaken Computer",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "systems/sfrpg/icons/spells/awaken_computer.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>You infuse a computer with a spark of advanced technology, granting it an artificial personality. For this spell to take effect, you must have access to the computer, through either hacking it and bypassing any countermeasures it has or having unsecured access, but you don’t need root access. Further, if the target computer’s tier is equal to half your caster level or higher, you must expend credits equal to 5% of its base price while you cast this spell or the spell has no effect. This spell has no effect on computers that already have an artificial personality upgrade.</p>\n<p>You decide the details of the computer’s personality when you cast this spell, including its name, mannerisms, and sense of humor. The artificial personality recognizes you as its creator unless you remove that detail from its memory while casting. You can designate yourself and up to four other creatures as authorized users of the personality. This spell configures the personality with cunning and charm, granting it a bonus to Bluff, Diplomacy, Intimidate, and Sense Motive checks equal to 3 × its tier.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "instantaneous",
@@ -89,7 +129,7 @@
       "value": "one computer"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

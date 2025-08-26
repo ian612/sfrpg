@@ -2,6 +2,7 @@
   "_id": "zjOo7OQKpRT5roSX",
   "name": "Security Seal",
   "type": "spell",
+  "folder": "5QG1QaccJ76HTSED",
   "img": "systems/sfrpg/icons/spells/security_seal.webp",
   "system": {
     "type": "",
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": null,
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -47,7 +48,46 @@
       "unidentified": "",
       "value": "<p>A&nbsp;security seal&nbsp;spell magically locks a single door, container with a lid or latch, portal, or computer system. Casting this spell requires you to spend 1 Resolve Point. You can freely bypass your own security seal without affecting it. If the sealed object has a lock, the DC to open that lock increases by 5 while it remains attached to the object. If the object doesn’t have a lock, this spell creates one that can only be opened with a successful DC 20 Engineering check to disable devices. If the sealed object has computer security, the DC to bypass that security increases by 5. A door or object secured with this spell can be opened only by breaking in or with a successful&nbsp;dispel magic&nbsp;or&nbsp;knock&nbsp;spell. Add 5 to the normal DC to break open a door or portal affected by this spell. A&nbsp;knock&nbsp;spell removes the&nbsp;security seal&nbsp;automatically, counting as one means of closure.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "hour",
@@ -89,7 +129,7 @@
       "value": "one door, container, or portal up to 30 sq. ft./level in size"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

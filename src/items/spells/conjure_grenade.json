@@ -2,6 +2,7 @@
   "_id": "Z5Of14FGLZFtAhed",
   "name": "Conjure Grenade",
   "type": "spell",
+  "folder": "GLXwds4O0VAbHzsX",
   "img": "icons/magic/fire/explosion-fireball-medium-purple-orange.webp",
   "system": {
     "type": "",
@@ -42,6 +43,7 @@
           "name": "",
           "formula": "1d4",
           "group": null,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -54,7 +56,8 @@
             "sonic": false
           }
         }
-      ]
+      ],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -67,6 +70,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -86,6 +90,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -138,7 +143,8 @@
     "school": "con",
     "skillCheck": {
       "type": "",
-      "dc": ""
+      "dc": "",
+      "variable": false
     },
     "source": "PoC pg. 83",
     "sr": false,

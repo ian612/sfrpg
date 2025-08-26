@@ -2,10 +2,11 @@
   "_id": "U4rFMP2V1YpWRcKJ",
   "name": "Tracking Mark",
   "type": "spell",
+  "folder": "I12wUng6YlrEEzGq",
   "img": "icons/magic/movement/chevrons-down-yellow.webp",
   "system": {
     "type": "",
-    "ability": null,
+    "ability": "",
     "abilityMods": {
       "parts": []
     },
@@ -26,8 +27,8 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
-      "value": null
+      "units": "ft",
+      "value": ""
     },
     "attackBonus": 0,
     "chatFlavor": "",
@@ -37,7 +38,8 @@
       "parts": []
     },
     "damage": {
-      "parts": []
+      "parts": [],
+      "primaryGroup": null
     },
     "damageNotes": "",
     "description": {
@@ -47,7 +49,46 @@
       "unidentified": "",
       "value": "<p>You place a unique magical mark, which is about 1 square inch in size, on a creature or object. The mark is invisible, but @UUID[Compendium.sfrpg.spells.Item.kxx5x0JAgFuEQJAm]{Detect Magic} and similar effects can reveal its presence. Unattended objects are always affected by this spell. If you attempt to affect a creature or an object in a creature’s possession, the creature can attempt a Reflex save to negate the effect.</p>\n<p>Once the tracking mark is in place, you can follow the tracking mark by succeeding at a DC 20 Mysticism check. You’re able to detect the tracking mark up to 1,000 feet away, and you must be on the same plane as the tracking mark to follow it.</p>"
     },
-    "descriptors": [],
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "dismissible": false,
     "duration": {
       "units": "hour",
@@ -82,6 +123,11 @@
       "descriptor": "object"
     },
     "school": "div",
+    "skillCheck": {
+      "type": "",
+      "dc": "",
+      "variable": false
+    },
     "source": "GM pg. 84",
     "sr": true,
     "target": {
@@ -89,7 +135,7 @@
       "value": "one creature or one object"
     },
     "uses": {
-      "max": null,
+      "max": "",
       "per": "",
       "value": null
     }

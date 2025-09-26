@@ -4,17 +4,19 @@ import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../..
 export default function(engine) {
     engine.closures.add( "calculateMovementSpeeds", (fact, context) => {
         const data = fact.data;
+        const speed = data.attributes.speed;
         const armors = fact.armors?.length > 0 ? fact.armors : null;
         const speedTooltip = [];
 
         // Calculate the armor with the largest speed penalty
         const slowestArmor = armors?.reduce((armor, worstArmor) => (armor.system?.armor?.speedAdjust || 0) < (worstArmor.system?.armor?.speedAdjust || 0) ? armor : worstArmor);
-        const armorSpeed = slowestArmor?.system?.armor?.speedAdjust || 0;
-        if (armorSpeed) {
-            speedTooltip.push(game.i18n.format("SFRPG.ActorSheet.Modifiers.Tooltips.Speed", {
+        const armorSpeed = {value: slowestArmor?.system?.armor?.speedAdjust || 0};
+        if (armorSpeed.value) {
+            armorSpeed.tooltip = [];
+            armorSpeed.tooltip.push(game.i18n.format("SFRPG.ActorSheet.Modifiers.Tooltips.Speed", {
                 speed: game.i18n.localize("SFRPG.ActorSheet.Attributes.Speed.Types.All"),
                 type: SFRPG.modifierTypes["armor"],
-                mod: armorSpeed.signedString(),
+                mod: armorSpeed.value.signedString(),
                 source: slowestArmor.name
             }));
         }
@@ -41,35 +43,36 @@ export default function(engine) {
             const stackFilteredModifiers = context.parameters.stackModifiers.process(filteredModifiers, context, {actor: fact.actor});
 
             // Calculate speed prior to any speed multiplication modifiers
-            const baseValue = Number(data.attributes.speed[speedKey].base);
-            const bonus = calculateBonus(data, stackFilteredModifiers, speedKey, speedTooltip);
-            const speedIntermediate = Math.max(0, baseValue + armorSpeed + bonus);
+            const baseValue = Number(speed[speedKey].base);
+            const bonus = calculateBonus(data, armorSpeed, stackFilteredModifiers, speedKey, speedTooltip);
+            const speedIntermediate = Math.max(0, baseValue + bonus);
 
             // Set the final calculated speed
             if (!game.settings.get("sfrpg", "decimalSpeed")) {
-                data.attributes.speed[speedKey].value = Math.floor(speedIntermediate * speedMultiplier);
+                speed[speedKey].value = Math.floor(speedIntermediate * speedMultiplier);
             } else {
-                data.attributes.speed[speedKey].value = speedIntermediate * speedMultiplier;
+                speed[speedKey].value = speedIntermediate * speedMultiplier;
             }
 
             if (speedKey === "flying") {
-                data.attributes.speed[speedKey].maneuverability = data.attributes.speed[speedKey].baseManeuverability;
+                speed[speedKey].maneuverability = speed[speedKey].baseManeuverability;
             }
         }
 
-        // Push speed tooltip
-        data.attributes.speed.tooltip = [...speedTooltip, ...multiplierTooltip];
+        // Push speed tooltips
+        speed.tooltip = [...armorSpeed.tooltip, ...speedTooltip, ...multiplierTooltip];
 
         return fact;
     }, { required: ["stackModifiers"], closureParameters: ["stackModifiers"] } );
 }
 
 function addModifier(bonus, data, localizationKey, speedKey, speedTooltip) {
+    const speed = data.attributes.speed;
     if (bonus.modifierType === SFRPGModifierType.FORMULA) {
-        if (data.attributes.speed.rolledMods) {
-            data.attributes.speed.rolledMods.push({mod: bonus.modifier, bonus: bonus});
+        if (speed.rolledMods) {
+            speed.rolledMods.push({mod: bonus.modifier, bonus: bonus});
         } else {
-            data.attributes.speed.rolledMods = [{mod: bonus.modifier, bonus: bonus}];
+            speed.rolledMods = [{mod: bonus.modifier, bonus: bonus}];
         }
 
         return 0;
@@ -96,8 +99,9 @@ function addModifier(bonus, data, localizationKey, speedKey, speedTooltip) {
     }
 }
 
-function calculateBonus(data, stackFilteredModifiers, speedKey, speedTooltip) {
+function calculateBonus(data, armorSpeed, stackFilteredModifiers, speedKey, speedTooltip) {
     let sum = 0;
+    let armorSpeedUsed = !armorSpeed.value ? true : false;
     for (let [bonusType, bonuses] of Object.entries(stackFilteredModifiers)) {
         if (bonuses === null || bonuses.length === 0) continue;
         if (![SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(bonusType)) {
@@ -105,13 +109,27 @@ function calculateBonus(data, stackFilteredModifiers, speedKey, speedTooltip) {
         }
 
         for (const bonus of bonuses) {
-            sum += addModifier(bonus, data, "SFRPG.ActorSheet.Modifiers.Tooltips.Speed", speedKey, speedTooltip);
+            let value = addModifier(bonus, data, "SFRPG.ActorSheet.Modifiers.Tooltips.Speed", speedKey, speedTooltip);
+            // For armor, compare armor penalty to bonus and take the greater of the two. Manipulate tooltips accordingly
+            if (bonusType === "armor") {
+                armorSpeedUsed = true;
+                if (value < armorSpeed.value) {
+                    // use the previously calculated value, remove the armor tooltip
+                    armorSpeed.tooltip = [];
+                } else {
+                    // use the armor value and tooltip
+                    value = armorSpeed.value;
+                    speedTooltip.pop();
+                }
+            }
+            sum += value;
         }
     }
-    return sum;
+    return armorSpeedUsed ? sum : sum + armorSpeed.value;
 }
 
 function calculateMultiplier(data, stackFilteredMultiplyModifiers) {
+    const speed = data.attributes.speed;
     let totalMultiplier = 1;
     const multiplierTooltip = [];
     for (let [bonusType, bonuses] of Object.entries(stackFilteredMultiplyModifiers)) {
@@ -122,8 +140,8 @@ function calculateMultiplier(data, stackFilteredMultiplyModifiers) {
 
         for (const bonus of bonuses) {
             if (bonus.modifierType === SFRPGModifierType.FORMULA) {
-                if (!data.attributes.speed.rolledMods) data.attributes.speed.rolledMods = [];
-                data.attributes.speed.rolledMods.push({mod: bonus.modifier, bonus: bonus});
+                if (!speed.rolledMods) speed.rolledMods = [];
+                speed.rolledMods.push({mod: bonus.modifier, bonus: bonus});
             } else {
                 const roll = Roll.create(bonus.modifier.toString(), data).evaluateSync({strict: false});
                 const computedBonus = roll.total;

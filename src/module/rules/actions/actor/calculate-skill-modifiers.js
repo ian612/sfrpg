@@ -1,7 +1,8 @@
-import { SFRPGEffectType, SFRPGModifierType, SFRPGModifierTypes } from "../../../modifiers/types.js";
+import { SFRPGEffectType, SFRPGModifierType } from "../../../modifiers/types.js";
 
 export default function(engine) {
     engine.closures.add('calculateSkillModifiers', (fact, context) => {
+        const data = fact.data;
         const skills = fact.data.skills;
         const modifiers = fact.modifiers;
 
@@ -26,7 +27,7 @@ export default function(engine) {
                 }
             }), context, {actor: fact.actor});
 
-            const bonus = calculateBonus(mods, fact, skill);
+            const bonus = calculateBonus(mods, data, skill);
 
             skill.mod += bonus;
         }
@@ -36,11 +37,8 @@ export default function(engine) {
 }
 
 function addModifier(bonus, data, item, localizationKey) {
-    if (item.calculatedMods) {
-        item.calculatedMods.push({mod: bonus.modifier, bonus: bonus});
-    } else {
-        item.calculatedMods = [{mod: bonus.modifier, bonus: bonus}];
-    }
+    if (!item.calculatedMods) item.calculatedMods = [];
+    item.calculatedMods.push({mod: bonus.modifier, bonus: bonus});
     const computedBonus = bonus.max || 0;
 
     if (computedBonus !== 0 && localizationKey) {
@@ -54,15 +52,10 @@ function addModifier(bonus, data, item, localizationKey) {
     return computedBonus;
 }
 
-function calculateBonus(mods, fact, skill) {
-    const data = fact.data;
+function calculateBonus(mods, data, skill) {
     let sum = 0;
-    for (let [bonusType, bonuses] of Object.entries(mods)) {
-        if (bonuses === null || bonuses.length === 0) continue;
-        if (![SFRPGModifierTypes.CIRCUMSTANCE, SFRPGModifierTypes.UNTYPED].includes(bonusType)) {
-            bonuses = [bonuses];
-        }
-
+    for (const bonuses of Object.values(mods)) {
+        if (bonuses.length === 0) continue;
         for (const bonus of bonuses) {
             sum += addModifier(bonus, data, skill, "SFRPG.SkillModifierTooltip");
         }

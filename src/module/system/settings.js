@@ -37,6 +37,16 @@ export const registerSystemSettings = function() {
         type: Boolean
     });
 
+    game.settings.register("sfrpg", "measurementUnits", {
+        name: "SFRPG.Settings.MeasurementUnits.Name",
+        hint: "SFRPG.Settings.MeasurementUnits.Hint",
+        scope: "world",
+        config: true,
+        default: "imperial",
+        type: String,
+        choices: CONFIG.SFRPG.measurementUnits
+    });
+
     game.settings.register("sfrpg", "decimalSpeed", {
         name: "SFRPG.Settings.DecimalSpeed.Name",
         hint: "SFRPG.Settings.DecimalSpeed.Hint",

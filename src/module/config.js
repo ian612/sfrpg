@@ -396,6 +396,13 @@ SFRPG.ammunitionTypes = {
     "thasteronPellets": "SFRPG.Items.Ammunition.Type.ThasteronPellets"
 };
 
+// Distance and Measurement
+
+SFRPG.measurementUnits = {
+    "imperial": "SFRPG.Imperial",
+    "metric": "SFRPG.Metric"
+};
+
 SFRPG.constantDistanceUnits = {
     "none": "SFRPG.None",
     "personal": "SFRPG.Personal",
@@ -409,12 +416,25 @@ SFRPG.constantDistanceUnits = {
     "unlimited": "SFRPG.Unlimited"
 };
 
-SFRPG.variableDistanceUnits = {
+SFRPG.variableImperialUnits = {
     "ft": "SFRPG.Ft",
-    "meter": "SFRPG.Meter",
-    "mi": "SFRPG.Mi",
+    "mi": "SFRPG.Mi"
+};
+
+SFRPG.variableMetricUnits = {
+    "km": "SFRPG.Km",
+    "meter": "SFRPG.Meter"
+};
+
+SFRPG.variableSpecialUnits = {
     "spec": "SFRPG.Special",
     "any": "SFRPG.DistAny"
+};
+
+SFRPG.variableDistanceUnits = {
+    ...SFRPG.variableImperialUnits,
+    ...SFRPG.variableMetricUnits,
+    ...SFRPG.variableSpecialUnits
 };
 
 SFRPG.distanceUnits = {

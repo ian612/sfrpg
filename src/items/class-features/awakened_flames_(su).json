@@ -2,6 +2,7 @@
   "_id": "zRmn12gbgoEcqppK",
   "name": "Awakened Flames (Su)",
   "type": "feat",
+  "folder": "RIyvkr2THJLyytDG",
   "img": "systems/sfrpg/icons/default/achievement.svg",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,
@@ -31,7 +32,7 @@
           "name": "",
           "formula": "(lookupRange(@classes.solarian.levels, 0, 2, 1, 6, 2, 10, 3, 14, 4, 18, 5))d6",
           "group": null,
-          "isPrimarySection": false,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -60,6 +61,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -79,6 +81,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,

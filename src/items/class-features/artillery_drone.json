@@ -2,6 +2,7 @@
   "_id": "bkJOg4KessQXtSPZ",
   "name": "Artillery Drone",
   "type": "chassis",
+  "folder": "f85NDg5CkNwat9e9",
   "img": "systems/sfrpg/icons/default/robot-golem.svg",
   "system": {
     "abilityIncreaseStats": {

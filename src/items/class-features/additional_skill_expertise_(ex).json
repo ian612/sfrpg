@@ -2,6 +2,7 @@
   "_id": "DGZB1xqmmR0GOcJN",
   "name": "Additional Skill Expertise (Ex)",
   "type": "feat",
+  "folder": "ejfd1l3BuXQmPQOR",
   "img": "systems/sfrpg/icons/classes/additional_skill_expertise.webp",
   "system": {
     "ability": "",
@@ -40,6 +41,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -59,6 +61,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,

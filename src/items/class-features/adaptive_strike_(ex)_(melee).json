@@ -2,6 +2,7 @@
   "_id": "tQOADIIm98aXeYfw",
   "name": "Adaptive Strike (Ex) (Melee)",
   "type": "weapon",
+  "folder": "ZBmB6HbuSzxxmQmF",
   "img": "icons/creatures/claws/claw-curved-jagged-gray.webp",
   "system": {
     "ability": "str",

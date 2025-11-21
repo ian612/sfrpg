@@ -2,6 +2,7 @@
   "_id": "xZMO0narHZxvqIn8",
   "name": "Adaptive Strike (Ex) (Ranged)",
   "type": "weapon",
+  "folder": "ZBmB6HbuSzxxmQmF",
   "img": "icons/creatures/claws/claw-curved-jagged-gray.webp",
   "system": {
     "ability": "dex",

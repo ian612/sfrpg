@@ -2,6 +2,7 @@
   "_id": "2BjD4ocSE0BL5DcN",
   "name": "Biohacks (Ex)",
   "type": "feat",
+  "folder": "ZvA6HZUVBykP3PPQ",
   "img": "systems/sfrpg/icons/equipment/technological%20items/sprayflesh.webp",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,
@@ -40,6 +41,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -59,6 +61,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,
@@ -89,7 +92,8 @@
     "modifiers": [],
     "properties": {},
     "range": {
-      "units": ""
+      "units": "none",
+      "value": ""
     },
     "recharge": {
       "charged": false,
@@ -110,7 +114,7 @@
     "slug": "",
     "source": "COM pg. 41",
     "target": {
-      "value": null
+      "value": ""
     },
     "uses": {
       "max": "1 + @classes.biohacker.keyAbilityMod",

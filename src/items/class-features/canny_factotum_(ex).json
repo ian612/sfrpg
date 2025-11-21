@@ -2,6 +2,7 @@
   "_id": "avP3GDNmqGDxqeXM",
   "name": "Canny Factotum (Ex)",
   "type": "feat",
+  "folder": "WWEoBIBIAGmcgDCf",
   "img": "systems/sfrpg/icons/default/achievement.svg",
   "system": {
     "ability": "",
@@ -40,6 +41,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -59,6 +61,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,

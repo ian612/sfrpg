@@ -2,6 +2,7 @@
   "_id": "aGuYtPBdKbP6RyY7",
   "name": "Arc Strike (Ex)",
   "type": "mod",
+  "folder": "f85NDg5CkNwat9e9",
   "img": "systems/sfrpg/icons/default/auto-repair.svg",
   "system": {
     "ability": "",
@@ -38,7 +39,7 @@
           "name": "d8 Damage",
           "formula": "1d8 + (lookupRange(@details.level.value, 0, 4, floor(@details.level.value / 3))d8)",
           "group": null,
-          "isPrimarySection": false,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,

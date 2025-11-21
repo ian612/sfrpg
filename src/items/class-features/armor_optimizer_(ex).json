@@ -2,6 +2,7 @@
   "_id": "QJjE9tvp0YFNhjfg",
   "name": "Armor Optimizer (Ex)",
   "type": "feat",
+  "folder": "WWEoBIBIAGmcgDCf",
   "img": "systems/sfrpg/icons/classes/armor_optimizer.webp",
   "system": {
     "ability": "",
@@ -40,6 +41,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -59,6 +61,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,

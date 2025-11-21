@@ -2,6 +2,7 @@
   "_id": "D9tAlLTy0M2apDq0",
   "name": "Dark Interaction (Su)",
   "type": "feat",
+  "folder": "RIyvkr2THJLyytDG",
   "img": "systems/sfrpg/images/cup/gameplay/graviton.webp",
   "system": {
     "ability": "",
@@ -40,6 +41,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -59,6 +61,7 @@
       "force": false,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,

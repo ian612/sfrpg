@@ -2,6 +2,7 @@
   "_id": "ApLr2VIU8JeoT4Vn",
   "name": "Desperate Measures (Su)",
   "type": "feat",
+  "folder": "YV8GztrK2RvUX825",
   "img": "systems/sfrpg/icons/default/achievement.svg",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,
@@ -31,7 +32,7 @@
           "name": "",
           "formula": "(1 + @classes.precog.levels)d4",
           "group": null,
-          "isPrimarySection": false,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": true,
@@ -60,6 +61,7 @@
     "descriptors": {
       "acid": false,
       "air": false,
+      "auditory": false,
       "calling": false,
       "chaotic": false,
       "charm": false,
@@ -79,6 +81,7 @@
       "force": true,
       "good": false,
       "healing": false,
+      "illusion": false,
       "language-dependent": false,
       "lawful": false,
       "light": false,

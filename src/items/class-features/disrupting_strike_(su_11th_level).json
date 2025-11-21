@@ -2,6 +2,7 @@
   "_id": "y9HTA6i8IvyKfMud",
   "name": "Disrupting Strike (Su; 11th Level)",
   "type": "feat",
+  "folder": "XiKzemBx4u4Rztm3",
   "img": "systems/sfrpg/icons/default/achievement.svg",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,
@@ -37,7 +38,46 @@
       "unidentified": "",
       "value": "<p>&gt;@UUID[Compendium.sfrpg.class-features.Item.wFTC0sGqdpnZUib4]{Gear Boost}</p>\n<p>Your weapons absorb ambient magic, potentially disrupting spellcasting. When you hit a target with an analog weapon, the target must attempt a Will save whenever they cast a spell before the beginning of your next turn. If they fail the save by 4 or less, the spell is weakened—treat its caster level as 2 lower, reduce any saving throw DC by 2, and the caster takes a –2 penalty to attack rolls with the spell. If they fail the save by 5 or more, the spell fails. Once a creature attempts a save against this gear boost, it’s immune to the ability for 24 hours.</p>"
     },
-    "descriptors": {},
+    "descriptors": {
+      "acid": false,
+      "air": false,
+      "auditory": false,
+      "calling": false,
+      "chaotic": false,
+      "charm": false,
+      "cold": false,
+      "compulsion": false,
+      "creation": false,
+      "curse": false,
+      "darkness": false,
+      "death": false,
+      "disease": false,
+      "earth": false,
+      "electricity": false,
+      "emotion": false,
+      "evil": false,
+      "fear": false,
+      "fire": false,
+      "force": false,
+      "good": false,
+      "healing": false,
+      "illusion": false,
+      "language-dependent": false,
+      "lawful": false,
+      "light": false,
+      "mind-affecting": false,
+      "pain": false,
+      "poison": false,
+      "polymorph": false,
+      "radiation": false,
+      "scrying": false,
+      "sense-dependent": false,
+      "shadow": false,
+      "sonic": false,
+      "summoning": false,
+      "teleportation": false,
+      "water": false
+    },
     "details": {
       "category": "classFeature",
       "combat": false,
@@ -52,7 +92,7 @@
     "modifiers": [],
     "properties": {},
     "range": {
-      "units": ""
+      "units": "none"
     },
     "recharge": {
       "charged": false,

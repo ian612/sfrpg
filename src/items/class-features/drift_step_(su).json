@@ -2,6 +2,7 @@
   "_id": "c1KOLgDdzEPmtcLp",
   "name": "Drift Step (Su)",
   "type": "feat",
+  "folder": "IxQhXYoZ8DHEIz0j",
   "img": "systems/sfrpg/icons/default/achievement.svg",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,

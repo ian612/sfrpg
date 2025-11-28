@@ -2,6 +2,7 @@
   "_id": "lyg8K6wUyB7x73AR",
   "name": "Explode Head (Su)",
   "type": "feat",
+  "folder": "IxQhXYoZ8DHEIz0j",
   "img": "systems/sfrpg/icons/classes/explode_head.webp",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,

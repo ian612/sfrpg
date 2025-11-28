@@ -2,6 +2,7 @@
   "_id": "M6oWSAdbq9WrUn6E",
   "name": "Eclipse Defense (Su)",
   "type": "feat",
+  "folder": "RIyvkr2THJLyytDG",
   "img": "systems/sfrpg/icons/classes/blackhole.webp",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,

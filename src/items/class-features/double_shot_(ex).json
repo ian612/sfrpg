@@ -2,6 +2,7 @@
   "_id": "m1WgqNm90BPlycXP",
   "name": "Double Shot (Ex)",
   "type": "feat",
+  "folder": "XiKzemBx4u4Rztm3",
   "img": "systems/sfrpg/icons/equipment/weapons/hail-pistol-absolute-zero.webp",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,

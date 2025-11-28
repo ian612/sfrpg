@@ -2,6 +2,7 @@
   "_id": "prPIRm63aP4XeSEw",
   "name": "Endure Lifetimes (Su)",
   "type": "feat",
+  "folder": "Y4z5iJXjAwGhO4n5",
   "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,

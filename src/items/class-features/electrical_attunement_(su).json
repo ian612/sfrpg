@@ -2,6 +2,7 @@
   "_id": "CkndBsEO0IMsYZ4m",
   "name": "Electrical Attunement (Su)",
   "type": "actorResource",
+  "folder": "RIyvkr2THJLyytDG",
   "img": "systems/sfrpg/icons/default/pie-chart.svg",
   "system": {
     "type": "solarian",

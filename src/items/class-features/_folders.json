@@ -8,7 +8,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700458820,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -17,7 +17,7 @@
     "flags": {},
     "folder": null,
     "name": "Vanguard",
-    "sort": 0,
+    "sort": 1200000,
     "sorting": "a",
     "type": "Item"
   },
@@ -30,7 +30,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700583190,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -39,7 +39,7 @@
     "flags": {},
     "folder": null,
     "name": "Mystic",
-    "sort": 0,
+    "sort": 100000,
     "sorting": "a",
     "type": "Item"
   },
@@ -52,7 +52,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700611429,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -61,7 +61,7 @@
     "flags": {},
     "folder": null,
     "name": "Solarian",
-    "sort": 0,
+    "sort": 200000,
     "sorting": "a",
     "type": "Item"
   },
@@ -74,7 +74,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700594473,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -83,7 +83,7 @@
     "flags": {},
     "folder": null,
     "name": "Operative",
-    "sort": 0,
+    "sort": 300000,
     "sorting": "a",
     "type": "Item"
   },
@@ -96,7 +96,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700631429,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -105,7 +105,7 @@
     "flags": {},
     "folder": null,
     "name": "Soldier",
-    "sort": 0,
+    "sort": 400000,
     "sorting": "a",
     "type": "Item"
   },
@@ -118,7 +118,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700533738,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -127,7 +127,7 @@
     "flags": {},
     "folder": null,
     "name": "Witchwarper",
-    "sort": 0,
+    "sort": 500000,
     "sorting": "a",
     "type": "Item"
   },
@@ -140,7 +140,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700510889,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -149,7 +149,7 @@
     "flags": {},
     "folder": null,
     "name": "Precog",
-    "sort": 0,
+    "sort": 600000,
     "sorting": "a",
     "type": "Item"
   },
@@ -162,7 +162,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700493560,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -171,7 +171,7 @@
     "flags": {},
     "folder": null,
     "name": "Evolutionist",
-    "sort": 0,
+    "sort": 700000,
     "sorting": "a",
     "type": "Item"
   },
@@ -184,7 +184,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700410909,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -193,7 +193,7 @@
     "flags": {},
     "folder": null,
     "name": "Biohacker",
-    "sort": 0,
+    "sort": 800000,
     "sorting": "a",
     "type": "Item"
   },
@@ -206,7 +206,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700556405,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -215,7 +215,7 @@
     "flags": {},
     "folder": null,
     "name": "Envoy",
-    "sort": 0,
+    "sort": 900000,
     "sorting": "a",
     "type": "Item"
   },
@@ -228,7 +228,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700571682,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -237,7 +237,7 @@
     "flags": {},
     "folder": null,
     "name": "Mechanic",
-    "sort": 0,
+    "sort": 1000000,
     "sorting": "a",
     "type": "Item"
   },
@@ -250,7 +250,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700646936,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -259,7 +259,7 @@
     "flags": {},
     "folder": null,
     "name": "Technomancer",
-    "sort": 0,
+    "sort": 1100000,
     "sorting": "a",
     "type": "Item"
   },
@@ -272,7 +272,7 @@
       "duplicateSource": null,
       "exportSource": null,
       "lastModifiedBy": "PFC6ARcHZsYmZ7YK",
-      "modifiedTime": 1763700474661,
+      "modifiedTime": 1764352414439,
       "systemId": "sfrpg",
       "systemVersion": "0.29.0.1"
     },
@@ -281,7 +281,7 @@
     "flags": {},
     "folder": null,
     "name": "Nanocyte",
-    "sort": 0,
+    "sort": 1300000,
     "sorting": "a",
     "type": "Item"
   }

@@ -2,6 +2,7 @@
   "_id": "1HVLxal9WXqtMiCg",
   "name": "Entropic Pool (Su)",
   "type": "actorResource",
+  "folder": "HDP4MtdErzQFYsH3",
   "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
   "system": {
     "type": "vanguard",

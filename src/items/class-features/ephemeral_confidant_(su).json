@@ -2,6 +2,7 @@
   "_id": "77qu3zLcdsaGe5k2",
   "name": "Ephemeral Confidant (Su)",
   "type": "feat",
+  "folder": "YV8GztrK2RvUX825",
   "img": "systems/sfrpg/icons/default/achievement.svg",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,

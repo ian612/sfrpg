@@ -2,6 +2,7 @@
   "_id": "KAmEDpsRMD12KGc3",
   "name": "Evolution Track (Su)",
   "type": "actorResource",
+  "folder": "ZBmB6HbuSzxxmQmF",
   "img": "systems/sfrpg/icons/default/pie-chart.svg",
   "system": {
     "type": "evolutionist",

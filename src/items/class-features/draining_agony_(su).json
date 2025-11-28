@@ -2,6 +2,7 @@
   "_id": "u0yi4o8dMLCDMSU1",
   "name": "Draining Agony (Su)",
   "type": "feat",
+  "folder": "RIyvkr2THJLyytDG",
   "img": "systems/sfrpg/images/cup/gameplay/graviton.webp",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "none",
+      "units": "ft",
       "value": ""
     },
     "attackBonus": 0,
@@ -31,7 +32,7 @@
           "name": "",
           "formula": "(lookupRange(@resources.solarian.stellarMode.value, @classes.solarian.levels, 0, 0))",
           "group": null,
-          "isPrimarySection": false,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,

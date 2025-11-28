@@ -2,6 +2,7 @@
   "_id": "KR4YcDKBvV0hWbcH",
   "name": "Evolutionary Focus (Combat - Ultimate)",
   "type": "feat",
+  "folder": "ZBmB6HbuSzxxmQmF",
   "img": "systems/sfrpg/icons/default/achievement.svg",
   "system": {
     "ability": "",
@@ -16,7 +17,7 @@
       "effect": "",
       "shapable": false,
       "shape": "",
-      "units": "",
+      "units": "ft",
       "value": "0"
     },
     "attackBonus": 0,
@@ -31,7 +32,7 @@
           "name": "",
           "formula": "5d10",
           "group": null,
-          "isPrimarySection": false,
+          "isPrimarySection": true,
           "types": {
             "acid": false,
             "bludgeoning": false,
@@ -72,7 +73,7 @@
     "modifiers": [],
     "properties": {},
     "range": {
-      "units": ""
+      "units": "none"
     },
     "recharge": {
       "charged": false,
